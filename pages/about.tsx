@@ -22,7 +22,7 @@ const About: NextPage = () => {
             </Col>
             <Col md={ 6 }>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eos deserunt sunt ullam. Quod, quaerat a voluptatem perspiciatis perferendis maiores.
+                I am going to say hello in this one!
               </p>
             </Col>
           </Row>
