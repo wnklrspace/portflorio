@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 const About: NextPage = () => {
   return (
     <>
-      <SeoMeta 
+      <SeoMeta
         title='• About'
         desc='Lorem Ipsum about about'
         urlPath='about'
@@ -17,14 +17,14 @@ const About: NextPage = () => {
           <Row>
             <Col md={ 6 }>
               <h1 className={styles.title}>
-                About 
+                About
               </h1>
             </Col>
             <Col md={ 6 }>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eos deserunt sunt ullam. Quod, quaerat a voluptatem perspiciatis perferendis maiores.
               </p>
-            </Col>  
+            </Col>
           </Row>
         </Container>
       </Layout>
