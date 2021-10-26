@@ -1,5 +1,6 @@
 import { Header } from '../Layout/'
 import { Footer } from './footer'
+import { LightSwitch } from '../Buttons'
 import styles from './styles.module.scss'
 
 interface Props {
@@ -17,6 +18,7 @@ export const Layout: React.FunctionComponent<Props> = (props) => {
   return (
     <>
       <Header backgroundColor= { backgroundColor } />
+      <LightSwitch />
         <main className={ styles.main }>
           { children }
         </main>

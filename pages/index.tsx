@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <Container>
           <h1 className={styles.title}>
             Hi, <br />
-            I am Flo. Software Engineer with a strong focus on User Experience and Design.
+            I am Flo. Software Engineer with a strong focus on Design.
           </h1>
         </Container>
       </Layout>

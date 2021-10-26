@@ -18,3 +18,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  @media (min-width: 1800px) {
+    max-width: 1800px;
+  }
+}
