@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import styles from './styles.module.scss'
 
-
 export const Navigation = () => {
 
   return (
@@ -10,7 +9,7 @@ export const Navigation = () => {
       <ul>
         <li>
           <Link href='./'>
-            <a>Home</a>
+            <a>Start</a>
           </Link>
         </li>
         <li>
@@ -20,7 +19,17 @@ export const Navigation = () => {
         </li>
         <li>
           <Link href='./projects'>
-            <a>Projects</a>
+            <a>Projekte</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='./projects'>
+            <a>Gedanken</a>
+          </Link>
+        </li>
+        <li>
+          <Link href='./projects'>
+            <a>Empfehlungen</a>
           </Link>
         </li>
       </ul>

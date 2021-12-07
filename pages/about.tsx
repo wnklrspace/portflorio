@@ -24,13 +24,16 @@ const About: NextPage = () => {
                 The way I talk to machines
               </h2>
               <Pill>
+                HTML
+              </Pill>
+              <Pill>
+                SCSS
+              </Pill>
+              <Pill>
                 Javascript
               </Pill>
               <Pill>
                 React
-              </Pill>
-              <Pill>
-                Next.JS
               </Pill>
               <Pill>
                 Next.JS

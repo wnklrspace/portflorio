@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.scss'
 const Projects: NextPage = () => {
   return (
     <>
-      <SeoMeta 
+      <SeoMeta
         title='• Projects'
         desc='Lorem Ipsum about projects'
         urlPath='projects'
@@ -14,7 +14,7 @@ const Projects: NextPage = () => {
 
       <Layout>
         <h1 className={styles.title}>
-          Projects 
+          Projects
         </h1>
       </Layout>
     </>
