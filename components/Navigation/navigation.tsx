@@ -22,16 +22,6 @@ export const Navigation = () => {
             <a>Projekte</a>
           </Link>
         </li>
-        <li>
-          <Link href='./projects'>
-            <a>Gedanken</a>
-          </Link>
-        </li>
-        <li>
-          <Link href='./projects'>
-            <a>Empfehlungen</a>
-          </Link>
-        </li>
       </ul>
     </nav>
   )
