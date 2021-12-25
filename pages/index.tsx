@@ -14,8 +14,9 @@ const Home: NextPage = () => {
       <Layout>
         <Container>
           <h1 className={styles.title}>
-            Hi, <br />
-            I am Flo. I do mainly code with a strong focus on design.
+            Software <br />
+            Development <br />
+            Design
           </h1>
         </Container>
       </Layout>
