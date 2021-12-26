@@ -37,11 +37,6 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                   Projects
                 </p>
               </Col>
-              <Col md={ 4 }>
-                <p>
-                  Projects
-                </p>
-              </Col>
             </Row>
           </Container>
         </div>
