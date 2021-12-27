@@ -1,3 +1,6 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .burger,
 .logo {
   position: fixed;
@@ -29,7 +32,7 @@
     background-color: #fff;
 
     &:last-child {
-      margin-top: 10px;
+      margin-top: 6px;
     }
   }
 }
@@ -59,10 +62,17 @@
   p,
   li {
     color: #010101;
+    list-style: none;
+    margin-bottom: gap(1);
   }
 
-  li {
-    font-size: calc(54px + 1vw);
-    list-style: none;
+  ul {
+    &:first-child {
+      margin-bottom: gap(4);
+
+      li {
+        font-size: calc(54px + 1vw);
+      }
+    }
   }
 }

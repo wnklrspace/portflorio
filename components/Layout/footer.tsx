@@ -27,14 +27,6 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                   <p>
                     Florian Winkler
                     <br />
-                    01517440550
-                    <br />
-                    flo@wnklr.art
-                  </p>
-                  <p style={{ textDecoration: 'line-through' }}>
-                    Ulm, Germany
-                  </p>
-                  <p>
                     Stuttgart, Germany
                   </p>
                 </Col>
@@ -45,7 +37,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                     </Link>
                   </p>
                   <p>
-                    <Link href='/about'>
+                    <Link href='/cv'>
                       <a>CV</a>
                     </Link>
                   </p>

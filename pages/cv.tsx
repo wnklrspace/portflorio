@@ -29,6 +29,18 @@ const About: NextPage = () => {
           <Container>
             <Row>
               <Col md={ 6 }>
+                <h2>Education</h2>
+              </Col>
+              <Col md={ 6 }>
+                <h2>Experience</h2>
+              </Col>
+            </Row>
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <Row>
+              <Col md={ 6 }>
                 <h2>
                   The way I talk to machines
                 </h2>

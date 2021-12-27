@@ -20,7 +20,7 @@ const Support: NextPage = () => {
               <Col>
                 <h1 className={styles.title}>
                   Support, <br />
-                  just support
+                  nothing but support
                 </h1>
               </Col>
               <Col md={ 8 }>
@@ -44,17 +44,28 @@ const Support: NextPage = () => {
         <Section>
           <Container>
             <Row>
-              <Col>
+              <Col md={ 12 }>
                 <ListOrganization
                   title='Bildungsinitiative Ferhatunvar'
                   description='Serpil möchte mit der Gründung der Bildungsinitiative allen Kindern, Jugendlichen, jungen Erwachsenen und deren Eltern, die rassistische Erfahrungen im Alltag oder in der Schule machen, eine Anlaufstelle bieten. Mit dieser Arbeit möchte Serpil das Gedenken an ihren Sohn Ferhat aufrechterhalten. Die Bildungsinitiative wird von der Familie Unvar, Jugendlichen, engagierten Erwachsenen, sowie Freund:innen von Ferhat getragen.'
                   link='https://www.bildungsinitiative-ferhatunvar.de/'
                 />
+              </Col>
+              <Col md={ 12 }>
                 <ListOrganization
                   title='Sea Watch'
                   description='Lorem ipsum dolores and so one and on'
                   link='#'
                 />
+              </Col>
+              <Col md={ 12 }>
+                <ListOrganization
+                  title='Deutsche Depressionshilfe'
+                  description='Lorem ipsum dolores and so one and on'
+                  link='https://www.deutsche-depressionshilfe.de/start'
+                />
+              </Col>
+              <Col md={ 12 }>
                 <ListOrganization
                   title='Weißer Ring'
                   description='Lorem ipsum dolores and so one and on'
