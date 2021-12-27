@@ -1,3 +1,4 @@
+@import './variables.scss';
 @import './typography.scss';
 
 html,
@@ -23,4 +24,11 @@ a {
   @media (min-width: 1800px) {
     max-width: 1800px;
   }
+}
+hr {
+  background-color: rgba(#fff, .25);
+  border: none;
+  outline: none;
+  height: 1px;
+  margin-bottom: gap(10);
 }

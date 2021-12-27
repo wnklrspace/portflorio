@@ -21,7 +21,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
       <footer>
         <Section>
           <Container>
-            <div className={ styles.footer }>
+            <hr />
               <Row>
                 <Col md={ 3 }>
                   <p>
@@ -68,7 +68,27 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                   </p>
                 </Col>
               </Row>
-            </div>
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <Row>
+              <Col md={ 3 }>
+                <p>
+                  <Link href='/imprint'>
+                    <a>Imprint</a>
+                  </Link>
+                </p>
+              </Col>
+              <Col md={{
+                size: 3,
+                offset: 6
+              }}>
+                <p>
+                  Code & Design with ♥️
+                </p>
+              </Col>
+            </Row>
           </Container>
         </Section>
       </footer>

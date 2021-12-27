@@ -46,7 +46,7 @@ export const FeaturedProject:  React.FunctionComponent<Props> = ({
           </div>
         </Col>
         <Col md={ 6 }>
-          <div className={ styles['project--featured__img-container'] }>
+          <div className={ styles['project__img-container'] }>
             {/* <Image
               src={ image.src || '' }
               alt={ image.alt || 'Background' }
