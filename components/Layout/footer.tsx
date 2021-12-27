@@ -26,12 +26,16 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                 <Col md={ 3 }>
                   <p>
                     Florian Winkler
-                  </p>
-                  <p>
+                    <br />
                     01517440550
+                    <br />
+                    flo@wnklr.art
+                  </p>
+                  <p style={{ textDecoration: 'line-through' }}>
+                    Ulm, Germany
                   </p>
                   <p>
-                    flo@wnklr.art
+                    Stuttgart, Germany
                   </p>
                 </Col>
                 <Col md={ 3 }>
@@ -96,16 +100,11 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                 </p>
               </Col>
               <Col md={ 3 }>
-                <p>
-                  Code & Design with ♥️
-                </p>
+
               </Col>
               <Col md={ 3 }>
-                <p style={{ textDecoration: 'line-through' }}>
-                  Ulm, Germany
-                </p>
                 <p>
-                  Stuttgart, Germany
+                  Code & Design with ♥️
                 </p>
               </Col>
             </Row>
