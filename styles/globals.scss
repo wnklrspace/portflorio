@@ -20,11 +20,17 @@ a {
   box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+  padding: 0;
+}
+
 .container {
   @media (min-width: 1800px) {
     max-width: 1800px;
   }
 }
+
 hr {
   background-color: rgba(#fff, .25);
   border: none;

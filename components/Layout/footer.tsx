@@ -50,6 +50,16 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                       <a>Projects</a>
                     </Link>
                   </p>
+                  <p>
+                    <Link href='/random'>
+                      <a>Random</a>
+                    </Link>
+                  </p>
+                  <p>
+                    <Link href='/support'>
+                      <a>Support</a>
+                    </Link>
+                  </p>
                 </Col>
                 <Col md={ 3 }>
                   <p>
@@ -80,12 +90,22 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
                   </Link>
                 </p>
               </Col>
-              <Col md={{
-                size: 3,
-                offset: 6
-              }}>
+              <Col md={ 3 }>
+                <p>
+
+                </p>
+              </Col>
+              <Col md={ 3 }>
                 <p>
                   Code & Design with ♥️
+                </p>
+              </Col>
+              <Col md={ 3 }>
+                <p style={{ textDecoration: 'line-through' }}>
+                  Ulm, Germany
+                </p>
+                <p>
+                  Stuttgart, Germany
                 </p>
               </Col>
             </Row>

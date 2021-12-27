@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.list {
+  // Code goes here
+
+  h2 {
+    margin: 0;
+  }
+
+  &--organization {
+    position: relative;
+    padding: gap(3);
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #121212;
+    }
+
+    &:not(:last-child) {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        background-color: #121212;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 60px)
+      }
+    }
+
+    &__ctas {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__donate {
+      padding: gap(1) gap(2);
+      background: rgb(105, 230, 105);
+      display: inline-block;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #020202;
+    }
+  }
+}
