@@ -1,0 +1,77 @@
+// gap used for spacing
+$gap: 10px;
+@function gap($factor) {
+  @return $gap * $factor;
+}
+
+$form-height: 50px;
+$button-circle-height: 475px;
+$button-circle-width: $button-circle-height;
+$burger-size: $form-height;
+
+$button-circle-height-sm: 300px;
+$button-circle-width-sm: $button-circle-height-sm;
+
+// ease
+$ease-cubic: 0.7s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+
+// border radius
+$border-radius: 30px;
+$border-radius-sm: 20px;
+$border-radius-button: calc(#{$form-height} / 2);
+$border-radius-input: 12px;
+
+// border
+$border-width: 2px;
+
+// button
+$button-outline-width: 2px;
+
+// shadow
+$box-shadow: 0 20px 40px -20px rgba(0,0,0,0.3);
+
+// transitions
+$transition-default: .4s ease-out;
+
+// font sizes
+$font-size-5xl: 94px;
+$font-size-4xl: 67px;
+$font-size-3xl: 46px;
+$font-size-xxl: 38px;
+$font-size-xl: 32px;
+$font-size-lg: 26px;
+$font-size-md: 24px;
+$font-size-sm: 21px;
+$font-size-xs: 18px;
+$font-size-xxs: 16px;
+$font-size-3xs: 14px;
+$font-size-4xs: 12px;
+$font-size-5xs: 11px;
+
+$font-size-error-message: $font-size-3xs;
+
+// gutter
+$gutter-outer-mobile: 20px;
+$gutter-outer-tablet: 30px;
+
+// z-index
+$z-index-default: 1;
+$z-index-prefooter: 0;
+$z-index-main-content: $z-index-default;
+$z-index-header: 100;
+$z-index-burger: 120;
+$z-index-gradient-back: 1;
+$z-index-gradient-front: 0;
+$z-index-gradient-container: -1;
+$z-index-tooltip: 20;
+$z-index-buttons: 20;
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

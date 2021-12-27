@@ -1,0 +1,435 @@
+@import './variables.scss';
+
+// Mediaquery mixins
+@mixin x-small() {
+  @media only screen and (min-width: map-get($grid-breakpoints, xs)){
+    @content;
+  }
+}
+
+@mixin small() {
+  @media only screen and (min-width: map-get($grid-breakpoints, sm)){
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media only screen and (min-width: map-get($grid-breakpoints, md)){
+    @content;
+  }
+}
+
+@mixin large() {
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)){
+    @content;
+  }
+}
+
+@mixin x-large() {
+  @media only screen and (min-width: map-get($grid-breakpoints, xl)){
+    @content;
+  }
+}
+
+//
+// Typography mixins
+//
+@mixin type-4xs {
+  font-size: $font-size-4xs;
+  line-height: 1.2em;
+}
+
+@mixin type-3xs {
+  font-size: $font-size-3xs;
+  line-height: 1.3em;
+}
+
+@mixin type-xxs {
+  font-size: $font-size-xxs;
+  line-height: 1.4em;
+}
+
+@mixin type-xs {
+  font-size: $font-size-xs;
+  line-height: 1.4em;
+}
+
+@mixin type-sm {
+  font-size: $font-size-sm;
+  line-height: 1.4em;
+}
+
+@mixin type-md {
+  font-size: $font-size-md;
+  line-height: 1.4em;
+}
+
+@mixin type-lg {
+  font-size: $font-size-lg;
+  line-height: 1.3em;
+}
+
+@mixin type-xl {
+  font-size: $font-size-xl;
+  line-height: 1.2em;
+}
+
+@mixin type-xxl {
+  font-size: $font-size-xxl;
+  line-height: 1.2em;
+}
+
+@mixin type-3xl {
+  font-size: $font-size-3xl;
+  line-height: 1.1em;
+}
+
+@mixin type-4xl {
+  font-size: $font-size-4xl;
+  line-height: 1.1em;
+}
+
+@mixin type-5xl {
+  font-size: $font-size-5xl;
+  line-height: 1em;
+}
+
+// Typography h1
+@mixin type-h1 {
+  @include type-xxl;
+
+  @include medium {
+    @include type-3xl;
+  }
+
+  @include large {
+    @include type-4xl;
+  }
+
+  @include x-large {
+    @include type-5xl;
+  }
+}
+
+// Typography h2
+@mixin type-h2 {
+  @include type-xl;
+
+  @include medium {
+    @include type-xxl;
+  }
+
+  @include large {
+    @include type-3xl;
+  }
+
+  @include x-large {
+    @include type-4xl;
+  }
+}
+
+// Typography h3
+@mixin type-h3 {
+  @include type-lg;
+
+  @include medium {
+    @include type-xl;
+  }
+
+  @include large {
+    @include type-3xl;
+  }
+}
+
+// Typography h4
+@mixin type-h4 {
+  @include type-md;
+
+  @include small {
+    @include type-lg;
+  }
+
+  @include medium {
+    @include type-xl;
+  }
+
+  @include large {
+    @include type-xxl;
+  }
+}
+
+// Typography h5
+@mixin type-h5 {
+  @include type-xs;
+
+  @include medium {
+    @include type-md;
+  }
+
+  @include large {
+    @include type-lg;
+  }
+}
+// Typography body
+@mixin type-body {
+  @include type-xxs;
+
+  @include small {
+    @include type-xs;
+  }
+
+  @include x-large {
+    @include type-sm;
+  }
+}
+
+// Typography body-s
+@mixin type-body-sm {
+  @include type-xxs;
+
+  @include small {
+    @include type-xs;
+  }
+
+  // @include x-large {
+  //   @include type-sm;
+  // }
+}
+
+// Typography body-xxs -- Article body size
+@mixin type-body-xxs {
+  @include type-xxs;
+}
+
+@mixin type-arrow {
+  @include type-3xs;
+}
+
+//
+// Buttons
+//
+// Mixin for button with arrow
+//
+@mixin button-arrow {
+  @include type-arrow;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 gap(2.4);
+  height: $form-height;
+  border-radius: $border-radius-button;
+  font-family: $font-family-medium;
+  transition: all $transition-default;
+  cursor: pointer;
+
+  &__arrow-container {
+    width: 45px;
+
+    @include x-large {
+      width: 65px;
+    }
+  }
+
+  &__arrow {
+    width: 25px;
+    height: 1px;
+    background-color: $color-white;
+    margin-right: gap(1);
+    position: relative;
+    transition: all .3s ease;
+
+    @include x-large {
+      width: 40px;
+      margin-right: gap(2);
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      right: -1px;
+      transition: all $transition-default;
+      background-color: $color-white;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+      bottom: 4px;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      bottom: -4px;
+    }
+  }
+
+  &:hover {
+    color: $color-white;
+
+    .btn__arrow {
+      background-color: $color-white;
+      width: 35px;
+
+      @include x-large {
+        width: 50px;
+      }
+
+      &::after,
+      &::before {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-left: gap(2);
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $color-grey-darkest;
+    border: $button-outline-width solid;
+
+    &--dark {
+      background-color: transparent;
+      color: $color-grey-darkest;
+
+      .btn__arrow {
+        background-color: $color-black;
+
+        &::after,
+        &::before {
+          background-color: $color-black;
+        }
+      }
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-grey-darkest;
+        border-color: $color-grey-darkest;
+
+        .btn__arrow {
+          background-color: $color-white;
+
+          &::after,
+          &::before {
+            background-color: $color-white;
+          }
+        }
+      }
+    }
+
+    &--light {
+      background-color: transparent;
+      color: $color-white;
+
+      .btn__arrow {
+        background-color: $color-white;
+
+        &::after,
+        &::before {
+          background-color: $color-white;
+        }
+      }
+
+      &:hover {
+        color: $color-grey-darkest;
+        background-color: $color-white;
+        border-color: $color-white;
+
+        .btn__arrow {
+          background-color: $color-black;
+
+          &::after,
+          &::before {
+            background-color: $color-black;
+          }
+        }
+      }
+    }
+  }
+
+  &--dark {
+    background-color: $color-grey-darkest;
+    color: $color-white;
+  }
+
+  &--light {
+    background-color: $color-white;
+    color: $color-grey-darkest;
+  }
+}
+
+@mixin arrow-lg {
+  width: 60px;
+  height: 1px;
+  background-color: $color-black;
+  transition: all $transition-default;
+  transform-origin: left;
+  position: relative;
+
+  @include medium {
+    width: 120px;
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: $color-black;
+    right: -3px;
+    transition: all $transition-default;
+
+    @include medium {
+      width: 40px;
+      right: -6px;
+    }
+  }
+
+  &::after {
+    transform: rotate(45deg);
+    bottom: 7px;
+
+    @include medium {
+      bottom: 14px;
+    }
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+    bottom: -7px;
+
+    @include medium {
+      bottom: -14px;
+    }
+  }
+}
+
+// logo horizontal
+@mixin logo-wrapper {
+  position: relative;
+  display: block;
+}
+
+// logo image mobile
+@mixin logo-img-mobile {
+  line-height: 0;
+  display: inline-block;
+  max-height: 26px;
+
+  &__img {
+    width: 170px;
+
+    @include medium {
+      width: 300px;
+    }
+
+    @include large {
+      width: 150px;
+    }
+  }
+}

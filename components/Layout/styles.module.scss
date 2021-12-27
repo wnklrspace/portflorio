@@ -1,26 +1,29 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .header {
-  position: fixed; 
-  bottom: 30px; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #eee;
   padding: 5px;
   border-radius: 40px;
 
   ul {
-    display: flex; 
-    padding: 0; 
-    margin: 0; 
+    display: flex;
+    padding: 0;
+    margin: 0;
 
     li {
       list-style: none;
 
       &:first-child {
-        margin-right: 10px; 
+        margin-right: 10px;
       }
 
       &:last-child {
-        margin-left: 10px; 
+        margin-left: 10px;
       }
 
       a {
@@ -28,11 +31,64 @@
         border-radius: 40px;
         display: inline-block;
         color: #000;
-        
+
         &:hover {
           background-color: #ccc;
         }
       }
     }
+  }
+}
+
+.section {
+  padding-top: 0;
+  padding-bottom: gap(10);
+  position: relative;
+  z-index: $z-index-main-content;
+
+  @include medium {
+    padding-bottom: gap(10);
+  }
+
+  @include large {
+    padding-bottom: gap(20);
+  }
+
+  &--xs {
+    padding-bottom: gap(3);
+
+    @include medium {
+      padding-bottom: gap(3);
+    }
+
+    @include large {
+      padding-bottom: gap(3);
+    }
+  }
+
+  &--sm {
+    @include medium {
+      padding-bottom: gap(10);
+    }
+
+    @include large {
+      padding-bottom: gap(10);
+    }
+  }
+
+  &--t {
+    padding-top: gap(10);
+
+    @include medium {
+      padding-top: gap(10);
+    }
+
+    @include large {
+      padding-top: gap(20);
+    }
+  }
+
+  &--nb {
+    padding-bottom: 0;
   }
 }

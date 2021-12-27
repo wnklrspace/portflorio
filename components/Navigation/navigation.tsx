@@ -9,7 +9,7 @@ export const Navigation = () => {
       <ul>
         <li>
           <Link href='./'>
-            <a>Start</a>
+            <a>Home</a>
           </Link>
         </li>
         <li>
@@ -19,7 +19,7 @@ export const Navigation = () => {
         </li>
         <li>
           <Link href='./projects'>
-            <a>Projekte</a>
+            <a>Projects</a>
           </Link>
         </li>
       </ul>
