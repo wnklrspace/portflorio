@@ -1,6 +1,7 @@
 import { imageConfigDefault } from 'next/dist/server/image-config'
 import Image from 'next/image'
-import { Container, Row, Col } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
+import { Container } from '../Layout'
 import styles from './styles.module.scss'
 
 interface Props {
@@ -46,14 +47,14 @@ export const FeaturedProject:  React.FunctionComponent<Props> = ({
         </Col>
         <Col md={ 6 }>
           <div className={ styles['project--featured__img-container'] }>
-            <Image
+            {/* <Image
               src={ image.src || '' }
               alt={ image.alt || 'Background' }
               layout='fill'
               objectFit='cover'
               placeholder='blur'
               blurDataURL={ image.src }
-            />
+            /> */}
           </div>
         </Col>
       </Row>

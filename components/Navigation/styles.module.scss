@@ -1,0 +1,25 @@
+.burger,
+.logo {
+  position: fixed;
+  top: 3rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.logo {
+  left: 3rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.burger {
+  right: 3rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  background: #333;
+}
+
+.nav {
+  display: none;
+}

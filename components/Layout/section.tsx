@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import styles from './styles.module.scss'
+import layout from './styles.module.scss'
 
 interface Props {
   children?: any,
@@ -15,9 +15,9 @@ export const Section: React.FunctionComponent<Props> = ({
   hasBottom = true,
 }) => {
 
-  const sectionClass = classNames(styles.section, {
-    [styles['section--t']]: hasTop,
-    [styles['section--nb']]: !hasBottom,
+  const sectionClass = classNames(layout.section, {
+    [layout['section--t']]: hasTop,
+    [layout['section--nb']]: !hasBottom,
   });
 
   return (

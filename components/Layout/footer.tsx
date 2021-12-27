@@ -1,5 +1,7 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
+import { Section, Container } from './'
 import { Navigation } from '../Navigation'
 import styles from './styles.module.scss'
 
@@ -17,29 +19,58 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
   return (
     <>
       <footer>
-        <div className="section">
+        <Section>
           <Container>
-            <Row>
-              <Col md={ 4 }>
-                <p>
-                  Florian Winkler
-                  <br />
-                  01517440550
-                  <br />
-                  flo@wnklr.art
-                </p>
-              </Col>
-              <Col md={ 4 }>
-                <p>
-                  CV
-                </p>
-                <p>
-                  Projects
-                </p>
-              </Col>
-            </Row>
+            <div className={ styles.footer }>
+              <Row>
+                <Col md={ 3 }>
+                  <p>
+                    Florian Winkler
+                  </p>
+                  <p>
+                    01517440550
+                  </p>
+                  <p>
+                    flo@wnklr.art
+                  </p>
+                </Col>
+                <Col md={ 3 }>
+                  <p>
+                    <Link href='./'>
+                      <a>Home</a>
+                    </Link>
+                  </p>
+                  <p>
+                    <Link href='/about'>
+                      <a>CV</a>
+                    </Link>
+                  </p>
+                  <p>
+                    <Link href='/projects'>
+                      <a>Projects</a>
+                    </Link>
+                  </p>
+                </Col>
+                <Col md={ 3 }>
+                  <p>
+                    Github
+                  </p>
+                  <p>
+                    LinkedIn
+                  </p>
+                  <p>
+                    Instagram
+                  </p>
+                </Col>
+                <Col md={ 3 }>
+                  <p>
+                    All rights reserved 2022
+                  </p>
+                </Col>
+              </Row>
+            </div>
           </Container>
-        </div>
+        </Section>
       </footer>
     </>
   )

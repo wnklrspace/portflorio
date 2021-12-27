@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         urlPath='./'
       />
       <Layout>
-        <Section>
+        <Section hasTop>
           <Container>
             <h1 className={styles.title}>
               Software <br />

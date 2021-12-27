@@ -1,45 +1,6 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.header {
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #eee;
-  padding: 5px;
-  border-radius: 40px;
-
-  ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-
-    li {
-      list-style: none;
-
-      &:first-child {
-        margin-right: 10px;
-      }
-
-      &:last-child {
-        margin-left: 10px;
-      }
-
-      a {
-        padding: 15px 30px;
-        border-radius: 40px;
-        display: inline-block;
-        color: #000;
-
-        &:hover {
-          background-color: #ccc;
-        }
-      }
-    }
-  }
-}
-
 .section {
   padding-top: 0;
   padding-bottom: gap(10);
@@ -91,4 +52,36 @@
   &--nb {
     padding-bottom: 0;
   }
+}
+
+.container {
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 $gutter-outer-mobile;
+  z-index: $z-index-default;
+
+  &--center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include medium {
+    padding: 0 $gutter-outer-tablet;
+  }
+
+  @include large {
+    padding: 0 gap(4);
+  }
+
+  @include x-large {
+    padding: 0 48px;
+  }
+}
+
+.footer {
+  border-top: 1px solid rgba(#fff, .25);
+  padding-top: gap(3);
 }

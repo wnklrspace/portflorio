@@ -5,7 +5,12 @@ import styles from './styles.module.scss'
 export const Navigation = () => {
 
   return (
-    <nav>
+  <>
+    <div className={ styles.logo }>
+      Fw
+    </div>
+    <div className={ styles.burger } />
+    <nav className={ styles.nav }>
       <ul>
         <li>
           <Link href='./'>
@@ -24,5 +29,6 @@ export const Navigation = () => {
         </li>
       </ul>
     </nav>
+  </>
   )
 }

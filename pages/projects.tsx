@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Layout, SeoMeta, Section } from '../components/Layout'
-import { FeaturedProject } from '../components/Projects'
-import { Container, Row, Col } from 'reactstrap'
+import { Layout, SeoMeta, Section, Container } from '../components/Layout'
+import { FeaturedProject, Project } from '../components/Projects'
+import { Row, Col } from 'reactstrap'
 import styles from '../styles/Home.module.scss'
 
 const Projects: NextPage = () => {
@@ -15,7 +15,7 @@ const Projects: NextPage = () => {
       />
 
       <Layout>
-        <Section>
+        <Section hasTop>
           <Container>
             <Row>
               <Col>
@@ -29,12 +29,79 @@ const Projects: NextPage = () => {
         <Section>
           <Container>
             <Row>
+              <Col md={ 8 }>
+                <Project
+                  title='Stadt, Land, Mehr'
+                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                  year={ 2022 }
+                  image={{
+                    src: '/bg.jpg',
+                    alt: 'Background color',
+                  }}
+                />
+              </Col>
+              <Col md={ 4 }>
+                <Project
+                  title='Uhland Realschule'
+                  description='Website for middle school in the länd'
+                  year={ 2021 }
+                  image={{
+                    src: '/bg.jpg',
+                    alt: 'Background color',
+                  }}
+                />
+              </Col>
+            </Row>
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <Row>
               <Col>
                 <FeaturedProject
                   title='Stadt, Land, Mehr'
                   description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
                   year={ 2022 }
                   backgroundColor='#336095'
+                  image={{
+                    src: '/bg.jpg',
+                    alt: 'Background color',
+                  }}
+                />
+              </Col>
+            </Row>
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <Row>
+              <Col md={ 4 }>
+                <Project
+                  title='Stadt, Land, Mehr'
+                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                  year={ 2022 }
+                  image={{
+                    src: '/bg.jpg',
+                    alt: 'Background color',
+                  }}
+                />
+              </Col>
+              <Col md={ 4 }>
+                <Project
+                  title='Stadt, Land, Mehr'
+                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                  year={ 2022 }
+                  image={{
+                    src: '/bg.jpg',
+                    alt: 'Background color',
+                  }}
+                />
+              </Col>
+              <Col md={ 4 }>
+                <Project
+                  title='Stadt, Land, Mehr'
+                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                  year={ 2022 }
                   image={{
                     src: '/bg.jpg',
                     alt: 'Background color',
