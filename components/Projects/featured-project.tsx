@@ -43,6 +43,9 @@ export const FeaturedProject:  React.FunctionComponent<Props> = ({
             <p className={ styles['project--featured__description'] }>
               { description }
             </p>
+            <p className={ styles['btn'] }>
+              Show project
+            </p>
           </div>
         </Col>
         <Col md={ 6 }>

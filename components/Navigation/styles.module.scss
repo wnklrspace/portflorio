@@ -45,7 +45,7 @@
   left: 0;
   right: 0;
   background-color: #fff;
-  min-height: 80vh;
+  padding: 10vh 0;
   align-items: center;
 
   &--active {
@@ -53,9 +53,16 @@
   }
 
   &__inner {
-    max-width: 1420px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  &__about {
+    padding: gap(3);
+    background-color: #020202;
+    border-radius: 20px;
+    color: #fff !important;
   }
 
   a,

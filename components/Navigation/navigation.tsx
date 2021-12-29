@@ -15,9 +15,11 @@ export const Navigation = () => {
 
   return (
   <>
-    <div className={ styles.logo }>
-      Fw
-    </div>
+    <Link href='./'>
+      <a className={ styles.logo }>
+        Fw
+      </a>
+    </Link>
     <div
       className={ styles.burger }
       onClick={ () => setShowNav(!showNav) }
@@ -57,11 +59,16 @@ export const Navigation = () => {
                   <a>Support</a>
                 </Link>
               </li>
+              <li>
+                <Link href='/imprint'>
+                  <a>Imprint</a>
+                </Link>
+              </li>
             </ul>
           </Col>
           <Col>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, quibusdam!
+            <p className={ styles.nav__about }>
+              Currently I am working at muse case design studio as a Junior Software Developer
             </p>
           </Col>
         </Row>

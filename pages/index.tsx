@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Row, Col } from 'reactstrap'
 import { Container, Layout, SeoMeta, Section } from '../components/Layout'
+import { LiveProjects } from '../components/Projects'
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -19,6 +20,11 @@ const Home: NextPage = () => {
               Development <br />
               & Design
             </h1>
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <LiveProjects />
           </Container>
         </Section>
       </Layout>
