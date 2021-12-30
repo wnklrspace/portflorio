@@ -12,11 +12,17 @@ export const Navigation = () => {
   const navClass = classNames(styles.nav, {
     [styles['nav--active']]: showNav,
   });
+  const logoClass = classNames(styles.logo, {
+    [styles['logo--inverted']]: showNav,
+  });
+  const backgroundClass = classNames(styles['nav-background'], {
+    [styles['nav-background--active']]: showNav,
+  });
 
   return (
   <>
     <Link href='./'>
-      <a className={ styles.logo }>
+      <a className={ logoClass }>
         Fw
       </a>
     </Link>
@@ -27,6 +33,7 @@ export const Navigation = () => {
       <div className={ styles.burger__meat }/>
       <div className={ styles.burger__meat }/>
     </div>
+    <div className={ backgroundClass } />
     <nav className={ navClass }>
       <Container>
         <Row>

@@ -10,13 +10,23 @@
 }
 
 .logo {
-  left: 3rem;
+  position: absolute;
+  left: gap(2);
   letter-spacing: .2em;
   text-transform: uppercase;
+
+  @include medium {
+    left: 3rem;
+    position: fixed;
+  }
+
+  &--inverted {
+    color: #010101;
+  }
 }
 
 .burger {
-  right: 3rem;
+  right: gap(2);
   height: 50px;
   width: 50px;
   border-radius: 5px;
@@ -26,6 +36,10 @@
   justify-content: center;
   flex-direction: column;
 
+  @include medium {
+    right: 3rem;
+  }
+
   &__meat {
     width: 60%;
     height: 2px;
@@ -34,6 +48,22 @@
     &:last-child {
       margin-top: 6px;
     }
+  }
+}
+
+.nav-background {
+  display: none;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#000, .25);
+  backdrop-filter: blur(10px);
+
+  &--active {
+    display: flex;
   }
 }
 
@@ -47,6 +77,13 @@
   background-color: #fff;
   padding: 10vh 0;
   align-items: center;
+
+  @include medium {
+    top: gap(3);
+    left: gap(3);
+    right: gap(3);
+    border-radius: 10px;
+  }
 
   &--active {
     display: flex;

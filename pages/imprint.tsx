@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { Row, Col } from 'reactstrap'
 import { Layout, SeoMeta, Section, Container } from '../components/Layout'
 import styles from '../styles/Home.module.scss'
@@ -17,6 +18,11 @@ const Imprint: NextPage = () => {
           <Container>
             <Row>
               <Col>
+                <Link href='./'>
+                  <a>
+                    Back to Home
+                  </a>
+                </Link>
                 <h1 className={styles.title}>
                   Imprint
                 </h1>

@@ -47,7 +47,7 @@ const Projects: NextPage = () => {
         <Section>
           <Container>
             <Row>
-              <Col md={ 4 }>
+              <Col xs={ 6 } md={ 4 }>
                 <Project
                   title='Stadt, Land, Mehr'
                   description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
@@ -58,7 +58,7 @@ const Projects: NextPage = () => {
                   }}
                 />
               </Col>
-              <Col md={ 4 }>
+              <Col xs={ 6 } md={ 4 }>
                 <Project
                   title='Uhland Realschule'
                   description='Website for middle school in the länd'
@@ -69,7 +69,7 @@ const Projects: NextPage = () => {
                   }}
                 />
               </Col>
-              <Col md={ 4 }>
+              <Col xs={ 6 } md={ 4 }>
                 <Project
                   title='Uhland Realschule'
                   description='Website for middle school in the länd'
@@ -80,13 +80,7 @@ const Projects: NextPage = () => {
                   }}
                 />
               </Col>
-            </Row>
-          </Container>
-        </Section>
-        <Section>
-          <Container>
-            <Row>
-              <Col md={ 4 }>
+              <Col xs={ 6 } md={ 4 }>
                 <Project
                   title='Stadt, Land, Mehr'
                   description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
@@ -97,7 +91,7 @@ const Projects: NextPage = () => {
                   }}
                 />
               </Col>
-              <Col md={ 4 }>
+              <Col xs={ 6 } md={ 4 }>
                 <Project
                   title='Stadt, Land, Mehr'
                   description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
@@ -108,7 +102,7 @@ const Projects: NextPage = () => {
                   }}
                 />
               </Col>
-              <Col md={ 4 }>
+              <Col xs={ 6 } md={ 4 }>
                 <Project
                   title='Stadt, Land, Mehr'
                   description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
