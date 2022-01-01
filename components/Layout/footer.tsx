@@ -4,8 +4,6 @@ import { Row, Col } from 'reactstrap'
 import { Section, Container } from './'
 import { Navigation } from '../Navigation'
 import styles from './styles.module.scss'
-
-
 interface Props {
   backgroundColor?: string,
 }
