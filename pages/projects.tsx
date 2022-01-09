@@ -47,72 +47,71 @@ const Projects: NextPage = () => {
         <Section>
           <Container>
             <Row>
-              <Col xs={ 6 } md={ 4 }>
-                <Project
-                  title='Stadt, Land, Mehr'
-                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
-                  year={ 2022 }
-                  image={{
-                    src: '/bg.jpg',
-                    alt: 'Background color',
-                  }}
-                />
-              </Col>
-              <Col xs={ 6 } md={ 4 }>
-                <Project
-                  title='Uhland Realschule'
-                  description='Website for middle school in the länd'
-                  year={ 2021 }
-                  image={{
-                    src: '/bg.jpg',
-                    alt: 'Background color',
-                  }}
-                />
-              </Col>
-              <Col xs={ 6 } md={ 4 }>
-                <Project
-                  title='Uhland Realschule'
-                  description='Website for middle school in the länd'
-                  year={ 2021 }
-                  image={{
-                    src: '/bg.jpg',
-                    alt: 'Background color',
-                  }}
-                />
-              </Col>
-              <Col xs={ 6 } md={ 4 }>
-                <Project
-                  title='Stadt, Land, Mehr'
-                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
-                  year={ 2022 }
-                  image={{
-                    src: '/bg.jpg',
-                    alt: 'Background color',
-                  }}
-                />
-              </Col>
-              <Col xs={ 6 } md={ 4 }>
-                <Project
-                  title='Stadt, Land, Mehr'
-                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
-                  year={ 2022 }
-                  image={{
-                    src: '/bg.jpg',
-                    alt: 'Background color',
-                  }}
-                />
-              </Col>
-              <Col xs={ 6 } md={ 4 }>
-                <Project
-                  title='Stadt, Land, Mehr'
-                  description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
-                  year={ 2022 }
-                  image={{
-                    src: '/bg.jpg',
-                    alt: 'Background color',
-                  }}
-                />
-              </Col>
+              <Project
+                size='lg'
+                title='Stadt, Land, Mehr'
+                description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                year={ 2022 }
+                image={{
+                  src: '/bg.jpg',
+                  alt: 'Background color',
+                }}
+              />
+              <Project
+                title='Stadt, Land, Mehr'
+                description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                year={ 2022 }
+                image={{
+                  src: '/bg.jpg',
+                  alt: 'Background color',
+                }}
+              />
+              <Project
+                title='Stadt, Land, Mehr'
+                description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                year={ 2022 }
+                image={{
+                  src: '/bg.jpg',
+                  alt: 'Background color',
+                }}
+              />
+              <Project
+                title='Stadt, Land, Mehr'
+                description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                year={ 2022 }
+                image={{
+                  src: '/bg.jpg',
+                  alt: 'Background color',
+                }}
+              />
+              <Project
+                title='Stadt, Land, Mehr'
+                description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                year={ 2022 }
+                image={{
+                  src: '/bg.jpg',
+                  alt: 'Background color',
+                }}
+              />
+              <Project
+                title='Stadt, Land, Mehr'
+                description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                year={ 2022 }
+                image={{
+                  src: '/bg.jpg',
+                  alt: 'Background color',
+                }}
+              />
+              <Project
+                size='lg'
+                title='Stadt, Land, Mehr'
+                description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+                year={ 2022 }
+                image={{
+                  src: '/bg.jpg',
+                  alt: 'Background color',
+                }}
+              />
             </Row>
           </Container>
         </Section>

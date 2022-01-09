@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <>
       <SeoMeta
-        desc='Lorem Ipsum about projects'
+        desc='• Software Development & Design'
         urlPath='./'
       />
       <Layout>

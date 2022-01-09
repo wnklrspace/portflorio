@@ -23,12 +23,17 @@ const Support: NextPage = () => {
                   nothing but support
                 </h1>
               </Col>
+            </Row>
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <Row>
               <Col md={ 8 }>
                 <p>
-                  Being a white male working in tech and design and having benefited from a secure financial
-                  family background, it is very important to me to think about my privileges and support
-                  people and organizations that support minorities and humans that do not have the same privileges
-                  as I do and did.
+                  Being a white male working in tech and design I have benefited from a privileges in my life (including coming from a financially secure family background),
+                  it is very important to me to think about my privileges and support people and organizations that support minorities and humans that do not have the
+                  same privileges as I do and did.
                 </p>
               </Col>
               <Col md={ 8 }>

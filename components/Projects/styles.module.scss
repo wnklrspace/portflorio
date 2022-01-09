@@ -2,7 +2,7 @@
 @import '../../styles/mixins.scss';
 
 .project {
-  // Code goes here
+  margin-bottom: gap(5);
 
   &--featured {
     border-radius: 10px;
@@ -19,7 +19,27 @@
     overflow: hidden;
     background: #eee;
     border-radius: 10px;
-    padding-top: 88%;
+    padding-top: 112%;
+
+    &--lg {
+      padding-top: calc(56% - var(--bs-gutter-x) * 0.5)
+    }
+  }
+
+  &__title,
+  &__year {
+    font-size: calc(24px + .1vw);
+  }
+
+  &__year {
+    opacity: .5;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
