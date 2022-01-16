@@ -45,13 +45,13 @@ export const Navigation = () => {
                 </Link>
               </li>
               <li>
-                <Link href='./cv'>
-                  <a>CV</a>
+                <Link href='./projects'>
+                  <a>Projects</a>
                 </Link>
               </li>
               <li>
-                <Link href='./projects'>
-                  <a>Projects</a>
+                <Link href='./cv'>
+                  <a>CV</a>
                 </Link>
               </li>
             </ul>
