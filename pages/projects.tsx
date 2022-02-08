@@ -53,7 +53,7 @@ const Projects: NextPage = () => {
                 description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
                 year={ 2022 }
                 image={{
-                  src: '/bg.jpg',
+                  src: '/hero-02.jpg',
                   alt: 'Background color',
                 }}
               />

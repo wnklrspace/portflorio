@@ -5,7 +5,7 @@
   margin-bottom: gap(5);
 
   &--featured {
-    border-radius: 10px;
+    // border-radius: 10px;
     padding: var(--bs-gutter-x);
 
     &__text {
@@ -46,5 +46,5 @@
 .projects-live {
   background-color: #121212;
   padding: gap(6);
-  border-radius: 20px;;
+  border-radius: 0;
 }

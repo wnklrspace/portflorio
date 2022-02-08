@@ -40,7 +40,7 @@ export const Project:  React.FunctionComponent<Props> = ({
           {/* <Image
             src={ image.src || '' }
             alt={ image.alt || 'Background' }
-            layout='fill'
+            layout='responsive'
             objectFit='cover'
             placeholder='blur'
             blurDataURL={ image.src }
