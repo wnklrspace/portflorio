@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 				<Section hasTop>
 					<Container>
 						<h1 className={styles.title}>
-							Front End <br />
+							Software <br />
 							Development <br />
 							&& UX/UI Design
 						</h1>
