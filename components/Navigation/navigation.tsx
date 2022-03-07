@@ -75,7 +75,12 @@ export const Navigation = () => {
           </Col>
           <Col>
             <p className={ styles.nav__about }>
-              Currently I am working at muse case design studio as a Junior Software Developer
+              Currently I am working as a Junior Software Developer at
+              <Link href='https://muse-case.com'>
+                <a>
+                  muse case design & technology studio
+                </a>
+              </Link>
             </p>
           </Col>
         </Row>
