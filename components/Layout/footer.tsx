@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Clock from 'react-live-clock';
 import { Row, Col } from 'reactstrap';
 import { Section, Container } from './';
 import { Navigation } from '../Navigation';
@@ -13,7 +14,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 
 	return (
 		<>
-			<footer>
+			<footer className={styles.footer}>
 				<Section>
 					<Container>
 						<hr />
@@ -25,9 +26,12 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 									Stuttgart, Germany
 								</p>
 								<p>
+									<Clock format={'HH | mm | ss'} ticking={true} />
+								</p>
+								<p>
 									<Link href='https://www.aktion-deutschland-hilft.de/'>
 										<a target='_blank' rel='noopener'>
-											Have you seen this? 😱
+											Have you seen this?
 										</a>
 									</Link>
 								</p>
@@ -60,9 +64,20 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 								</p>
 							</Col>
 							<Col md={3}>
-								<p>Github</p>
-								<p>LinkedIn</p>
-								<p>Instagram</p>
+								<p>
+									<Link href='https://github.com/wnklrspace'>
+										<a target='_blank' rel='noopener'>
+											Github
+										</a>
+									</Link>
+								</p>
+								<p>
+									<Link href='https://www.linkedin.com/in/florian-winkler-384582198/'>
+										<a target='_blank' rel='noopener'>
+											LinkedIn
+										</a>
+									</Link>
+								</p>
 							</Col>
 							<Col md={3}>
 								<p>All rights reserved 2022</p>

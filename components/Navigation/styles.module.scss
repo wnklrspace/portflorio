@@ -75,7 +75,7 @@
 	left: 0;
 	right: 0;
 	background-color: #fff;
-	padding: 10vh 0;
+	padding: calc(10vh + 100px) 0 10vh 0;
 	align-items: center;
 
 	@include medium {

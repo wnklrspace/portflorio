@@ -2,86 +2,89 @@
 @import '../../styles/mixins.scss';
 
 .section {
-  padding-top: 0;
-  padding-bottom: gap(10);
-  position: relative;
-  z-index: $z-index-main-content;
+	padding-top: 0;
+	padding-bottom: gap(10);
+	position: relative;
+	z-index: $z-index-main-content;
 
-  @include medium {
-    padding-bottom: gap(10);
-  }
+	@include medium {
+		padding-bottom: gap(10);
+	}
 
-  @include large {
-    padding-bottom: gap(20);
-  }
+	@include large {
+		padding-bottom: gap(20);
+	}
 
-  &--xs {
-    padding-bottom: gap(3);
+	&--xs {
+		padding-bottom: gap(3);
 
-    @include medium {
-      padding-bottom: gap(3);
-    }
+		@include medium {
+			padding-bottom: gap(3);
+		}
 
-    @include large {
-      padding-bottom: gap(3);
-    }
-  }
+		@include large {
+			padding-bottom: gap(3);
+		}
+	}
 
-  &--sm {
-    @include medium {
-      padding-bottom: gap(10);
-    }
+	&--sm {
+		@include medium {
+			padding-bottom: gap(10);
+		}
 
-    @include large {
-      padding-bottom: gap(10);
-    }
-  }
+		@include large {
+			padding-bottom: gap(10);
+		}
+	}
 
-  &--t {
-    padding-top: gap(10);
+	&--t {
+		padding-top: gap(10);
 
-    @include medium {
-      padding-top: gap(10);
-    }
+		@include medium {
+			padding-top: gap(10);
+		}
 
-    @include large {
-      padding-top: gap(20);
-    }
-  }
+		@include large {
+			padding-top: gap(20);
+		}
+	}
 
-  &--nb {
-    padding-bottom: 0;
-  }
+	&--nb {
+		padding-bottom: 0;
+	}
 }
 
 .container {
-  max-width: 1680px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 $gutter-outer-mobile;
-  z-index: $z-index-default;
+	max-width: 1840px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 $gutter-outer-mobile;
+	z-index: $z-index-default;
 
-  &--center-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	&--center-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-  @include medium {
-    padding: 0 $gutter-outer-tablet;
-  }
+	@include medium {
+		padding: 0 $gutter-outer-tablet;
+	}
 
-  @include large {
-    padding: 0 gap(4);
-  }
+	@include large {
+		padding: 0 gap(4);
+	}
 
-  @include x-large {
-    padding: 0 48px;
-  }
+	@include x-large {
+		padding: 0 48px;
+	}
 }
 
 .footer {
-  border-top: 1px solid rgba(#fff, .25);
-  padding-top: gap(3);
+	padding-top: gap(3);
+
+	& > * {
+		font-size: 14px !important;
+	}
 }

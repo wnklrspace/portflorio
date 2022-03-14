@@ -14,6 +14,9 @@ export const Navigation = () => {
 	const logoClass = classNames(styles.logo, {
 		[styles['logo--inverted']]: showNav,
 	});
+	const burgerClass = classNames(styles.burger, {
+		[styles['burger--active']]: showNav,
+	});
 	const backgroundClass = classNames(styles['nav-background'], {
 		[styles['nav-background--active']]: showNav,
 	});
@@ -23,7 +26,7 @@ export const Navigation = () => {
 			<Link href='./'>
 				<a className={logoClass}>Fw</a>
 			</Link>
-			<div className={styles.burger} onClick={() => setShowNav(!showNav)}>
+			<div className={burgerClass} onClick={() => setShowNav(!showNav)}>
 				<div className={styles.burger__meat} />
 				<div className={styles.burger__meat} />
 			</div>
