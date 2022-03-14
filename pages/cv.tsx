@@ -71,8 +71,6 @@ const About: NextPage = () => {
 									German, native
 									<br />
 									English, fluent
-									<br />
-									Spanish, fluent
 								</p>
 							</Col>
 
