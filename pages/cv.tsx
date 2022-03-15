@@ -17,15 +17,6 @@ const About: NextPage = () => {
 								<h1 className={styles.title}>CV</h1>
 							</Col>
 						</Row>
-						<Row>
-							<Col>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-									facilis sunt et autem placeat voluptas adipisci laborum vel
-									maiores consectetur?
-								</p>
-							</Col>
-						</Row>
 					</Container>
 				</Section>
 				<Section>
