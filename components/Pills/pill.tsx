@@ -1,16 +1,12 @@
-import styles from './styles.module.scss'
+import styles from './styles.module.scss';
 
 interface Props {
-  children: Object,
+	// children: Object;
+	name?: string;
 }
 
-export const Pill:  React.FunctionComponent<Props> = (props) => {
+export const Pill: React.FunctionComponent<Props> = ({ name }) => {
+	// const { children } = props;
 
-  const { children } = props;
-
-  return (
-    <div className={ styles.pill }>
-      { children }
-    </div>
-  )
-}
+	return <div className={styles.pill}>{name}</div>;
+};

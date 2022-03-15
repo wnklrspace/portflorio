@@ -14,15 +14,12 @@ const Support: NextPage = () => {
 					<Container>
 						<Row>
 							<Col>
-								<h1 className={styles.title}>
-									Support, <br />
-									nothing but support
-								</h1>
+								<h1 className={styles.title}>Support</h1>
 							</Col>
 						</Row>
 					</Container>
 				</Section>
-				<Section>
+				{/* <Section>
 					<Container>
 						<Row>
 							<Col md={6}>
@@ -46,7 +43,7 @@ const Support: NextPage = () => {
 							</Col>
 						</Row>
 					</Container>
-				</Section>
+				</Section> */}
 				<Section>
 					<Container>
 						<Row>

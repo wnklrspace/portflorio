@@ -13,21 +13,7 @@ const Random: NextPage = () => {
 					<Container>
 						<Row>
 							<Col>
-								<h1 className={styles.title}>
-									Random <br /> thoughts
-								</h1>
-							</Col>
-						</Row>
-					</Container>
-				</Section>
-				<Section>
-					<Container>
-						<Row>
-							<Col md={6}>
-								<h2>Recommendations</h2>
-							</Col>
-							<Col md={6}>
-								<h2>Books</h2>
+								<h1 className={styles.title}>Random</h1>
 							</Col>
 						</Row>
 					</Container>

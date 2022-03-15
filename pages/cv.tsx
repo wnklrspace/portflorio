@@ -17,6 +17,15 @@ const About: NextPage = () => {
 								<h1 className={styles.title}>CV</h1>
 							</Col>
 						</Row>
+						<Row>
+							<Col>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+									facilis sunt et autem placeat voluptas adipisci laborum vel
+									maiores consectetur?
+								</p>
+							</Col>
+						</Row>
 					</Container>
 				</Section>
 				<Section>
@@ -75,29 +84,43 @@ const About: NextPage = () => {
 							</Col>
 
 							<Col lg={4} md={6}>
+								<p style={{ fontStyle: 'italic' }}>Expertise</p>
+								<Pill name='Front End Development' />
+								<Pill name='UX/UI Design' />
+								<Pill name='Accessibility' />
+								<Pill name='Design Systems' />
+								<Pill name='User Research' />
+								<Pill name='Component Design' />
+								<Pill name='Back End Development (soon)' />
+								<br />
+								<br />
 								<p style={{ fontStyle: 'italic' }}>
 									The way I talk to machines
 								</p>
-								<Pill>HTML</Pill>
-								<Pill>SCSS</Pill>
-								<Pill>Javascript</Pill>
-								<Pill>React</Pill>
-								<Pill>Next.JS</Pill>
-								<Pill>Framer Motion</Pill>
-								<Pill>PHP</Pill>
+								<Pill name='HTML' />
+								<Pill name='SCSS' />
+								<Pill name='Javascript' />
+								<Pill name='React' />
+								<Pill name='Next.JS' />
+								<Pill name='Framer Motion' />
+								<Pill name='PHP (basics)' />
+								<Pill name='Java (basics)' />
 								<br />
 								<br />
 								<p style={{ fontStyle: 'italic' }}>How I handle content</p>
-								<Pill>Sanity</Pill>
-								<Pill>Prismic</Pill>
-								<Pill>Kirby</Pill>
-								<Pill>Wordpress</Pill>
+								<Pill name='Sanity' />
+								<Pill name='Prismic' />
+								<Pill name='Kirby' />
+								<Pill name='Wordpress' />
 								<br />
 								<br />
 								<p style={{ fontStyle: 'italic' }}>Workflow & Tools</p>
-								<Pill>Github</Pill>
-								<Pill>Notion</Pill>
-								<Pill>Slack</Pill>
+								<Pill name='Vercel' />
+								<Pill name='Github' />
+								<Pill name='Figma' />
+								<Pill name='Adobe CC' />
+								<Pill name='Notion' />
+								<Pill name='Miro' />
 							</Col>
 						</Row>
 					</Container>
