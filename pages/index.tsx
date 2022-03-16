@@ -1,14 +1,14 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Row, Col } from 'reactstrap';
 import { Container, Layout, SeoMeta, Section } from '../components/Layout';
 import { LiveProjects, Project } from '../components/Projects';
+import { Button } from '../components/Buttons';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => {
 	return (
 		<>
-			<SeoMeta desc='• Software Development & Design' urlPath='./' />
+			<SeoMeta desc='• Software Development & UX/UI Design' urlPath='./' />
 			<Layout>
 				<Section hasTop>
 					<Container>
@@ -65,6 +65,11 @@ const Home: NextPage = () => {
 									alt: 'Background color',
 								}}
 							/>
+						</Row>
+						<Row>
+							<Col>
+								<Button name='See all projects' />
+							</Col>
 						</Row>
 					</Container>
 				</Section>

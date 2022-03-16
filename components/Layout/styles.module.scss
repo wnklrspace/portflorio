@@ -87,4 +87,14 @@
 	& > * {
 		font-size: 14px !important;
 	}
+
+	a {
+		// text-decoration: underline;
+		transition: opacity 0.3s ease;
+		will-change: opacity;
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
 }

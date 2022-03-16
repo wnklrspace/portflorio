@@ -24,7 +24,7 @@ export const Navigation = () => {
 	return (
 		<>
 			<Link href='./'>
-				<a className={logoClass}>Fw</a>
+				<a className={logoClass}>F W</a>
 			</Link>
 			<div className={burgerClass} onClick={() => setShowNav(!showNav)}>
 				<div className={styles.burger__meat} />

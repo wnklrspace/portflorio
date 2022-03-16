@@ -19,31 +19,33 @@ const Support: NextPage = () => {
 						</Row>
 					</Container>
 				</Section>
-				{/* <Section>
+				<Section>
 					<Container>
 						<Row>
 							<Col md={6}>
 								<p>
-									Being a white male working in tech and design I have benefited
-									from a privileges in my life (including coming from a
-									financially secure family background), it is very important to
-									me to think about my privileges and support people and
-									organizations that support minorities and humans that do not
-									have the same privileges as I do and did.
+									Being a white male working in the tech industry I have
+									benefited from a privileges in my life. Including having a
+									financially secure family background that has given me the
+									freedom to not have to worry about money. Having that
+									background, it is very important to me to support people and
+									organizations and try to do good with the things I have and
+									can do. With that being said I have listed some organizations
+									that I regularly support with small donations.
 								</p>
 							</Col>
 							<Col md={6}>
 								<p>
-									Below I have listed some organizations that I regularly
-									support with a small donation. I am currently about to think
-									about ways to implement features in my softwares and games
-									(for instance I Knew I Know You) that people can pay for that
-									will be donated 100% to an organization of your choice.
+									I am currently about to think about ways to implement features
+									in my software and design that people can pay for and will be
+									100% donated to a beneficial organization. If you have ideas
+									and thoughts around that topic, I would be more than curious
+									to exchange them with you.
 								</p>
 							</Col>
 						</Row>
 					</Container>
-				</Section> */}
+				</Section>
 				<Section>
 					<Container>
 						<Row>

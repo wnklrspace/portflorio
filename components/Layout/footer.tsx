@@ -26,7 +26,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 									Stuttgart, Germany
 								</p>
 								<p>
-									<Clock format={'HH • mm • ss'} ticking={true} />
+									<Clock format={'HH | mm | ss'} ticking={true} />
 								</p>
 								<p>
 									<Link href='https://www.aktion-deutschland-hilft.de/'>

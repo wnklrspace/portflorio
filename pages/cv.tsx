@@ -78,11 +78,10 @@ const About: NextPage = () => {
 								<p style={{ fontStyle: 'italic' }}>Expertise</p>
 								<Pill name='Front End Development' />
 								<Pill name='UX/UI Design' />
+								<Pill name='App Development' />
 								<Pill name='Accessibility' />
 								<Pill name='Design Systems' />
-								<Pill name='User Research' />
 								<Pill name='Component Design' />
-								<Pill name='Back End Development (soon)' />
 								<br />
 								<br />
 								<p style={{ fontStyle: 'italic' }}>
@@ -94,6 +93,7 @@ const About: NextPage = () => {
 								<Pill name='React' />
 								<Pill name='Next.JS' />
 								<Pill name='Framer Motion' />
+								<Pill name='Swift (basics)' />
 								<Pill name='PHP (basics)' />
 								<Pill name='Java (basics)' />
 								<br />
@@ -106,10 +106,13 @@ const About: NextPage = () => {
 								<br />
 								<br />
 								<p style={{ fontStyle: 'italic' }}>Workflow & Tools</p>
+								<p>Code</p>
+								<Pill name='Github/Gitlab' />
 								<Pill name='Vercel' />
-								<Pill name='Github' />
+								<p>Design</p>
 								<Pill name='Figma' />
 								<Pill name='Adobe CC' />
+								<p>Project Management</p>
 								<Pill name='Notion' />
 								<Pill name='Miro' />
 							</Col>
