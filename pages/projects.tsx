@@ -29,10 +29,10 @@ const Projects: NextPage = () => {
 						<Row>
 							<Col>
 								<FeaturedProject
-									title='Muse Case Labs'
-									description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
+									title='easygiveback'
+									description='Lorem Upsum Dolores abotu'
 									year={2022}
-									backgroundColor='#336095'
+									backgroundColor='#213139'
 									image={{
 										src: '/bg.jpg',
 										alt: 'Background color',
