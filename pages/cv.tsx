@@ -89,10 +89,11 @@ const About: NextPage = () => {
 								</p>
 								<Pill name='HTML' />
 								<Pill name='SCSS' />
-								<Pill name='Javascript' />
+								<Pill name='JavaScript' />
+								<Pill name='TypeScript' />
 								<Pill name='React' />
 								<Pill name='Next.JS' />
-								<Pill name='Framer Motion' />
+								{/* <Pill name='Framer Motion' /> */}
 								<Pill name='Swift (basics)' />
 								<Pill name='PHP (basics)' />
 								<Pill name='Java (basics)' />
