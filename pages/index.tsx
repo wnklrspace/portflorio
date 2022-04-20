@@ -8,14 +8,13 @@ import styles from '../styles/Home.module.scss';
 const Home: NextPage = () => {
 	return (
 		<>
-			<SeoMeta desc='• Software Development & UX/UI Design' urlPath='./' />
+			<SeoMeta desc='• Front End Development' urlPath='./' />
 			<Layout>
 				<Section hasTop>
 					<Container>
 						<h1 className={styles.title}>
-							Software <br />
+							Front End <br />
 							Development <br />
-							&& UX/UI Design
 						</h1>
 					</Container>
 				</Section>
