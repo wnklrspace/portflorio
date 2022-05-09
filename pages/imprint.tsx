@@ -26,25 +26,25 @@ const Imprint: NextPage = () => {
 					<Container>
 						<Row>
 							<Col>
-								<h2>Angaben gemäß § 5 TMG</h2>
+								<p>Angaben gemäß § 5 TMG</p>
 								<p>
 									Florian Winkler <br />
 									Stuttgart
 								</p>
-								<h2>Kontakt</h2>
+								<p>Kontakt</p>
 								<p>
 									Auf Anfrage schicke ich Ihnen gerne meine Kontaktdaten und die
 									ganze Adresse zu.
 								</p>
-								<h2>
+								<p>
 									Verbraucher­streit­beilegung/Universal­schlichtungs­stelle
-								</h2>
+								</p>
 								<p>
 									Wir sind nicht bereit oder verpflichtet, an
 									Streitbeilegungsverfahren vor einer
 									Verbraucherschlichtungsstelle teilzunehmen.
 								</p>
-								<h2>Haftung für Inhalte</h2>
+								<p>Haftung für Inhalte</p>
 								<p>
 									Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
 									Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
@@ -60,7 +60,7 @@ const Imprint: NextPage = () => {
 									Rechtsverletzungen werden wir diese Inhalte umgehend
 									entfernen.
 								</p>
-								<h2>Haftung für Links</h2>
+								<p>Haftung für Links</p>
 								<p>
 									Unser Angebot enthält Links zu externen Websites Dritter, auf
 									deren Inhalte wir keinen Einfluss haben. Deshalb können wir
@@ -75,7 +75,7 @@ const Imprint: NextPage = () => {
 									Bei Bekanntwerden von Rechtsverletzungen werden wir derartige
 									Links umgehend entfernen.
 								</p>
-								<h2>Urheberrecht</h2>
+								<p>Urheberrecht</p>
 								<p>
 									Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
 									diesen Seiten unterliegen dem deutschen Urheberrecht. Die

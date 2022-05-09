@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { Row, Col } from 'reactstrap';
 import { Container, Layout, SeoMeta, Section } from '../components/Layout';
-import { LiveProjects, Project } from '../components/Projects';
+import { LiveProjects, Project, ProjectListItem } from '../components/Projects';
 import { Button } from '../components/Buttons';
 import styles from '../styles/Home.module.scss';
 
@@ -13,58 +13,52 @@ const Home: NextPage = () => {
 				<Section hasTop>
 					<Container>
 						<h1 className={styles.title}>
-							Front End <br />
-							Development <br />
+							Front End <br /> Development
 						</h1>
 					</Container>
 				</Section>
-				<Section>
-					<Container>
-						<LiveProjects />
-					</Container>
-				</Section>
+
 				<Section>
 					<Container>
 						<Row>
 							<Project
+								title='easygiveback'
 								size='lg'
-								title='Stadt, Land, Mehr'
-								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/hero-02.jpg',
-									alt: 'Background color',
-								}}
+								link='https://stage.easygiveback.org/'
 							/>
 							<Project
-								title='Stadt, Land, Mehr'
-								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
-								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
+								title='muse case labs'
+								size='md'
+								year={2021}
+								link='https://www.muse-case-labs.com/'
 							/>
 							<Project
-								title='Stadt, Land, Mehr'
-								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
-								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
+								title='16 fifth'
+								size='md'
+								year={2020}
+								link='https://16fifth.vercel.app/'
 							/>
 							<Project
-								size='lg'
-								title='Stadt, Land, Mehr'
-								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
-								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
+								title='Uhland Realschule'
+								size='md'
+								year={2021}
+								link='https://uhland-realschule.de/'
+							/>
+							<Project
+								title='gerstberger'
+								size='md'
+								year={2020}
+								link='https://jobs.gerstberger.com/'
+							/>
+							<Project
+								title='astoria west nyc'
+								size='md'
+								year={2021}
+								link='https://www.astoriawestnyc.com/'
 							/>
 						</Row>
+
 						<Row>
 							<Col>
 								<Button name='See all projects' />
