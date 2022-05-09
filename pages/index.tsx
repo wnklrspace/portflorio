@@ -57,6 +57,24 @@ const Home: NextPage = () => {
 								year={2021}
 								link='https://www.astoriawestnyc.com/'
 							/>
+							<Project
+								title='amplify'
+								size='lg'
+								year={2021}
+								link='https://xd.adobe.com/view/eb762da1-b929-4d52-ae7f-b8e4501158cf-be25/screen/19cd5799-7e34-45a2-b4ae-a21a26d27e36/?fullscreen'
+							/>
+							<Project
+								title='about tomorrow'
+								size='md'
+								year={2021}
+								link='https://about-tomorrow.de'
+							/>
+							<Project
+								title='blinkist analyses'
+								size='md'
+								year={2021}
+								link='./MID_FlorianWinkler_Blinkist.pdf'
+							/>
 						</Row>
 
 						<Row>

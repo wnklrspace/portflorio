@@ -25,31 +25,24 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 									<br />
 									Stuttgart, Germany
 								</p>
+								<br />
+								<br />
 								<p>
 									<Clock format={'HH | mm | ss'} ticking={true} />
 								</p>
 								<p>
-									<Link href='https://www.aktion-deutschland-hilft.de/'>
-										<a target='_blank' rel='noopener'>
-											Have you seen this?
-										</a>
-									</Link>
+									Right about time for <br /> coffee and talk
 								</p>
 							</Col>
 							<Col md={3}>
 								<p>
 									<Link href='./'>
-										<a>Home</a>
+										<a>Projects</a>
 									</Link>
 								</p>
 								<p>
 									<Link href='/cv'>
 										<a>CV</a>
-									</Link>
-								</p>
-								<p>
-									<Link href='/projects'>
-										<a>Projects</a>
 									</Link>
 								</p>
 								<p>
@@ -81,6 +74,13 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 							</Col>
 							<Col md={3}>
 								<p>All rights reserved 2022</p>
+								<p>
+									<Link href='https://www.aktion-deutschland-hilft.de/'>
+										<a target='_blank' rel='noopener'>
+											Have you seen this?
+										</a>
+									</Link>
+								</p>
 							</Col>
 						</Row>
 					</Container>

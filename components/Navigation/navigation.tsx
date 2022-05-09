@@ -38,11 +38,6 @@ export const Navigation = () => {
 							<ul>
 								<li>
 									<Link href='./'>
-										<a>Home</a>
-									</Link>
-								</li>
-								<li>
-									<Link href='./projects'>
 										<a>Projects</a>
 									</Link>
 								</li>
