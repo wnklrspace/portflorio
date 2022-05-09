@@ -51,38 +51,22 @@ const Projects: NextPage = () => {
 								title='Stadt, Land, Mehr'
 								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/hero-02.jpg',
-									alt: 'Background color',
-								}}
 							/>
 							<Project
 								title='Stadt, Land, Mehr'
 								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
 							/>
 							<Project
 								title='Stadt, Land, Mehr'
 								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
 							/>
 							<Project
 								size='lg'
 								title='Stadt, Land, Mehr'
 								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
 							/>
 						</Row>
 					</Container>
@@ -114,28 +98,16 @@ const Projects: NextPage = () => {
 								title='Stadt, Land, Mehr'
 								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
 							/>
 							<Project
 								title='Stadt, Land, Mehr'
 								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
 							/>
 							<Project
 								title='Stadt, Land, Mehr'
 								description='Lorem Upsum Dolores abotu ein familienunternehmen, das Vitalcenter Gerstberger'
 								year={2022}
-								image={{
-									src: '/bg.jpg',
-									alt: 'Background color',
-								}}
 							/>
 						</Row>
 					</Container>

@@ -15,6 +15,10 @@ const Home: NextPage = () => {
 						<h1 className={styles.title}>
 							Front End <br /> Development
 						</h1>
+						<h2 className={styles.title} style={{ textAlign: 'right' }}>
+							UI-Design <br />
+							UX-Design
+						</h2>
 					</Container>
 				</Section>
 
