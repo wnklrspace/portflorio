@@ -25,6 +25,59 @@ const About: NextPage = () => {
 						<Row>
 							<Col lg={4} md={6}>
 								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+									Expertise
+								</p>
+								<p>Primarily</p>
+								<Pill name='Front End Development' />
+								<Pill name='Web Development' />
+								<Pill name='Design Systems' />
+								<p>I am also interested in</p>
+								<Pill name='UX/UI Design' />
+								<Pill name='Accessibility' />
+								<Pill name='User Testing' />
+								<Pill name='Component Design' />
+								<br />
+								<br />
+								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+									The way I talk to machines
+								</p>
+								<p>Primarily</p>
+								<Pill name='SCSS' />
+								<Pill name='JavaScript' />
+								<Pill name='TypeScript' />
+								<Pill name='React' />
+								<Pill name='Next.JS' />
+								{/* <Pill name='Framer Motion' /> */}
+								<p>I had a glimpse on</p>
+								<Pill name='Swift' />
+								<Pill name='PHP' />
+								<Pill name='Java' />
+								<br />
+								<br />
+								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+									How I handle content
+								</p>
+								<Pill name='Sanity' />
+								<Pill name='Prismic' />
+								<Pill name='Kirby' />
+								<Pill name='Wordpress' />
+								<br />
+								<br />
+								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+									Workflow & Tools
+								</p>
+								<p>Code</p>
+								<Pill name='Github/Gitlab' />
+								<Pill name='Vercel' />
+								<p>Design</p>
+								<Pill name='Figma' />
+								<Pill name='Adobe CC' />
+								<p>Project Management</p>
+								<Pill name='Notion' />
+								<Pill name='Miro' />
+							</Col>
+							<Col lg={4} md={6}>
+								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
 									Experience
 								</p>
 								<p>
@@ -99,59 +152,6 @@ const About: NextPage = () => {
 									<br />
 									English, fluent
 								</p>
-							</Col>
-
-							<Col lg={4} md={6}>
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
-									Expertise
-								</p>
-								<p>Primarily</p>
-								<Pill name='Front End Development' />
-								<Pill name='Web Development' />
-								<Pill name='Design Systems' />
-								<p>I am also interested in</p>
-								<Pill name='UX/UI Design' />
-								<Pill name='Accessibility' />
-								<Pill name='Component Design' />
-								<br />
-								<br />
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
-									The way I talk to machines
-								</p>
-								<p>Primarily</p>
-								<Pill name='SCSS' />
-								<Pill name='JavaScript' />
-								<Pill name='TypeScript' />
-								<Pill name='React' />
-								<Pill name='Next.JS' />
-								{/* <Pill name='Framer Motion' /> */}
-								<p>I had a glimpse on</p>
-								<Pill name='Swift' />
-								<Pill name='PHP' />
-								<Pill name='Java' />
-								<br />
-								<br />
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
-									How I handle content
-								</p>
-								<Pill name='Sanity' />
-								<Pill name='Prismic' />
-								<Pill name='Kirby' />
-								<Pill name='Wordpress' />
-								<br />
-								<br />
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
-									Workflow & Tools
-								</p>
-								<p>Code</p>
-								<Pill name='Github/Gitlab' />
-								<Pill name='Vercel' />
-								<p>Design</p>
-								<Pill name='Figma' />
-								<Pill name='Adobe CC' />
-								<p>Project Management</p>
-								<Pill name='Notion' />
-								<Pill name='Miro' />
 							</Col>
 						</Row>
 					</Container>

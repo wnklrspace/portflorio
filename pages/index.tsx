@@ -66,6 +66,7 @@ const Home: NextPage = () => {
 								size='lg'
 								year={2021}
 								link='https://xd.adobe.com/view/eb762da1-b929-4d52-ae7f-b8e4501158cf-be25/screen/19cd5799-7e34-45a2-b4ae-a21a26d27e36/?fullscreen'
+								src='/logo_animation.gif'
 							/>
 							<Project
 								title='about tomorrow'
@@ -79,12 +80,6 @@ const Home: NextPage = () => {
 								year={2021}
 								link='./MID_FlorianWinkler_Blinkist.pdf'
 							/>
-						</Row>
-
-						<Row>
-							<Col>
-								<Button name='See all projects' />
-							</Col>
 						</Row>
 					</Container>
 				</Section>

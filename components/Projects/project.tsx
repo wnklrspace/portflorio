@@ -12,12 +12,10 @@ interface Props {
 	year?: number;
 	size?: string;
 	link?: string;
-	image?: {
-		src: string;
-		alt: string;
-		width: number;
-		height: number;
-	};
+	src?: string;
+	alt?: string;
+	width?: number;
+	height?: number;
 }
 
 export const Project: React.FunctionComponent<Props> = ({
@@ -25,7 +23,10 @@ export const Project: React.FunctionComponent<Props> = ({
 	description,
 	link,
 	year,
-	image,
+	src,
+	alt,
+	width,
+	height,
 	size = 'md',
 }) => {
 	const imageContainerClass = classNames(styles['project__img-container'], {
@@ -38,14 +39,18 @@ export const Project: React.FunctionComponent<Props> = ({
 				<a target='_blank' rel='noopener'>
 					<div className={styles['project']}>
 						<div className={imageContainerClass}>
-							{/* <Image
-            src={ image.src || '' }
-            alt={ image.alt || 'Background' }
-            layout='responsive'
-            objectFit='cover'
-            placeholder='blur'
-            blurDataURL={ image.src }
-          /> */}
+							{src && (
+								<div className={styles.img}>
+									<Image
+										src={src || ''}
+										alt={alt || 'Background'}
+										layout='fill'
+										objectFit='cover'
+										placeholder='blur'
+										blurDataURL={src || ''}
+									/>
+								</div>
+							)}
 						</div>
 						<div className={styles['project__text']}>
 							<p className={styles['project__year']}>{year}</p>
