@@ -37,6 +37,18 @@
 		}
 	}
 
+	&--first {
+		padding-top: gap(20);
+
+		@include medium {
+			padding-top: gap(20);
+		}
+
+		@include large {
+			padding-top: gap(20);
+		}
+	}
+
 	&--t {
 		padding-top: gap(10);
 

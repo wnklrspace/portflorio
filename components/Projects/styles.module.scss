@@ -22,7 +22,8 @@
 		border-radius: 10px;
 		padding-top: 112%;
 
-		&--lg {
+		&--lg,
+		&--full {
 			padding-top: calc(56% - var(--bs-gutter-x) * 0.5);
 		}
 	}
@@ -41,6 +42,10 @@
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;
+
+		@include medium {
+			padding: 0 gap(1);
+		}
 	}
 }
 

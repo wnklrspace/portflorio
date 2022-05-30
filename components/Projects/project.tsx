@@ -15,6 +15,7 @@ interface Props {
 	src?: string;
 	alt?: string;
 	width?: number;
+	target?: 'blank' | 'self';
 	height?: number;
 }
 
@@ -27,16 +28,22 @@ export const Project: React.FunctionComponent<Props> = ({
 	alt,
 	width,
 	height,
+	target = 'blank',
 	size = 'md',
 }) => {
 	const imageContainerClass = classNames(styles['project__img-container'], {
 		[styles['project__img-container--lg']]: size === 'lg',
+		[styles['project__img-container--full']]: size === 'full',
 	});
 
 	return (
-		<Col xs={6} md={size === 'md' ? 4 : 8}>
+		<Col
+			xs={6}
+			md={
+				(size === 'md' && 4) || (size === 'lg' && 8) || (size === 'full' && 12)
+			}>
 			<Link href={link || ''}>
-				<a target='_blank' rel='noopener'>
+				<a target={`_${target}`} rel='noopener'>
 					<div className={styles['project']}>
 						<div className={imageContainerClass}>
 							{src && (

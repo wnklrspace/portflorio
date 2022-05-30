@@ -7,14 +7,17 @@ import { Navigation } from '../Navigation';
 import styles from './styles.module.scss';
 interface Props {
 	backgroundColor?: string;
+	fontColor: 'white' | 'black';
 }
 
 export const Footer: React.FunctionComponent<Props> = (props) => {
-	const { backgroundColor } = props;
+	const { backgroundColor, fontColor } = props;
 
 	return (
 		<>
-			<footer className={styles.footer}>
+			<footer
+				style={{ backgroundColor: backgroundColor, color: fontColor }}
+				className={styles.footer}>
 				<Section>
 					<Container>
 						<hr />

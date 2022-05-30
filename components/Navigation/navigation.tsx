@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import { FC } from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 import { Row, Col } from 'reactstrap';
@@ -6,7 +7,11 @@ import classNames from 'classnames';
 import { Container } from '../Layout';
 import styles from './styles.module.scss';
 
-export const Navigation = () => {
+interface NavigationProps {
+	fontColor: 'white' | 'black';
+}
+
+export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 	const [showNav, setShowNav] = useState(false);
 	const navClass = classNames(styles.nav, {
 		[styles['nav--active']]: showNav,
@@ -16,6 +21,7 @@ export const Navigation = () => {
 	});
 	const burgerClass = classNames(styles.burger, {
 		[styles['burger--active']]: showNav,
+		[styles['burger--inverted']]: fontColor === 'white',
 	});
 	const backgroundClass = classNames(styles['nav-background'], {
 		[styles['nav-background--active']]: showNav,
@@ -23,7 +29,7 @@ export const Navigation = () => {
 
 	return (
 		<>
-			<Link href='./'>
+			<Link href='/'>
 				<a className={logoClass}>F W</a>
 			</Link>
 			<div className={burgerClass} onClick={() => setShowNav(!showNav)}>

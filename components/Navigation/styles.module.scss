@@ -40,6 +40,14 @@
 	justify-content: center;
 	flex-direction: column;
 
+	&--inverted {
+		background: #fff;
+
+		.burger__meat {
+			background-color: #333;
+		}
+	}
+
 	@include medium {
 		right: 3rem;
 	}

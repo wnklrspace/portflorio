@@ -11,7 +11,7 @@ const About: NextPage = () => {
 		<>
 			<SeoMeta title='• About' desc='Lorem Ipsum about about' urlPath='about' />
 			<Layout>
-				<Section hasTop>
+				<Section hasTop hasBottom={false}>
 					<Container>
 						<Row>
 							<Col>
