@@ -1,3 +1,5 @@
+@import './variables.scss';
+@import './mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
@@ -6,20 +8,32 @@
 }
 
 h1 {
-	font-size: calc(110px + 1vw);
+	font-size: calc(32px + 1vw);
 	line-height: 1;
 	font-weight: 400;
+
+	@include medium {
+		font-size: calc(110px + 1vw);
+	}
 }
 
 h2 {
-	font-size: calc(54px + 1vw);
+	font-size: calc(24px + 1vw);
+
+	@include medium {
+		font-size: calc(54px + 1vw);
+	}
 }
 
 p,
 span {
-	font-size: calc(18px + 0.1vw);
+	font-size: calc(14px + 0.1vw);
 	line-height: 1.4;
 	font-weight: 200;
+
+	@include medium {
+		font-size: calc(18px + 0.1vw);
+	}
 }
 
 a {

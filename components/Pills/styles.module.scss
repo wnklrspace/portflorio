@@ -1,8 +1,16 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .pill {
 	padding: 15px 30px;
 	border: 1px solid #333;
 	display: inline-flex;
 	border-radius: 15px;
+	font-size: calc(14px + 0.1vw);
+
+	@include medium {
+		font-size: calc(16px + 0.1vw);
+	}
 
 	&:not(:last-child) {
 		margin: 0 10px 10px 0;

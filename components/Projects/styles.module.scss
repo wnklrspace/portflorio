@@ -24,13 +24,19 @@
 
 		&--lg,
 		&--full {
-			padding-top: calc(56% - var(--bs-gutter-x) * 0.5);
+			@include medium {
+				padding-top: calc(56% - var(--bs-gutter-x) * 0.5);
+			}
 		}
 	}
 
 	&__title,
 	&__year {
-		font-size: calc(24px + 0.1vw);
+		font-size: calc(14px + 0.1vw);
+
+		@include medium {
+			font-size: calc(24px + 0.1vw);
+		}
 	}
 
 	&__year {
