@@ -27,9 +27,10 @@ const Home: NextPage = () => {
 						<Row>
 							<Project
 								title='easygiveback'
-								size='full'
+								size='lg'
 								year={2022}
 								link='/project/easygiveback'
+								src='/cover_easygiveback_03.jpg'
 								target='self'
 							/>
 							<Project
@@ -58,6 +59,7 @@ const Home: NextPage = () => {
 								size='md'
 								year={2020}
 								link='https://16fifth.vercel.app/'
+								src='/cover_16fifth.jpg'
 							/>
 							<Project
 								title='Uhland Realschule'
