@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
+import { Text } from '../Text';
 import styles from './styles.module.scss';
 
 interface ButtonProps {
@@ -16,7 +17,11 @@ export const Button: FC<ButtonProps> = ({
 	const target = targetBlank ? '_blank' : '_self';
 	return (
 		<Link href={link || '#'}>
-			<a target={target}>{name}</a>
+			<a target={target} className={styles.button}>
+				<Text type='span' size='m'>
+					{name}
+				</Text>
+			</a>
 		</Link>
 	);
 };

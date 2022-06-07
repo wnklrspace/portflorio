@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 interface Props {
 	backgroundColor?: string;
-	fontColor: 'white' | 'black';
+	fontColor: 'light' | 'dark';
 }
 
 export const Header: React.FunctionComponent<Props> = (props) => {

@@ -1,7 +1,7 @@
 // gap used for spacing
 $gap: 10px;
 @function gap($factor) {
-  @return $gap * $factor;
+	@return $gap * $factor;
 }
 
 $form-height: 50px;
@@ -28,27 +28,18 @@ $border-width: 2px;
 $button-outline-width: 2px;
 
 // shadow
-$box-shadow: 0 20px 40px -20px rgba(0,0,0,0.3);
+$box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.3);
 
 // transitions
-$transition-default: .4s ease-out;
+$transition-default: 0.4s ease-out;
 
 // font sizes
-$font-size-5xl: 94px;
-$font-size-4xl: 67px;
-$font-size-3xl: 46px;
-$font-size-xxl: 38px;
-$font-size-xl: 32px;
-$font-size-lg: 26px;
-$font-size-md: 24px;
-$font-size-sm: 21px;
-$font-size-xs: 18px;
-$font-size-xxs: 16px;
-$font-size-3xs: 14px;
-$font-size-4xs: 12px;
-$font-size-5xs: 11px;
+$font-size-xl: calc(94px + 0.1vw);
+$font-size-lg: 32px;
+$font-size-md: 21px;
+$font-size-sm: 12px;
 
-$font-size-error-message: $font-size-3xs;
+$font-size-error-message: $font-size-sm;
 
 // gutter
 $gutter-outer-mobile: 20px;
@@ -68,10 +59,10 @@ $z-index-buttons: 20;
 
 // breakpoints
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
 );

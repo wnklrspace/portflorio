@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Layout, SeoMeta, Section, Container } from '../components/Layout';
 import { FeaturedProject, Project } from '../components/Projects';
 import { Row, Col } from 'reactstrap';

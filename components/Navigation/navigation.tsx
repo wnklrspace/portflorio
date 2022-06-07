@@ -8,7 +8,7 @@ import { Container } from '../Layout';
 import styles from './styles.module.scss';
 
 interface NavigationProps {
-	fontColor: 'white' | 'black';
+	fontColor: 'light' | 'dark';
 }
 
 export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
@@ -21,7 +21,7 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 	});
 	const burgerClass = classNames(styles.burger, {
 		[styles['burger--active']]: showNav,
-		[styles['burger--inverted']]: fontColor === 'white',
+		[styles['burger--inverted']]: fontColor === 'light',
 	});
 	const backgroundClass = classNames(styles['nav-background'], {
 		[styles['nav-background--active']]: showNav,
@@ -43,29 +43,33 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 						<Col md={6}>
 							<ul>
 								<li>
-									<Link href='./'>
+									<Link href='/'>
 										<a>Projects</a>
 									</Link>
 								</li>
 								<li>
-									<Link href='./cv'>
+									<Link href='../cv'>
 										<a>CV</a>
 									</Link>
 								</li>
 							</ul>
 							<ul>
 								<li>
-									<Link href='/random'>
-										<a>Random</a>
+									<Link href='https://github.com/wnklrspace'>
+										<a target='_blank' rel='noopener'>
+											Github
+										</a>
 									</Link>
 								</li>
 								<li>
-									<Link href='/support'>
-										<a>Support</a>
+									<Link href='https://www.linkedin.com/in/florian-winkler-384582198/'>
+										<a target='_blank' rel='noopener'>
+											Linked In
+										</a>
 									</Link>
 								</li>
 								<li>
-									<Link href='/imprint'>
+									<Link href='../imprint'>
 										<a>Imprint</a>
 									</Link>
 								</li>

@@ -6,11 +6,11 @@ import styles from './styles.module.scss';
 interface Props {
 	children: object;
 	backgroundColor?: string;
-	fontColor?: 'white' | 'black';
+	fontColor?: 'light' | 'dark';
 }
 
 export const Layout: React.FunctionComponent<Props> = (props) => {
-	const { children, backgroundColor, fontColor = 'white' } = props;
+	const { children, backgroundColor, fontColor = 'light' } = props;
 
 	return (
 		<>

@@ -34,37 +34,18 @@
 //
 // Typography mixins
 //
-@mixin type-4xs {
-	font-size: $font-size-4xs;
-	line-height: 1.2em;
-}
 
-@mixin type-3xs {
-	font-size: $font-size-3xs;
-	line-height: 1.3em;
-}
-
-@mixin type-xxs {
-	font-size: $font-size-xxs;
-	line-height: 1.4em;
-}
-
-@mixin type-xs {
-	font-size: $font-size-xs;
-	line-height: 1.4em;
-}
-
-@mixin type-sm {
+@mixin type-s {
 	font-size: $font-size-sm;
 	line-height: 1.4em;
 }
 
-@mixin type-md {
+@mixin type-m {
 	font-size: $font-size-md;
 	line-height: 1.4em;
 }
 
-@mixin type-lg {
+@mixin type-l {
 	font-size: $font-size-lg;
 	line-height: 1.3em;
 }
@@ -72,137 +53,6 @@
 @mixin type-xl {
 	font-size: $font-size-xl;
 	line-height: 1.2em;
-}
-
-@mixin type-xxl {
-	font-size: $font-size-xxl;
-	line-height: 1.2em;
-}
-
-@mixin type-3xl {
-	font-size: $font-size-3xl;
-	line-height: 1.1em;
-}
-
-@mixin type-4xl {
-	font-size: $font-size-4xl;
-	line-height: 1.1em;
-}
-
-@mixin type-5xl {
-	font-size: $font-size-5xl;
-	line-height: 1em;
-}
-
-// Typography h1
-@mixin type-h1 {
-	@include type-xxl;
-
-	@include medium {
-		@include type-3xl;
-	}
-
-	@include large {
-		@include type-4xl;
-	}
-
-	@include x-large {
-		@include type-5xl;
-	}
-}
-
-// Typography h2
-@mixin type-h2 {
-	@include type-xl;
-
-	@include medium {
-		@include type-xxl;
-	}
-
-	@include large {
-		@include type-3xl;
-	}
-
-	@include x-large {
-		@include type-4xl;
-	}
-}
-
-// Typography h3
-@mixin type-h3 {
-	@include type-lg;
-
-	@include medium {
-		@include type-xl;
-	}
-
-	@include large {
-		@include type-3xl;
-	}
-}
-
-// Typography h4
-@mixin type-h4 {
-	@include type-md;
-
-	@include small {
-		@include type-lg;
-	}
-
-	@include medium {
-		@include type-xl;
-	}
-
-	@include large {
-		@include type-xxl;
-	}
-}
-
-// Typography h5
-@mixin type-h5 {
-	@include type-xs;
-
-	@include medium {
-		@include type-md;
-	}
-
-	@include large {
-		@include type-lg;
-	}
-}
-// Typography body
-@mixin type-body {
-	@include type-xxs;
-
-	@include small {
-		@include type-xs;
-	}
-
-	@include x-large {
-		@include type-sm;
-	}
-}
-
-// Typography body-s
-@mixin type-body-sm {
-	@include type-xxs;
-
-	@include small {
-		@include type-xs;
-	}
-
-	// @include x-large {
-	//   @include type-sm;
-	// }
-}
-
-// Typography body-xxs -- Article body size
-@mixin type-body-xxs {
-	@include type-xxs;
-}
-
-@mixin type-arrow {
-	@include type-3xs;
 }
 
 //

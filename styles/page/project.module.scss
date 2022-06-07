@@ -1,0 +1,26 @@
+.block {
+	display: flex;
+	flex-direction: column;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid rgba(white, 0.2);
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+
+	&__head {
+		display: flex;
+	}
+
+	&__number {
+		width: 30px;
+		height: 30px;
+		border-radius: 15px;
+		background-color: white;
+		color: black;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 20px;
+	}
+}

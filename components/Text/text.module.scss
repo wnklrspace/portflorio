@@ -1,0 +1,54 @@
+@import '../../styles/mixins.scss';
+
+.xl,
+.xl > * {
+	@include type-xl;
+}
+
+.l,
+.l > * {
+	@include type-l;
+}
+
+.m,
+.m > * {
+	@include type-m;
+}
+
+.s,
+.s > * {
+	@include type-s;
+}
+
+.bold,
+.bold > * {
+	font-weight: 400;
+}
+
+.regular,
+.regular > * {
+	font-weight: 400;
+}
+
+.uppercase,
+.uppercase > * {
+	text-transform: uppercase;
+}
+
+.lowercase,
+.lowercase > * {
+	text-transform: lowercase;
+}
+
+.underline,
+.underline > * {
+	text-decoration: underline;
+}
+
+.mb {
+	margin-bottom: gap(3);
+
+	@include medium {
+		margin-bottom: gap(6);
+	}
+}

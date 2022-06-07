@@ -2,14 +2,14 @@ import type { NextPage } from 'next';
 import { Row, Col } from 'reactstrap';
 import { Container, Layout, SeoMeta, Section } from '../components/Layout';
 import { LiveProjects, Project, ProjectListItem } from '../components/Projects';
-import { Button } from '../components/Buttons';
+import { projectData } from './project/project-data';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => {
 	return (
 		<>
 			<SeoMeta desc='• Front End Development' urlPath='./' />
-			<Layout fontColor='white'>
+			<Layout fontColor='light'>
 				<Section firstOfPage hasTop>
 					<Container>
 						<h1 className={styles.title}>
@@ -25,66 +25,19 @@ const Home: NextPage = () => {
 				<Section>
 					<Container>
 						<Row>
-							<Project
-								title='easygiveback'
-								size='lg'
-								year={2022}
-								link='/project/easygiveback'
-								src='/cover_easygiveback_03.jpg'
-								target='self'
-							/>
-							<Project
-								title='astoria west nyc'
-								size='md'
-								year={2021}
-								link='/project/astoria'
-								src='/cover_astoria.jpg'
-								target='self'
-							/>
-							<Project
-								title='muse case labs'
-								size='md'
-								year={2021}
-								link='https://www.muse-case-labs.com/'
-							/>
-							<Project
-								title='amplify'
-								size='md'
-								year={2021}
-								link='https://xd.adobe.com/view/eb762da1-b929-4d52-ae7f-b8e4501158cf-be25/screen/19cd5799-7e34-45a2-b4ae-a21a26d27e36/?fullscreen'
-								src='/cover_amplify.jpg'
-							/>
-							<Project
-								title='16 fifth'
-								size='md'
-								year={2020}
-								link='https://16fifth.vercel.app/'
-								src='/cover_16fifth.jpg'
-							/>
-							<Project
-								title='Uhland Realschule'
-								size='md'
-								year={2021}
-								link='/project/uhland'
-							/>
-							<Project
-								title='gerstberger'
-								size='md'
-								year={2020}
-								link='https://jobs.gerstberger.com/'
-							/>
-							<Project
-								title='about tomorrow'
-								size='md'
-								year={2021}
-								link='https://about-tomorrow.de'
-							/>
-							<Project
-								title='blinkist analyses'
-								size='md'
-								year={2021}
-								link='./MID_FlorianWinkler_Blinkist.pdf'
-							/>
+							{projectData.map((project: any, index: number) => {
+								return (
+									<Project
+										key={index}
+										title={project.title}
+										size={index == 0 ? 'lg' : 'md'}
+										year={project.year}
+										link={`/project/${project.slug}`}
+										src={project.hero_image}
+										target='self'
+									/>
+								);
+							})}
 						</Row>
 					</Container>
 				</Section>

@@ -7,7 +7,7 @@ import { Navigation } from '../Navigation';
 import styles from './styles.module.scss';
 interface Props {
 	backgroundColor?: string;
-	fontColor: 'white' | 'black';
+	fontColor: 'light' | 'dark';
 }
 
 export const Footer: React.FunctionComponent<Props> = (props) => {
@@ -39,23 +39,13 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 							</Col>
 							<Col md={3}>
 								<p>
-									<Link href='./'>
+									<Link href='/'>
 										<a>Projects</a>
 									</Link>
 								</p>
 								<p>
-									<Link href='/cv'>
+									<Link href='../cv'>
 										<a>CV</a>
-									</Link>
-								</p>
-								<p>
-									<Link href='/random'>
-										<a>Random</a>
-									</Link>
-								</p>
-								<p>
-									<Link href='/support'>
-										<a>Support</a>
 									</Link>
 								</p>
 							</Col>
@@ -93,7 +83,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 						<Row>
 							<Col md={3}>
 								<p>
-									<Link href='/imprint'>
+									<Link href='../imprint'>
 										<a>Imprint</a>
 									</Link>
 								</p>
