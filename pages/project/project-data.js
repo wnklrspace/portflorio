@@ -1,6 +1,6 @@
 import { slugify } from '../../helper';
 
-export const projectData = [
+const projectData = [
 	{
 		title: 'easygiveback',
 		slug: slugify('easygiveback'),
@@ -227,3 +227,5 @@ export const projectData = [
 		],
 	},
 ];
+
+export default projectData;

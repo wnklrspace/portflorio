@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import { Row, Col } from 'reactstrap';
 import { Container, Layout, SeoMeta, Section } from '../components/Layout';
 import { LiveProjects, Project, ProjectListItem } from '../components/Projects';
-import { projectData } from './project/project-data';
+import projectData from './project/project-data';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => {
