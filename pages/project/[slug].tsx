@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Row, Col } from 'reactstrap';
+import { isEmpty } from 'lodash';
 import { Layout, SeoMeta, Section, Container } from '../../components/Layout';
 import { Pill } from '../../components/Pills';
 import { Text } from '../../components/Text';
@@ -24,20 +25,23 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 					<Container>
 						<Row>
 							<Col xl={{ size: 8, offset: 0 }}>
-								<Text type='h1' size='xl' weight='bold'>
-									<span style={{ color: `${data.theme.mainColor}` }}>
-										{data.title}
-									</span>
-								</Text>
+								<div className={styles.title}>
+									<div
+										className={styles.ball}
+										style={{ backgroundColor: `${data.theme.mainColor}` }}
+									/>
+									<Text type='h1' size='xl' weight='bold'>
+										<span style={{ color: `${data.theme.mainColor}` }}>
+											{data.title}
+										</span>
+									</Text>
+								</div>
 							</Col>
 						</Row>
 						<Row>
 							<Col xl={{ size: 8, offset: 0 }}>
 								<Text type='p' size='l' weight='bold'>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Aliquid, ipsum. Doloremque, libero maiores quis sed provident
-									qui soluta, iste impedit similique eius nostrum. Libero
-									quaerat suscipit dolorem voluptatem sapiente perspiciatis.
+									{data.intro_text}
 								</Text>
 							</Col>
 						</Row>
@@ -46,22 +50,31 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 				<Section hasTop>
 					<Container>
 						<Row>
-							<Col xl={{ size: 4, offset: 0 }}>
+							<Col md={{ size: 5, offset: 0 }} xl={{ size: 4, offset: 0 }}>
+								{!isEmpty(data.partner) && (
+									<>
+										<Text type='h3' size='m'>
+											Partner
+										</Text>
+
+										{data.partner.map((partner: any, index: number) => {
+											return (
+												<Text key={index} type='p' size='m' underline>
+													<Link href={partner.link}>
+														<a target='_blank'>{partner.name}</a>
+													</Link>
+												</Text>
+											);
+										})}
+										<hr
+											style={{
+												margin: '30px 0',
+											}}
+										/>
+									</>
+								)}
 								<Text type='h3' size='m'>
-									Partner
-								</Text>
-								<Text type='p' size='m' underline>
-									<Link href='https://muse-case.com'>
-										<a>muse case GmbH</a>
-									</Link>
-								</Text>
-								<hr
-									style={{
-										margin: '30px 0',
-									}}
-								/>
-								<Text type='h3' size='m'>
-									Job
+									{data.role.length > 1 ? 'Jobs' : 'Job'}
 								</Text>
 								{data.role.map((role: any, index: number) => {
 									return <Pill key={index} name={role} />;
@@ -84,7 +97,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 								/>
 								<Button name='Launch website' link={data.link} targetBlank />
 							</Col>
-							<Col xl={{ size: 5, offset: 2 }}>
+							<Col md={{ size: 5, offset: 2 }} xl={{ size: 5, offset: 2 }}>
 								{data.description.map((description: any, index: number) => {
 									return (
 										<div className={styles.block} key={index}>
@@ -96,7 +109,9 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 													}}>
 													{index + 1}
 												</p>
-												<p>{description.key}</p>
+												<Text type='p' size='m' weight='bold'>
+													{description.key}
+												</Text>
 											</div>
 											<div>
 												<p>{description.description}</p>

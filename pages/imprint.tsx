@@ -13,7 +13,7 @@ const Imprint: NextPage = () => {
 				<Section hasTop>
 					<Container>
 						<Row>
-							<Col>
+							<Col md={{ size: 8, offset: 2 }}>
 								<Link href='./'>
 									<a>Back to Home</a>
 								</Link>
@@ -25,7 +25,7 @@ const Imprint: NextPage = () => {
 				<Section>
 					<Container>
 						<Row>
-							<Col>
+							<Col md={{ size: 8, offset: 2 }}>
 								<p>Angaben gemäß § 5 TMG</p>
 								<p>
 									Florian Winkler <br />
