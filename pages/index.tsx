@@ -1,11 +1,16 @@
+import { useContext, useState } from 'react';
 import type { NextPage } from 'next';
 import { Row, Col } from 'reactstrap';
+import classNames from 'classnames';
 import { Container, Layout, SeoMeta, Section } from '../components/Layout';
-import { LiveProjects, Project, ProjectListItem } from '../components/Projects';
+import { Project, ProjectListItem } from '../components/Projects';
+import { Icon } from '../components/Icon/icon';
 import projectData from './project/project-data';
-import styles from '../styles/Home.module.scss';
+import { ListViewContext } from '../context/list-view';
+import styles from '../styles/page/index.module.scss';
 
 const Home: NextPage = () => {
+	const { listView, setListView } = useContext(ListViewContext);
 	return (
 		<>
 			<SeoMeta desc='• Front End Development' urlPath='./' />
@@ -15,18 +20,34 @@ const Home: NextPage = () => {
 						<h1 className={styles.title}>
 							Front End <br /> Development
 						</h1>
-						<h2 className={styles.title} style={{ textAlign: 'right' }}>
-							UI-Design <br />
-							UX-Design
-						</h2>
 					</Container>
 				</Section>
 
 				<Section>
 					<Container>
 						<Row>
+							<Col md={{ size: 4, offset: 8 }}>
+								<div className={styles.layout}>
+									<div
+										className={`${styles.switch} ${
+											listView === 'list' && styles['switch--active']
+										}`}
+										onClick={() => setListView('list')}>
+										<Icon type='list' />
+									</div>
+									<div
+										className={`${styles.switch} ${
+											listView === 'grid' && styles['switch--active']
+										}`}
+										onClick={() => setListView('grid')}>
+										<Icon type='grid' />
+									</div>
+								</div>
+							</Col>
+						</Row>
+						<Row>
 							{projectData.map((project: any, index: number) => {
-								return (
+								return listView === 'grid' ? (
 									<Project
 										key={index}
 										title={project.title}
@@ -35,6 +56,16 @@ const Home: NextPage = () => {
 										link={`/project/${project.slug}`}
 										src={project.hero_image}
 										target='self'
+									/>
+								) : (
+									<ProjectListItem
+										key={index}
+										title={project.title}
+										year={project.year}
+										link={`/project/${project.slug}`}
+										target='self'
+										mainColor={project.theme.mainColor}
+										role={project.intro_text}
 									/>
 								);
 							})}

@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Clock from 'react-live-clock';
 import { Row, Col } from 'reactstrap';
 import { Section, Container } from './';
-import { Navigation } from '../Navigation';
 import styles from './styles.module.scss';
 interface Props {
 	backgroundColor?: string;

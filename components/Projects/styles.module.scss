@@ -71,13 +71,52 @@
 }
 
 .project-list-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: gap(4) 0 gap(4) 0;
+	border-bottom: 1px solid rgba(white, 0.2);
+
+	@include medium {
+		flex-direction: row;
+		align-items: center;
+		padding-left: 100px;
+	}
+
+	&:hover {
+		.title {
+			& > :last-child {
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
+.ball {
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+
+	@include medium {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+}
+
+.half {
+	width: 50%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: gap(2) 0;
-	border-bottom: 1px solid;
+}
 
-	h2 {
-		font-size: $font-size-xl;
+.title {
+	& > :first-child {
+		opacity: 0.5;
 	}
 }

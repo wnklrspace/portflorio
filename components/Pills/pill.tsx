@@ -6,7 +6,5 @@ interface Props {
 }
 
 export const Pill: React.FunctionComponent<Props> = ({ name }) => {
-	// const { children } = props;
-
 	return <div className={styles.pill}>{name}</div>;
 };

@@ -9,6 +9,7 @@ interface TextProps {
 	transform?: 'lowercase' | 'uppercase';
 	marginBottom?: boolean;
 	underline?: boolean;
+	italic?: boolean;
 	children: React.ReactNode;
 }
 
@@ -18,6 +19,7 @@ export const Text: FC<TextProps> = ({
 	size,
 	weight = 'regular',
 	underline = false,
+	italic = false,
 	marginBottom = false,
 	children,
 }) => {
@@ -35,6 +37,7 @@ export const Text: FC<TextProps> = ({
 		[styles['uppercase']]: transform === 'uppercase',
 		[styles['lowercase']]: transform === 'lowercase',
 		[styles['underline']]: underline,
+		[styles['italic']]: italic,
 		// space
 		[styles['mb']]: marginBottom,
 	});

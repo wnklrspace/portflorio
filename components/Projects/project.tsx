@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Row, Col } from 'reactstrap';
 import classNames from 'classnames';
-import { Container } from '../Layout';
+import { Space } from '../Space/space';
 import styles from './styles.module.scss';
 
 interface Props {
@@ -59,6 +59,7 @@ export const Project: React.FunctionComponent<Props> = ({
 								</div>
 							)}
 						</div>
+						<Space size='xs' />
 						<div className={styles['project__text']}>
 							<p className={styles['project__year']}>{year}</p>
 							<h2 className={styles['project__title']}>{title}</h2>

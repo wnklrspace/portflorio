@@ -18,8 +18,10 @@ const projectData = [
 		stack: [
 			'Next.JS',
 			'React.JS',
+			'Redux',
 			'Wordpress CMS',
 			'SCSS',
+			'Framer Motion',
 			'TypeScript',
 			'Github',
 		],
@@ -79,12 +81,89 @@ const projectData = [
 		],
 	},
 	{
+		title: 'muse case labs',
+		slug: slugify('muse case labs'),
+		link: 'https://muse-case-labs.com',
+		year: 2021,
+		intro_text: 'Landingpage for cutting-edge coding & design bootcamps',
+		theme: {
+			mainColor: '#eee',
+			textColor: 'light',
+		},
+		hero_image: '',
+		role: ['Front End Development'],
+		partner: [
+			{
+				name: 'muse case GmbH',
+				link: 'https://muse-case.com',
+			},
+		],
+		stack: [
+			'Next.JS',
+			'React.JS',
+			'Prismic CMS',
+			'SCSS',
+			'Framer Motion',
+			'TypeScript',
+			'Github',
+		],
+		description: [
+			{
+				key: 'challenge',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'approach',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'result',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+		],
+	},
+	{
+		title: 'Foodorama',
+		slug: slugify('Foodorama'),
+		link: '',
+		year: 2022,
+		intro_text: 'Your digital refrigerator to help you find recipies',
+		theme: {
+			mainColor: '#377631',
+			textColor: 'light',
+		},
+		hero_image: '',
+		role: ['App Development', 'UX Design'],
+		partner: [],
+		stack: ['Swift UI', 'Figma'],
+		description: [
+			{
+				key: 'challenge',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'approach',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'result',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+		],
+	},
+	{
 		title: 'Astoria West NYC',
 		slug: slugify('Astoria West NYC'),
 		link: 'https://astoriawestnyc.com',
 		year: 2021,
 		intro_text:
-			'Building a digital donation platform for non-profit organizations.',
+			'Crafting a unique landingpage for rental apartments in New York City',
 		theme: {
 			mainColor: '#ffb2a3',
 			textColor: 'light',
@@ -102,6 +181,7 @@ const projectData = [
 			'React.JS',
 			'Prismic CMS',
 			'SCSS',
+			'Framer Motion',
 			'TypeScript',
 			'Github',
 		],

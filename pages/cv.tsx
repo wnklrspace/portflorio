@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { Row, Col } from 'reactstrap';
 import { Layout, SeoMeta, Section, Container } from '../components/Layout';
+import { Text } from '../components/Text';
+import { Space } from '../components/Space/space';
 import { Pill } from '../components/Pills';
 import styles from '../styles/Home.module.scss';
 
@@ -15,72 +17,102 @@ const About: NextPage = () => {
 					<Container>
 						<Row>
 							<Col>
-								<h1 className={styles.title}>CV</h1>
+								<Text type='h1' size='xl'>
+									CV
+								</Text>
 							</Col>
 						</Row>
 					</Container>
 				</Section>
+				<Space size='md' />
 				<Section>
 					<Container>
 						<Row>
-							<Col lg={4} md={6}>
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+							<Col md={6} lg={{ size: 4 }}>
+								<Text type='p' size='m' italic underline>
 									Expertise
-								</p>
-								<p>Primarily</p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									Primarily
+								</Text>
+								<Space size='xs' />
 								<Pill name='Front End Development' />
 								<Pill name='Web Development' />
 								<Pill name='Design Systems' />
-								<p>I am also interested in</p>
+								<Space size='sm' />
+								<Text type='p' size='m'>
+									I am also interested in
+								</Text>
+								<Space size='xs' />
 								<Pill name='UX/UI Design' />
 								<Pill name='Accessibility' />
 								<Pill name='User Testing' />
 								<Pill name='Component Design' />
-								<br />
-								<br />
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+								<Space size='sm' />
+								<Text type='p' size='m' italic underline>
 									The way I talk to machines
-								</p>
-								<p>Primarily</p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									Primarily
+								</Text>
+								<Space size='xs' />
 								<Pill name='SCSS' />
 								<Pill name='JavaScript' />
 								<Pill name='TypeScript' />
 								<Pill name='React' />
 								<Pill name='Next.JS' />
-								{/* <Pill name='Framer Motion' /> */}
-								<p>I had a glimpse on</p>
+								<Pill name='Framer Motion' />
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									I am also interested in
+								</Text>
+								<Space size='xs' />
 								<Pill name='Swift' />
 								<Pill name='PHP' />
 								<Pill name='Java' />
-								<br />
-								<br />
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+								<Space size='sm' />
+								<Text type='p' size='m' italic underline>
 									How I handle content
-								</p>
+								</Text>
+								<Space size='xs' />
 								<Pill name='Sanity' />
 								<Pill name='Prismic' />
 								<Pill name='Kirby' />
 								<Pill name='Wordpress' />
-								<br />
-								<br />
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+								<Space size='sm' />
+								<Text type='p' size='m' italic underline>
 									Workflow & Tools
-								</p>
-								<p>Code</p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									Code
+								</Text>
+								<Space size='xs' />
 								<Pill name='Github/Gitlab' />
 								<Pill name='Vercel' />
-								<p>Design</p>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									Design
+								</Text>
+								<Space size='xs' />
 								<Pill name='Figma' />
 								<Pill name='Adobe CC' />
-								<p>Project Management</p>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									Project Management
+								</Text>
+								<Space size='xs' />
 								<Pill name='Notion' />
 								<Pill name='Miro' />
 							</Col>
-							<Col lg={4} md={6}>
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+							<Col md={6} lg={{ size: 3, offset: 2 }}>
+								<Text type='p' size='m' italic underline>
 									Experience
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									<Link href='https://www.muse-case.com/'>
 										<a target='_blank' rel='noopener'>
 											muse case GmbH, Stuttgart
@@ -89,8 +121,9 @@ const About: NextPage = () => {
 									<br />
 									Front End Developer, working student <br />
 									03.2022 - ongoing
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									<Link href='https://www.muse-case.com/'>
 										<a target='_blank' rel='noopener'>
 											muse case GmbH, Stuttgart
@@ -99,8 +132,9 @@ const About: NextPage = () => {
 									<br />
 									Front End Developer <br />
 									10.2021 - 03.2022
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									<Link href='https://www.muse-case.com/'>
 										<a target='_blank' rel='noopener'>
 											muse case GmbH, Stuttgart
@@ -109,26 +143,29 @@ const About: NextPage = () => {
 									<br />
 									Front End Developer, working student <br />
 									04.2021 - 10.2021
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									Vitalcenter Gerstberger, Memmingen <br />
 									Web Developer, working student
 									<br />
 									01.2018 - 04.2021
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									Projektagentur, Ulm <br />
 									Apprenticeship <br />
 									Web Development, Web Design
 									<br />
 									10.2018 - 02.2020
-								</p>
+								</Text>
 							</Col>
-							<Col lg={4} md={6}>
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+							<Col md={6} lg={{ size: 3, offset: 0 }}>
+								<Text type='p' size='m' italic underline>
 									Education
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									<Link href='https://www.hdm-stuttgart.de/'>
 										<a target='_blank' rel='noopener'>
 											Hochschule der Medien, Stuttgart
@@ -137,21 +174,23 @@ const About: NextPage = () => {
 									<br />
 									Mobile Media B.Sc. <br />
 									2020 - 2024
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									Ferdinand von Steinbeis Schule, Ulm <br />
 									Vocational school for Media Design <br />
 									2017 - 2020
-								</p>
-								<br />
-								<p style={{ fontStyle: 'italic', textDecoration: 'underline' }}>
+								</Text>
+								<Space size='sm' />
+								<Text type='p' size='m' italic underline>
 									Lanuages
-								</p>
-								<p>
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
 									German, native
 									<br />
 									English, fluent
-								</p>
+								</Text>
 							</Col>
 						</Row>
 					</Container>

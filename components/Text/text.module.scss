@@ -2,17 +2,33 @@
 
 .xl,
 .xl > * {
-	@include type-xl;
+	@include type-l;
+
+	@include large {
+		@include type-l;
+	}
+
+	@include x-large {
+		@include type-xl;
+	}
 }
 
 .l,
 .l > * {
-	@include type-l;
+	@include type-m;
+
+	@include medium {
+		@include type-l;
+	}
 }
 
 .m,
 .m > * {
-	@include type-m;
+	@include type-s;
+
+	@include medium {
+		@include type-m;
+	}
 }
 
 .s,
@@ -43,6 +59,11 @@
 .underline,
 .underline > * {
 	text-decoration: underline;
+}
+
+.italic,
+.italic > * {
+	font-style: italic;
 }
 
 .mb {

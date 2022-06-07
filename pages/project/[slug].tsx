@@ -3,8 +3,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { Row, Col } from 'reactstrap';
 import { isEmpty } from 'lodash';
+import { Space } from '../../components/Space/space';
 import { Layout, SeoMeta, Section, Container } from '../../components/Layout';
 import { Pill } from '../../components/Pills';
+import { ProjectListItem } from '../../components/Projects';
 import { Text } from '../../components/Text';
 import { Button } from '../../components/Buttons';
 import { slugify } from '../../helper';
@@ -16,10 +18,13 @@ interface ProjectProps {
 }
 
 const Project: NextPage<ProjectProps> = ({ data }) => {
-	console.log('data: ', data);
 	return (
 		<>
-			<SeoMeta title='• About' desc='Lorem Ipsum about about' urlPath='about' />
+			<SeoMeta
+				title={`• ${data.title}`}
+				desc={data.intro_text}
+				urlPath={data.hero_image}
+			/>
 			<Layout backgroundColor='black' fontColor={data.theme.textColor}>
 				<Section firstOfPage hasBottom={false}>
 					<Container>
@@ -38,6 +43,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 								</div>
 							</Col>
 						</Row>
+						<Space size='md' />
 						<Row>
 							<Col xl={{ size: 8, offset: 0 }}>
 								<Text type='p' size='l' weight='bold'>
@@ -56,6 +62,8 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 										<Text type='h3' size='m'>
 											Partner
 										</Text>
+
+										<Space size='xs' />
 
 										{data.partner.map((partner: any, index: number) => {
 											return (
@@ -76,6 +84,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 								<Text type='h3' size='m'>
 									{data.role.length > 1 ? 'Jobs' : 'Job'}
 								</Text>
+								<Space size='xs' />
 								{data.role.map((role: any, index: number) => {
 									return <Pill key={index} name={role} />;
 								})}
@@ -87,6 +96,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 								<Text type='h3' size='m'>
 									Tech Stack
 								</Text>
+								<Space size='xs' />
 								{data.stack.map((pill: string, index: number) => {
 									return <Pill key={index} name={pill} />;
 								})}
@@ -96,6 +106,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 									}}
 								/>
 								<Button name='Launch website' link={data.link} targetBlank />
+								<Space size='lg' />
 							</Col>
 							<Col md={{ size: 5, offset: 2 }} xl={{ size: 5, offset: 2 }}>
 								{data.description.map((description: any, index: number) => {
@@ -113,6 +124,7 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 													{description.key}
 												</Text>
 											</div>
+											<Space size='xs' />
 											<div>
 												<p>{description.description}</p>
 											</div>
@@ -121,6 +133,33 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 								})}
 							</Col>
 						</Row>
+					</Container>
+				</Section>
+				<Section>
+					<Container>
+						<Row>
+							<Col>
+								<Text type='h2' size='l'>
+									Other Projects
+								</Text>
+							</Col>
+						</Row>
+						{projectData.map((project: any, index: number) => {
+							return (
+								project.title !== data.title &&
+								index <= 3 && (
+									<ProjectListItem
+										key={index}
+										title={project.title}
+										year={project.year}
+										link={`/project/${project.slug}`}
+										target='self'
+										mainColor={project.theme.mainColor}
+										role={project.intro_text}
+									/>
+								)
+							);
+						})}
 					</Container>
 				</Section>
 			</Layout>
