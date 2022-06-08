@@ -28,7 +28,7 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 
 	return (
 		<Link href={link}>
-			<a target={target}>
+			<a target={`_${target}`}>
 				<div className={projectListItem}>
 					<div className={styles.ball} style={{ backgroundColor: mainColor }} />
 

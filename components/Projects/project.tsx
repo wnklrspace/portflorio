@@ -63,9 +63,6 @@ export const Project: React.FunctionComponent<Props> = ({
 						<div className={styles['project__text']}>
 							<p className={styles['project__year']}>{year}</p>
 							<h2 className={styles['project__title']}>{title}</h2>
-							{/* <p className={ styles['project__description'] }>
-            { description }
-          </p> */}
 						</div>
 					</div>
 				</a>

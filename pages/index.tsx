@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import { Container, Layout, SeoMeta, Section } from '../components/Layout';
 import { Project, ProjectListItem } from '../components/Projects';
 import { Icon } from '../components/Icon/icon';
+import { Text } from '../components/Text';
 import projectData from '../project-data';
 import { ListViewContext } from '../context/list-view';
 import styles from '../styles/page/index.module.scss';
@@ -26,7 +27,14 @@ const Home: NextPage = () => {
 				<Section>
 					<Container>
 						<Row>
-							<Col md={{ size: 4, offset: 8 }}>
+							<Col md={4}>
+								<div style={{ opacity: 0.4 }}>
+									<Text type='p' size='m'>
+										{projectData.length.toString()} Projects
+									</Text>
+								</div>
+							</Col>
+							<Col md={{ size: 4, offset: 4 }}>
 								<div className={styles.layout}>
 									<div
 										className={`${styles.switch} ${
@@ -45,6 +53,7 @@ const Home: NextPage = () => {
 								</div>
 							</Col>
 						</Row>
+
 						<Row>
 							{projectData.map((project: any, index: number) => {
 								return listView === 'grid' ? (
