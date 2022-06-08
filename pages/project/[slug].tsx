@@ -10,7 +10,7 @@ import { ProjectListItem } from '../../components/Projects';
 import { Text } from '../../components/Text';
 import { Button } from '../../components/Buttons';
 import { slugify } from '../../helper';
-import projectData from './project-data';
+import projectData from '../../project-data';
 import styles from '../../styles/page/project.module.scss';
 
 interface ProjectProps {

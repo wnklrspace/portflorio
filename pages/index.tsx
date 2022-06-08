@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { Container, Layout, SeoMeta, Section } from '../components/Layout';
 import { Project, ProjectListItem } from '../components/Projects';
 import { Icon } from '../components/Icon/icon';
-import projectData from './project/project-data';
+import projectData from '../project-data';
 import { ListViewContext } from '../context/list-view';
 import styles from '../styles/page/index.module.scss';
 

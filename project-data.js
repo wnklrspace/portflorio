@@ -1,4 +1,4 @@
-import { slugify } from '../../helper';
+import { slugify } from './helper';
 
 const projectData = [
 	{
