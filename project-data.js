@@ -44,6 +44,43 @@ const projectData = [
 		],
 	},
 	{
+		title: 'Gerstberger Information System',
+		slug: slugify('Gerstberger Information System'),
+		link: '',
+		year: 2022,
+		intro_text: 'Implementing a Front End for an internal information system',
+		theme: {
+			mainColor: '#ed1a3b',
+			textColor: 'light',
+		},
+		hero_image: '',
+		role: ['Front End Development', 'UX Design'],
+		partner: [
+			{
+				name: 'Vitalcenter Gerstberger GmbH & Co. KG',
+				link: 'https://gerstberger.com',
+			},
+		],
+		stack: ['React.JS', 'SCSS', 'JavaScript', 'SQL'],
+		description: [
+			{
+				key: 'challenge',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'approach',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'result',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+		],
+	},
+	{
 		title: 'Vitalcenter Gerstberger',
 		slug: slugify('Vitalcenter Gerstberger'),
 		link: 'https://jobs.gerstberger.com',
@@ -163,7 +200,7 @@ const projectData = [
 		link: 'https://astoriawestnyc.com',
 		year: 2021,
 		intro_text:
-			'Crafting a unique landingpage for rental apartments in New York City',
+			'Crafting an unique landingpage for rental apartments in New York City',
 		theme: {
 			mainColor: '#ffb2a3',
 			textColor: 'light',
