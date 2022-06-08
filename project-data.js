@@ -87,7 +87,7 @@ const projectData = [
 		year: 2021,
 		intro_text: 'Landingpage for cutting-edge coding & design bootcamps',
 		theme: {
-			mainColor: '#ff33c6',
+			mainColor: '#e8ff9d',
 			textColor: 'light',
 		},
 		hero_image: '',
