@@ -4,11 +4,7 @@
 .xl > * {
 	@include type-l;
 
-	@include large {
-		@include type-l;
-	}
-
-	@include x-large {
+	@include medium {
 		@include type-xl;
 	}
 }

@@ -159,6 +159,23 @@ const About: NextPage = () => {
 									<br />
 									10.2018 - 02.2020
 								</Text>
+								<Space size='sm' />
+								<Text type='p' size='m' italic underline>
+									Honorary
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									<Link href='https://www.awo-stuttgart.de/'>
+										<a target='_blank' rel='noopener'>
+											AWO, Stuttgart Ost
+										</a>
+									</Link>
+									<br />
+									Preparing and holding mind training courses for elderly people
+									to help preventing Alzheimer&apos;s disease.
+									<br />
+									10.2021 - 03.2022
+								</Text>
 							</Col>
 							<Col md={6} lg={{ size: 3, offset: 0 }}>
 								<Text type='p' size='m' italic underline>

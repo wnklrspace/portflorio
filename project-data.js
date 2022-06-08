@@ -48,7 +48,8 @@ const projectData = [
 		slug: slugify('Gerstberger Information System'),
 		link: '',
 		year: 2022,
-		intro_text: 'Implementing a Front End for an internal information system',
+		intro_text:
+			'Implementing a React Front End for an internal information system',
 		theme: {
 			mainColor: '#ed1a3b',
 			textColor: 'light',

@@ -100,12 +100,21 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 								{data.stack.map((pill: string, index: number) => {
 									return <Pill key={index} name={pill} />;
 								})}
-								<hr
-									style={{
-										margin: '30px 0',
-									}}
-								/>
-								<Button name='Launch website' link={data.link} targetBlank />
+
+								{!isEmpty(data.link) && (
+									<>
+										<hr
+											style={{
+												margin: '30px 0',
+											}}
+										/>
+										<Button
+											name='Launch website'
+											link={data.link}
+											targetBlank
+										/>
+									</>
+								)}
 								<Space size='lg' />
 							</Col>
 							<Col md={{ size: 5, offset: 2 }} xl={{ size: 5, offset: 2 }}>
@@ -155,7 +164,8 @@ const Project: NextPage<ProjectProps> = ({ data }) => {
 										link={`/project/${project.slug}`}
 										target='self'
 										mainColor={project.theme.mainColor}
-										role={project.intro_text}
+										description={project.intro_text}
+										jobs={project.role}
 									/>
 								)
 							);

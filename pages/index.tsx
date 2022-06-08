@@ -63,9 +63,10 @@ const Home: NextPage = () => {
 										title={project.title}
 										year={project.year}
 										link={`/project/${project.slug}`}
-										target='self'
 										mainColor={project.theme.mainColor}
-										role={project.intro_text}
+										description={project.intro_text}
+										jobs={project.role}
+										target='self'
 									/>
 								);
 							})}
