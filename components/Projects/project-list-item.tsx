@@ -31,7 +31,7 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 			<div className={styles.ball} style={{ backgroundColor: mainColor }} />
 
 			<div className={styles.title}>
-				<div style={{ width: '75%' }}>
+				<div style={{ width: '80%' }}>
 					<Text type='h3' size='m' weight='light'>
 						{title} • {year} •{' '}
 						{jobs.length > 1 ? (
