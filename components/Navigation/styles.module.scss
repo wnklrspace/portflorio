@@ -87,7 +87,7 @@
 	left: 0;
 	right: 0;
 	background-color: #fff;
-	padding: calc(10vh + 100px) 0 10vh 0;
+	padding: calc(10vh + gap(4)) 0 10vh 0;
 	align-items: center;
 
 	@include medium {
@@ -107,28 +107,40 @@
 		margin: 0 auto;
 	}
 
-	&__about {
-		padding: gap(3);
-		background-color: #020202;
-		border-radius: 20px;
-		color: #fff !important;
-	}
-
 	a,
 	p,
 	li {
-		color: #010101;
+		color: $color-black;
 		list-style: none;
 		margin-bottom: gap(1);
 	}
 
 	ul {
 		&:first-child {
-			margin-bottom: gap(4);
+			margin-bottom: gap(2);
 
-			li {
-				font-size: calc(54px + 1vw);
+			li a {
+				font-size: $font-size-lg;
+				font-weight: 400;
+
+				@include medium {
+					font-size: $font-size-xl;
+				}
+			}
+		}
+
+		&:last-child {
+			li a {
+				font-weight: 400;
 			}
 		}
 	}
+}
+
+.about {
+	display: none;
+	padding: gap(3);
+	background-color: #020202;
+	border-radius: 20px;
+	color: #fff !important;
 }

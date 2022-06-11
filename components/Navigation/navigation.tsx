@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Row, Col } from 'reactstrap';
 import classNames from 'classnames';
+import { Text } from '../Text';
 import { Container } from '../Layout';
 import styles from './styles.module.scss';
 
@@ -75,14 +76,16 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 								</li>
 							</ul>
 						</Col>
-						<Col>
-							<p className={styles.nav__about}>
-								Currently I am working as a working student in the field of
-								Front End Development at
-								<Link href='https://muse-case.com'>
-									<a>muse case design & technology studio</a>
-								</Link>
-							</p>
+						<Col md={6}>
+							<div className={styles.about}>
+								<Text type='p' size='m'>
+									Currently I am working as a working student in the field of
+									Front End Development at
+									<Link href='https://muse-case.com'>
+										<a>muse case design & technology studio</a>
+									</Link>
+								</Text>
+							</div>
 						</Col>
 					</Row>
 				</Container>

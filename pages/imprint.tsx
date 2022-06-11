@@ -1,14 +1,17 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 import { Row, Col } from 'reactstrap';
+import { Text } from '../components/Text';
 import { Layout, SeoMeta, Section, Container } from '../components/Layout';
-import styles from '../styles/Home.module.scss';
 
 const Imprint: NextPage = () => {
 	return (
 		<>
-			<SeoMeta title='• About' desc='Lorem Ipsum about about' urlPath='about' />
+			<SeoMeta
+				title='• Imprint'
+				desc='this is the imprint page'
+				urlPath='imprint'
+			/>
 			<Layout>
 				<Section hasTop>
 					<Container>
@@ -17,7 +20,9 @@ const Imprint: NextPage = () => {
 								<Link href='./'>
 									<a>Back to Home</a>
 								</Link>
-								<h1 className={styles.title}>Imprint</h1>
+								<Text type='h1' size='l'>
+									Imprint
+								</Text>
 							</Col>
 						</Row>
 					</Container>

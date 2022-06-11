@@ -37,36 +37,26 @@ export const Project: React.FunctionComponent<Props> = ({
 	});
 
 	return (
-		<Col
-			xs={6}
-			md={
-				(size === 'md' && 4) || (size === 'lg' && 8) || (size === 'full' && 12)
-			}>
-			<Link href={link || ''}>
-				<a target={`_${target}`} rel='noopener'>
-					<div className={styles['project']}>
-						<div className={imageContainerClass}>
-							{src && (
-								<div className={styles.img}>
-									<Image
-										src={src || ''}
-										alt={alt || 'Background'}
-										layout='fill'
-										objectFit='cover'
-										placeholder='blur'
-										blurDataURL={src || ''}
-									/>
-								</div>
-							)}
-						</div>
-						<Space size='xs' />
-						<div className={styles['project__text']}>
-							<p className={styles['project__year']}>{year}</p>
-							<h2 className={styles['project__title']}>{title}</h2>
-						</div>
+		<div className={styles['project']}>
+			<div className={imageContainerClass}>
+				{src && (
+					<div className={styles.img}>
+						<Image
+							src={src || ''}
+							alt={alt || 'Background'}
+							layout='fill'
+							objectFit='cover'
+							placeholder='blur'
+							blurDataURL={src || ''}
+						/>
 					</div>
-				</a>
-			</Link>
-		</Col>
+				)}
+			</div>
+			<Space size='xs' />
+			<div className={styles['project__text']}>
+				<p className={styles['project__year']}>{year}</p>
+				<h2 className={styles['project__title']}>{title}</h2>
+			</div>
+		</div>
 	);
 };

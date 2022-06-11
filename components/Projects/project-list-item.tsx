@@ -27,31 +27,31 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 	const projectListItem = classNames(styles['project-list-item'], {});
 
 	return (
-		<Link href={link}>
-			<a target={`_${target}`}>
-				<div className={projectListItem}>
-					<div className={styles.ball} style={{ backgroundColor: mainColor }} />
+		// <Link href={link}>
+		// 	<a target={`_${target}`}>
+		<div className={projectListItem}>
+			<div className={styles.ball} style={{ backgroundColor: mainColor }} />
 
-					<div className={styles.title}>
-						<Text type='h3' size='m' weight='light'>
-							{title} • {year} •{' '}
-							{jobs.length > 1 ? (
-								jobs.map((job, index) => (
-									<>
-										<>{`${job}`}</>
-										<>{jobs.length !== index + 1 && ', '}</>
-									</>
-								))
-							) : (
-								<>{jobs}</>
-							)}
-						</Text>
-						<Text type='p' size='l'>
-							{description}
-						</Text>
-					</div>
-				</div>
-			</a>
-		</Link>
+			<div className={styles.title}>
+				<Text type='h3' size='m' weight='light'>
+					{title} • {year} •{' '}
+					{jobs.length > 1 ? (
+						jobs.map((job, index) => (
+							<>
+								<>{`${job}`}</>
+								<>{jobs.length !== index + 1 && ', '}</>
+							</>
+						))
+					) : (
+						<>{jobs}</>
+					)}
+				</Text>
+				<Text type='p' size='l'>
+					{description}
+				</Text>
+			</div>
+		</div>
+		// 	</a>
+		// </Link>
 	);
 };

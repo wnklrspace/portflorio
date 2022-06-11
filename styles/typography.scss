@@ -17,31 +17,32 @@ p {
 }
 
 h1 {
-	font-size: calc(32px + 1vw);
+	font-size: $font-size-lg;
 	line-height: 1;
 	font-weight: 400;
 
 	@include medium {
-		font-size: calc(110px + 1vw);
+		font-size: $font-size-xl;
 	}
 }
 
 h2 {
-	font-size: calc(24px + 1vw);
+	font-size: $font-size-md;
 
 	@include medium {
-		font-size: calc(54px + 1vw);
+		font-size: calc($font-size-md + 0.1vw);
 	}
 }
 
 p,
-span {
-	font-size: calc(14px + 0.1vw);
+span,
+a {
+	font-size: $font-size-sm;
 	line-height: 1.4;
 	font-weight: 200;
 
 	@include medium {
-		font-size: calc(18px + 0.1vw);
+		font-size: calc($font-size-sm + 0.1vw);
 	}
 }
 

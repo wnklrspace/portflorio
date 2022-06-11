@@ -28,7 +28,7 @@ const About: NextPage = () => {
 				<Section>
 					<Container>
 						<Row>
-							<Col md={6} lg={{ size: 4 }}>
+							<Col md={12} lg={4} xl={{ size: 4 }}>
 								<Text type='p' size='m' italic underline>
 									Expertise
 								</Text>
@@ -66,7 +66,7 @@ const About: NextPage = () => {
 								<Pill name='Framer Motion' />
 								<Space size='xs' />
 								<Text type='p' size='m'>
-									I am also interested in
+									I had a glimpse on
 								</Text>
 								<Space size='xs' />
 								<Pill name='Swift' />
@@ -106,8 +106,9 @@ const About: NextPage = () => {
 								<Space size='xs' />
 								<Pill name='Notion' />
 								<Pill name='Miro' />
+								<Space size='sm' />
 							</Col>
-							<Col md={6} lg={{ size: 3, offset: 2 }}>
+							<Col md={6} lg={4} xl={{ size: 3, offset: 2 }}>
 								<Text type='p' size='m' italic underline>
 									Experience
 								</Text>
@@ -160,24 +161,8 @@ const About: NextPage = () => {
 									10.2018 - 02.2020
 								</Text>
 								<Space size='sm' />
-								<Text type='p' size='m' italic underline>
-									Honorary
-								</Text>
-								<Space size='xs' />
-								<Text type='p' size='m'>
-									<Link href='https://www.awo-stuttgart.de/'>
-										<a target='_blank' rel='noopener'>
-											AWO, Stuttgart Ost
-										</a>
-									</Link>
-									<br />
-									Preparing and holding mind training courses for elderly people
-									to help preventing Alzheimer&apos;s disease.
-									<br />
-									10.2021 - 03.2022
-								</Text>
 							</Col>
-							<Col md={6} lg={{ size: 3, offset: 0 }}>
+							<Col md={6} lg={4} xl={{ size: 3, offset: 0 }}>
 								<Text type='p' size='m' italic underline>
 									Education
 								</Text>
@@ -197,6 +182,23 @@ const About: NextPage = () => {
 									Ferdinand von Steinbeis Schule, Ulm <br />
 									Vocational school for Media Design <br />
 									2017 - 2020
+								</Text>
+								<Space size='sm' />
+								<Text type='p' size='m' italic underline>
+									Honorary
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									<Link href='https://www.awo-stuttgart.de/'>
+										<a target='_blank' rel='noopener'>
+											AWO, Stuttgart Ost
+										</a>
+									</Link>
+									<br />
+									Preparing and holding mind training courses for elderly people
+									to help preventing Alzheimer&apos;s disease.
+									<br />
+									10.2021 - 03.2022
 								</Text>
 								<Space size='sm' />
 								<Text type='p' size='m' italic underline>

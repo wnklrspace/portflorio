@@ -5,9 +5,10 @@ const projectData = [
 		title: 'easygiveback',
 		slug: slugify('easygiveback'),
 		link: 'https://easygiveback.de',
+		github: 'https://github.com/easygiveback/frontend',
 		year: 2022,
 		intro_text:
-			'Building a digital donation platform for non-profit organizations.',
+			'Building a digital donation platform for non-profit organizations',
 		theme: {
 			mainColor: '#D5F0FF',
 			textColor: 'light',
@@ -19,6 +20,7 @@ const projectData = [
 			'Next.JS',
 			'React.JS',
 			'Redux',
+			'PHP',
 			'Wordpress CMS',
 			'SCSS',
 			'Framer Motion',
@@ -44,49 +46,12 @@ const projectData = [
 		],
 	},
 	{
-		title: 'Gerstberger Information System',
-		slug: slugify('Gerstberger Information System'),
-		link: '',
-		year: 2022,
-		intro_text:
-			'Implementing a React Front End for an internal information system',
-		theme: {
-			mainColor: '#ed1a3b',
-			textColor: 'light',
-		},
-		hero_image: '',
-		role: ['Front End Development', 'UX Design'],
-		partner: [
-			{
-				name: 'Vitalcenter Gerstberger GmbH & Co. KG',
-				link: 'https://gerstberger.com',
-			},
-		],
-		stack: ['React.JS', 'SCSS', 'JavaScript', 'SQL'],
-		description: [
-			{
-				key: 'challenge',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
-			},
-			{
-				key: 'approach',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
-			},
-			{
-				key: 'result',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
-			},
-		],
-	},
-	{
 		title: 'Vitalcenter Gerstberger',
 		slug: slugify('Vitalcenter Gerstberger'),
 		link: 'https://jobs.gerstberger.com',
+		github: '',
 		year: 2020,
-		intro_text: 'Designing a job portal for a local health care supply store.',
+		intro_text: 'Designing a job portal for a local health care supply store',
 		theme: {
 			mainColor: '#ed1a3b',
 			textColor: 'light',
@@ -122,6 +87,7 @@ const projectData = [
 		title: 'muse case labs',
 		slug: slugify('muse case labs'),
 		link: 'https://muse-case-labs.com',
+		github: '',
 		year: 2021,
 		intro_text: 'Landingpage for cutting-edge coding & design bootcamps',
 		theme: {
@@ -167,6 +133,7 @@ const projectData = [
 		title: 'Foodorama',
 		slug: slugify('Foodorama'),
 		link: '',
+		github: '',
 		year: 2022,
 		intro_text: 'Your digital refrigerator to help you find recipies',
 		theme: {
@@ -176,7 +143,7 @@ const projectData = [
 		hero_image: '',
 		role: ['App Development', 'UX Design'],
 		partner: [],
-		stack: ['Swift UI', 'Figma'],
+		stack: ['Swift UI', 'Xcode', 'Figma'],
 		description: [
 			{
 				key: 'challenge',
@@ -199,6 +166,7 @@ const projectData = [
 		title: 'Astoria West NYC',
 		slug: slugify('Astoria West NYC'),
 		link: 'https://astoriawestnyc.com',
+		github: '',
 		year: 2021,
 		intro_text:
 			'Crafting an unique landingpage for rental apartments in New York City',
@@ -242,12 +210,52 @@ const projectData = [
 		],
 	},
 	{
+		title: 'Gerstberger Information System',
+		slug: slugify('Gerstberger Information System'),
+		link: '',
+		github: '',
+		year: 2022,
+		intro_text:
+			'Implementing a React Front End for an internal information system',
+		theme: {
+			mainColor: '#ed1a3b',
+			textColor: 'light',
+		},
+		hero_image: '',
+		role: ['Front End Development', 'UX Design'],
+		partner: [
+			{
+				name: 'Vitalcenter Gerstberger GmbH & Co. KG',
+				link: 'https://gerstberger.com',
+			},
+		],
+		stack: ['React.JS', 'SCSS', 'JavaScript', 'SQL'],
+		description: [
+			{
+				key: 'challenge',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'approach',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+			{
+				key: 'result',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsum. Doloremque, libero maiores quis sed provident qui soluta, iste impedit similique eius nostrum. Libero quaerat suscipit dolorem voluptatem sapiente perspiciatis.',
+			},
+		],
+	},
+	{
 		title: 'amplify',
 		slug: slugify('amplify'),
 		link: 'https://xd.adobe.com/view/eb762da1-b929-4d52-ae7f-b8e4501158cf-be25/screen/19cd5799-7e34-45a2-b4ae-a21a26d27e36/?fullscreen',
+		github: '',
 		year: 2020,
 		intro_text:
-			'Building a digital donation platform for non-profit organizations.',
+			'Building a digital donation platform for non-profit organizations',
 		theme: {
 			mainColor: 'rgb(63,70,153)',
 			textColor: 'light',
@@ -278,9 +286,10 @@ const projectData = [
 		title: 'Uhland Realschule',
 		slug: slugify('Uhland Realschule'),
 		link: 'https://uhland-realschule.de/',
+		github: '',
 		year: 2020,
 		intro_text:
-			'Building a digital donation platform for non-profit organizations.',
+			'Building a digital donation platform for non-profit organizations',
 		theme: {
 			mainColor: '#009f63',
 			textColor: 'light',
@@ -316,8 +325,9 @@ const projectData = [
 		title: 'Natur Pur',
 		slug: slugify('Natur Pur'),
 		link: 'http://ap.wnklr.art/',
+		github: '',
 		year: 2019,
-		intro_text: 'Building an interactive playground for a local museum.',
+		intro_text: 'Building an interactive playground for a local museum',
 		theme: {
 			mainColor: '#466d46',
 			textColor: 'light',
