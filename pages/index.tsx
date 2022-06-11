@@ -75,7 +75,7 @@ const Home: NextPage = () => {
 						<Row>
 							{projectData.map((project: any, index: number) => {
 								return listView === 'grid' ? (
-									<Col md={index == 0 ? 8 : 4}>
+									<Col xs={6} md={index == 0 ? 8 : 4}>
 										<div
 											key={index}
 											onClick={() => {

@@ -31,19 +31,21 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 			<div className={styles.ball} style={{ backgroundColor: mainColor }} />
 
 			<div className={styles.title}>
-				<Text type='h3' size='m' weight='light'>
-					{title} • {year} •{' '}
-					{jobs.length > 1 ? (
-						jobs.map((job, index) => (
-							<>
-								<>{`${job}`}</>
-								<>{jobs.length !== index + 1 && ', '}</>
-							</>
-						))
-					) : (
-						<>{jobs}</>
-					)}
-				</Text>
+				<div style={{ width: '75%' }}>
+					<Text type='h3' size='m' weight='light'>
+						{title} • {year} •{' '}
+						{jobs.length > 1 ? (
+							jobs.map((job, index) => (
+								<>
+									<>{`${job}`}</>
+									<>{jobs.length !== index + 1 && ', '}</>
+								</>
+							))
+						) : (
+							<>{jobs}</>
+						)}
+					</Text>
+				</div>
 				<Space size='xs' />
 				<Text type='p' size='l'>
 					{description}
