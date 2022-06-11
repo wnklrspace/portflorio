@@ -6,7 +6,6 @@ import { Layout, SeoMeta, Section, Container } from '../components/Layout';
 import { Text } from '../components/Text';
 import { Space } from '../components/Space/space';
 import { Pill } from '../components/Pills';
-import styles from '../styles/Home.module.scss';
 
 const About: NextPage = () => {
 	return (

@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
+import { Row, Col } from 'reactstrap';
+import { Text } from '../components/Text';
 import { Layout, SeoMeta, Section, Container } from '../components/Layout';
 import { FeaturedProject, Project } from '../components/Projects';
-import { Row, Col } from 'reactstrap';
-import styles from '../styles/Home.module.scss';
 
 const Projects: NextPage = () => {
 	return (
@@ -18,7 +18,9 @@ const Projects: NextPage = () => {
 					<Container>
 						<Row>
 							<Col>
-								<h1 className={styles.title}>Projects</h1>
+								<Text type='h1' size='xl'>
+									Projects
+								</Text>
 							</Col>
 						</Row>
 					</Container>

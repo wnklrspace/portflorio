@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Row, Col } from 'reactstrap';
+import { Text } from '../components/Text';
 import { Layout, SeoMeta, Section, Container } from '../components/Layout';
 import { ListOrganization } from '../components/List';
-import styles from '../styles/Home.module.scss';
 
 const Support: NextPage = () => {
 	return (
@@ -14,7 +14,9 @@ const Support: NextPage = () => {
 					<Container>
 						<Row>
 							<Col>
-								<h1 className={styles.title}>Support</h1>
+								<Text type='h1' size='xl'>
+									Support
+								</Text>
 							</Col>
 						</Row>
 					</Container>

@@ -140,7 +140,20 @@
 .about {
 	display: none;
 	padding: gap(3);
-	background-color: #020202;
+	background-color: $color-black;
 	border-radius: 20px;
-	color: #fff !important;
+
+	@include large {
+		display: flex;
+	}
+
+	p,
+	a {
+		color: $color-white;
+		margin: 0;
+	}
+
+	a {
+		text-decoration: underline;
+	}
 }

@@ -79,10 +79,9 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 						<Col md={6}>
 							<div className={styles.about}>
 								<Text type='p' size='m'>
-									Currently I am working as a working student in the field of
-									Front End Development at
+									Currently I am working as a Front End Developer at{' '}
 									<Link href='https://muse-case.com'>
-										<a>muse case design & technology studio</a>
+										<a>muse case GmbH</a>
 									</Link>
 								</Text>
 							</div>
