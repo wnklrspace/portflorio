@@ -53,14 +53,7 @@ const Home: NextPage = () => {
 				<Section>
 					<Container>
 						<Row>
-							<Col md={4}>
-								<div style={{ opacity: 0.4 }}>
-									<Text type='p' size='m'>
-										{projectData.length.toString()} Projects
-									</Text>
-								</div>
-							</Col>
-							<Col md={{ size: 4, offset: 4 }}>
+							<Col md={{ size: 4, offset: 8 }}>
 								<div className={styles.layout}>
 									<div
 										className={`${styles.switch} ${

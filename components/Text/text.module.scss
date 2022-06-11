@@ -2,7 +2,7 @@
 
 .xl,
 .xl > * {
-	@include type-l;
+	@include type-xl;
 
 	@include medium {
 		@include type-xl;

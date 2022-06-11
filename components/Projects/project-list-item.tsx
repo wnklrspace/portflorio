@@ -1,7 +1,5 @@
-import { imageConfigDefault } from 'next/dist/server/image-config';
-import Image from 'next/image';
-import Link from 'next/link';
 import classNames from 'classnames';
+import { Space } from '../Space/space';
 import { Text } from '../Text';
 import styles from './styles.module.scss';
 
@@ -46,6 +44,7 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 						<>{jobs}</>
 					)}
 				</Text>
+				<Space size='xs' />
 				<Text type='p' size='l'>
 					{description}
 				</Text>

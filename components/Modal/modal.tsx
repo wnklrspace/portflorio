@@ -101,7 +101,7 @@ export const Modal: FC<ModalProps> = ({
 
 				<div className={styles['modal__footer']}>
 					<div onClick={() => setShowModal(false)}>
-						<span>Close</span>
+						<div>Close</div>
 					</div>
 					{github != '' && (
 						<div>
