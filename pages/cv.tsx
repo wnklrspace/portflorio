@@ -38,6 +38,7 @@ const About: NextPage = () => {
 										width={800}
 										height={533}
 										layout='responsive'
+										blurDataURL='/foto.jpg'
 									/>
 								</div>
 								<Space size='sm' />
