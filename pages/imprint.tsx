@@ -9,7 +9,7 @@ const Imprint: NextPage = () => {
 		<>
 			<SeoMeta
 				title='• Imprint'
-				desc='this is the imprint page'
+				desc='Imprint of the portflorio'
 				urlPath='imprint'
 			/>
 			<Layout>

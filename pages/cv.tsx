@@ -12,7 +12,7 @@ import styles from '../styles/page/cv.module.scss';
 const About: NextPage = () => {
 	return (
 		<>
-			<SeoMeta title='• About' desc='Lorem Ipsum about about' urlPath='about' />
+			<SeoMeta title='• CV' desc='CV of Florian Winkler' urlPath='cv' />
 			<Layout>
 				<Section hasTop hasBottom={false}>
 					<Container>

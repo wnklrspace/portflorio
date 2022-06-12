@@ -5,7 +5,7 @@ import { Text } from '../components/Text';
 const ErrorPage: NextPage = () => {
 	return (
 		<Layout>
-			<SeoMeta title='• Error 404' desc='Lorem Ipsum about Error page' />
+			<SeoMeta title='• Error 404' desc='This is an Error page' />
 			<Text type='h1' size='l'>
 				Error 404
 			</Text>
