@@ -103,6 +103,11 @@ const About: NextPage = () => {
 									Project Management
 								</Text>
 								<Space size='xs' />
+								<Pill name='Github' />
+								<Pill name='Jira' />
+								<Pill name='Confluence' />
+								<Pill name='Trello' />
+								<Pill name='Todoist' />
 								<Pill name='Notion' />
 								<Pill name='Miro' />
 								<Space size='sm' />
