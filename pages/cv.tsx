@@ -1,11 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Row, Col } from 'reactstrap';
 import { Layout, SeoMeta, Section, Container } from '../components/Layout';
 import { Text } from '../components/Text';
 import { Space } from '../components/Space/space';
 import { Pill } from '../components/Pills';
+import styles from '../styles/page/cv.module.scss';
 
 const About: NextPage = () => {
 	return (
@@ -24,10 +26,21 @@ const About: NextPage = () => {
 					</Container>
 				</Section>
 				<Space size='md' />
+
 				<Section>
 					<Container>
 						<Row>
 							<Col md={12} lg={4} xl={{ size: 4 }}>
+								<div className={styles.image}>
+									<Image
+										src='/foto.jpg'
+										alt='Florian Winkler'
+										width={800}
+										height={533}
+										layout='responsive'
+									/>
+								</div>
+								<Space size='sm' />
 								<Text type='p' size='m' italic underline>
 									Expertise
 								</Text>
