@@ -1,3 +1,4 @@
+$gap-xxs: 10px;
 $gap-xs: 20px;
 $gap-sm: 60px;
 $gap-md: 80px;
@@ -6,6 +7,10 @@ $gap-xl: 200px;
 
 .space {
 	padding-top: $gap-xs;
+
+	&--xxs {
+		padding-top: $gap-xxs;
+	}
 
 	&--xs {
 		padding-top: $gap-xs;
