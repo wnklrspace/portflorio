@@ -19,12 +19,14 @@ const Home: NextPage = () => {
 		stack: Array<string>;
 		partner: Array<{ name: string; link: string }>;
 		year: string;
+		description: string;
 	}>({
 		title: '',
 		jobs: [''],
 		github: '',
 		liveSite: '',
 		year: '',
+		description: '',
 		stack: [''],
 		partner: [{ name: '', link: '' }],
 	});
@@ -87,6 +89,7 @@ const Home: NextPage = () => {
 													stack: project.stack,
 													year: project.year,
 													partner: project.partner,
+													description: project.intro_text,
 												});
 												setShowModal(true);
 											}}>
@@ -113,6 +116,7 @@ const Home: NextPage = () => {
 												stack: project.stack,
 												year: project.year,
 												partner: project.partner,
+												description: project.intro_text,
 											});
 											setShowModal(true);
 										}}>
@@ -142,6 +146,7 @@ const Home: NextPage = () => {
 					liveSite={modalContent.liveSite}
 					stack={modalContent.stack}
 					year={modalContent.year}
+					description={modalContent.description}
 					showModal={showModal}
 					setShowModal={setShowModal}
 				/>

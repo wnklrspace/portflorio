@@ -14,6 +14,7 @@ interface ModalProps {
 	github: string;
 	liveSite: string;
 	year: string;
+	description: string;
 	showModal: boolean;
 	setShowModal: Function;
 }
@@ -27,6 +28,7 @@ export const Modal: FC<ModalProps> = ({
 	setShowModal,
 	showModal,
 	year,
+	description,
 	partner,
 }) => {
 	return (
@@ -88,6 +90,17 @@ export const Modal: FC<ModalProps> = ({
 					<Space size='xs' />
 					<div style={{ opacity: 0.5, marginBottom: '10px' }}>
 						<Text type='p' size='s' transform='uppercase'>
+							Description
+						</Text>
+					</div>
+
+					<Text type='p' size='m'>
+						{description}.
+					</Text>
+
+					<Space size='sm' />
+					<div style={{ opacity: 0.5, marginBottom: '10px' }}>
+						<Text type='p' size='s' transform='uppercase'>
 							Tech stack
 						</Text>
 					</div>
@@ -101,7 +114,11 @@ export const Modal: FC<ModalProps> = ({
 
 				<div className={styles['modal__footer']}>
 					<div onClick={() => setShowModal(false)}>
-						<div>Close</div>
+						<div>
+							<Text type='p' size='s'>
+								Close
+							</Text>
+						</div>
 					</div>
 					{github != '' && (
 						<div>
