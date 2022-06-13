@@ -45,7 +45,7 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 					)}
 				</Text>
 
-				<Space size='xs' />
+				<Space size='xxs' />
 				<Text type='p' size='l'>
 					{description}
 				</Text>
