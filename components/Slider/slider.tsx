@@ -23,7 +23,13 @@ export const Slider: FC<SliderProps> = ({ images }) => {
 						return (
 							<SwiperSlide key={key}>
 								<div className={styles['image-container']}>
-									<Image src={image.src} alt={image.alt} layout='fill' />
+									<Image
+										src={image.src}
+										alt={image.alt}
+										placeholder='blur'
+										blurDataURL={image.src}
+										layout='fill'
+									/>
 								</div>
 							</SwiperSlide>
 						);
