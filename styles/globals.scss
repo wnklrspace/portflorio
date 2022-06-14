@@ -47,3 +47,12 @@ hr {
 .modal-open {
 	position: fixed;
 }
+
+.swiper-container {
+	overflow: unset !important;
+}
+
+.swiper-slide {
+	overflow: hidden;
+	border-radius: 10px;
+}

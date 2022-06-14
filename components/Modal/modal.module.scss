@@ -54,6 +54,7 @@
 	&__footer {
 		display: flex;
 		overflow: hidden;
+		min-height: 80px;
 		border-top: 1px solid rgba($color-white, 0.1);
 
 		div {

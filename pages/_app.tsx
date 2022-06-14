@@ -5,6 +5,9 @@ import { ListViewContext } from '../context/list-view';
 // bootstrap grid styles
 import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
+// swiper styles
+import '../node_modules/swiper/swiper.scss';
+
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {

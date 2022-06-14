@@ -19,6 +19,7 @@ const Home: NextPage = () => {
 		stack: Array<string>;
 		partner: Array<{ name: string; link: string }>;
 		year: string;
+		images: Array<any>;
 		description: string;
 	}>({
 		title: '',
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
 		year: '',
 		description: '',
 		stack: [''],
+		images: [''],
 		partner: [{ name: '', link: '' }],
 	});
 
@@ -88,6 +90,7 @@ const Home: NextPage = () => {
 													liveSite: project.link,
 													stack: project.stack,
 													year: project.year,
+													images: project.images,
 													partner: project.partner,
 													description: project.intro_text,
 												});
@@ -115,6 +118,7 @@ const Home: NextPage = () => {
 												liveSite: project.link,
 												stack: project.stack,
 												year: project.year,
+												images: project.images,
 												partner: project.partner,
 												description: project.intro_text,
 											});
@@ -148,6 +152,7 @@ const Home: NextPage = () => {
 					year={modalContent.year}
 					description={modalContent.description}
 					showModal={showModal}
+					images={modalContent.images}
 					setShowModal={setShowModal}
 				/>
 			)}

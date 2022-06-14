@@ -1,4 +1,4 @@
-import { slugify } from './helper';
+import { slugify } from '/helper';
 
 const projectData = [
 	{
@@ -26,6 +26,14 @@ const projectData = [
 			'Framer Motion',
 			'TypeScript',
 			'Github',
+		],
+		images: [
+			{
+				src: '/cover_easygiveback_01.jpg',
+				alt: 'Cover von easygiveback',
+				width: 2000,
+				height: 1800,
+			},
 		],
 		description: [
 			{
@@ -65,6 +73,32 @@ const projectData = [
 			},
 		],
 		stack: ['PHP', 'SCSS', 'JavaScript', 'Wordpress CMS', 'Github'],
+		images: [
+			{
+				src: '/ger_web_01.jpg',
+				alt: 'Gerstberger Jobsportal 1',
+				width: 2000,
+				height: 1800,
+			},
+			{
+				src: '/ger_web_02.jpg',
+				alt: 'Gerstberger Jobsportal 2',
+				width: 2000,
+				height: 1800,
+			},
+			{
+				src: '/ger_web_03.jpg',
+				alt: 'Gerstberger Jobsportal 3',
+				width: 2000,
+				height: 1800,
+			},
+			{
+				src: '/bg.jpg',
+				alt: 'Gerstberger Jobsportal Cover',
+				width: 2000,
+				height: 1800,
+			},
+		],
 		description: [
 			{
 				key: 'challenge',
@@ -111,6 +145,7 @@ const projectData = [
 			'TypeScript',
 			'Github',
 		],
+		images: [],
 		description: [
 			{
 				key: 'challenge',
@@ -144,6 +179,7 @@ const projectData = [
 		role: ['App Development', 'UX Design'],
 		partner: [],
 		stack: ['Swift UI', 'Xcode', 'Figma'],
+		images: [],
 		description: [
 			{
 				key: 'challenge',
@@ -190,6 +226,14 @@ const projectData = [
 			'Framer Motion',
 			'TypeScript',
 			'Github',
+		],
+		images: [
+			{
+				src: '/cover_astoria.jpg',
+				alt: 'Cover for astoria west nyc',
+				width: 2000,
+				height: 1600,
+			},
 		],
 		description: [
 			{
@@ -255,7 +299,7 @@ const projectData = [
 		github: '',
 		year: 2020,
 		intro_text:
-			'Building a digital donation platform for non-profit organizations',
+			'Designing a music player for digital dance session with your friends',
 		theme: {
 			mainColor: 'rgb(63,70,153)',
 			textColor: 'light',
@@ -264,6 +308,14 @@ const projectData = [
 		role: ['UX Design'],
 		partner: [],
 		stack: ['Adobe XD', 'Design System'],
+		images: [
+			{
+				src: '/cover_amplify.jpg',
+				alt: 'App Amplify',
+				width: 2000,
+				height: 1600,
+			},
+		],
 		description: [
 			{
 				key: 'challenge',
@@ -288,8 +340,7 @@ const projectData = [
 		link: 'https://uhland-realschule.de/',
 		github: '',
 		year: 2020,
-		intro_text:
-			'Building a digital donation platform for non-profit organizations',
+		intro_text: 'Building a accessible website for a local school',
 		theme: {
 			mainColor: '#009f63',
 			textColor: 'light',
@@ -303,6 +354,7 @@ const projectData = [
 			},
 		],
 		stack: ['PHP', 'SCSS', 'Kirby CMS', 'Github', 'JavaScript'],
+		images: [],
 		description: [
 			{
 				key: 'challenge',
@@ -336,6 +388,20 @@ const projectData = [
 		role: ['UX Design', 'Branding', 'Front End Development'],
 		partner: [],
 		stack: ['HTML', 'SCSS', 'JavaScript'],
+		images: [
+			{
+				src: '/cover_naturpur_01.jpg',
+				alt: '',
+				width: 2000,
+				height: 1600,
+			},
+			{
+				src: '/cover_naturpur_02.jpg',
+				alt: '',
+				width: 2000,
+				height: 1600,
+			},
+		],
 		description: [
 			{
 				key: 'challenge',

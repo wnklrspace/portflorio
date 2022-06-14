@@ -2,6 +2,7 @@ import { FC, useEffect } from 'react';
 import Link from 'next/link';
 import { isEmpty } from 'lodash';
 import { Text } from '../Text';
+import { Slider } from '../Slider/slider';
 import { Pill } from '../Pills';
 import { Space } from '../Space/space';
 import styles from './modal.module.scss';
@@ -15,6 +16,7 @@ interface ModalProps {
 	liveSite: string;
 	year: string;
 	description: string;
+	images: Array<any>;
 	showModal: boolean;
 	setShowModal: Function;
 }
@@ -28,6 +30,7 @@ export const Modal: FC<ModalProps> = ({
 	setShowModal,
 	showModal,
 	year,
+	images,
 	description,
 	partner,
 }) => {
@@ -40,6 +43,20 @@ export const Modal: FC<ModalProps> = ({
 					</Text>
 				</div>
 				<div className={styles['modal__body']}>
+					<div>
+						<Slider images={images} />
+					</div>
+					<Space size='sm' />
+					<div style={{ opacity: 0.5, marginBottom: '10px' }}>
+						<Text type='p' size='s' transform='uppercase'>
+							Tech stack
+						</Text>
+					</div>
+
+					{stack.map((item, index) => {
+						return <Pill key={index} name={item} />;
+					})}
+					<Space size='xs' />
 					<div style={{ opacity: 0.5, marginBottom: '10px' }}>
 						<Text type='p' size='s' transform='uppercase'>
 							Year
@@ -97,17 +114,6 @@ export const Modal: FC<ModalProps> = ({
 					<Text type='p' size='m'>
 						{description}.
 					</Text>
-
-					<Space size='sm' />
-					<div style={{ opacity: 0.5, marginBottom: '10px' }}>
-						<Text type='p' size='s' transform='uppercase'>
-							Tech stack
-						</Text>
-					</div>
-
-					{stack.map((item, index) => {
-						return <Pill key={index} name={item} />;
-					})}
 
 					<Space size='xs' />
 				</div>
