@@ -33,6 +33,42 @@ export const Icon: FC<IconProps> = ({ type }) => {
 				</div>
 			);
 
+		case 'arrowLeft':
+			return (
+				<div className={styles.icon}>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						width='44'
+						height='44'
+						viewBox='0 0 24 24'
+						fill='none'>
+						<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+						<line x1='10' y1='12' x2='20' y2='12' />
+						<line x1='10' y1='12' x2='14' y2='16' />
+						<line x1='10' y1='12' x2='14' y2='8' />
+						<line x1='4' y1='4' x2='4' y2='20' />
+					</svg>
+				</div>
+			);
+
+		case 'arrowRight':
+			return (
+				<div className={styles.icon}>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						width='44'
+						height='44'
+						viewBox='0 0 24 24'
+						fill='none'>
+						<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+						<line x1='14' y1='12' x2='4' y2='12' />
+						<line x1='14' y1='12' x2='10' y2='16' />
+						<line x1='14' y1='12' x2='10' y2='8' />
+						<line x1='20' y1='4' x2='20' y2='20' />
+					</svg>
+				</div>
+			);
+
 		default:
 			return <p>No Icon selected</p>;
 	}

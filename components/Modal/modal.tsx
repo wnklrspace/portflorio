@@ -5,6 +5,7 @@ import { Text } from '../Text';
 import { Slider } from '../Slider/slider';
 import { Pill } from '../Pills';
 import { Space } from '../Space/space';
+import { Icon } from '../Icon/icon';
 import styles from './modal.module.scss';
 
 interface ModalProps {
@@ -14,7 +15,7 @@ interface ModalProps {
 	partner: Array<{ name: string; link: string }>;
 	github: string;
 	liveSite: string;
-	year: string;
+	year: number;
 	description: string;
 	images: Array<any>;
 	showModal: boolean;
@@ -149,6 +150,12 @@ export const Modal: FC<ModalProps> = ({
 						</div>
 					)}
 				</div>
+			</div>
+			<div className={styles.arrowLeft}>
+				<Icon type='arrowLeft' />
+			</div>
+			<div className={styles.arrowRight}>
+				<Icon type='arrowRight' />
 			</div>
 			<div className={styles.background} onClick={() => setShowModal(false)} />
 		</div>

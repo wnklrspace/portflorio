@@ -12,21 +12,23 @@ import styles from '../styles/page/index.module.scss';
 
 const Home: NextPage = () => {
 	const [modalContent, setModalContent] = useState<{
+		id: number;
 		title: string;
 		jobs: Array<string>;
 		github: string;
 		liveSite: string;
 		stack: Array<string>;
 		partner: Array<{ name: string; link: string }>;
-		year: string;
+		year: number;
 		images: Array<any>;
 		description: string;
 	}>({
+		id: 0,
 		title: '',
 		jobs: [''],
 		github: '',
 		liveSite: '',
-		year: '',
+		year: 0,
 		description: '',
 		stack: [''],
 		images: [''],
@@ -41,6 +43,87 @@ const Home: NextPage = () => {
 			? document.body.classList.add('modal-open')
 			: document.body.classList.remove('modal-open');
 	}, [showModal]);
+
+	useEffect(() => {
+		window.addEventListener('keydown', handleUserKeyPress);
+
+		return () => {
+			window.removeEventListener('keydown', handleUserKeyPress);
+		};
+	});
+
+	function handleUserKeyPress(e: KeyboardEvent) {
+		// When user presses the right arrow key and nextProject is not
+		// undefined, user is getting redirected to the next project
+		if (showModal && e.key === 'ArrowRight') {
+			if (modalContent.id == projectData[projectData.length - 1].id) {
+				setModalContent({
+					id: projectData[0].id,
+					title: projectData[0].title,
+					jobs: projectData[0].role,
+					github: projectData[0].github,
+					liveSite: projectData[0].link,
+					stack: projectData[0].stack,
+					year: projectData[0].year,
+					images: projectData[0].images,
+					partner: projectData[0].partner,
+					description: projectData[0].intro_text,
+				});
+				return;
+			}
+
+			setModalContent({
+				id: projectData[modalContent.id + 1].id,
+				title: projectData[modalContent.id + 1].title,
+				jobs: projectData[modalContent.id + 1].role,
+				github: projectData[modalContent.id + 1].github,
+				liveSite: projectData[modalContent.id + 1].link,
+				stack: projectData[modalContent.id + 1].stack,
+				year: projectData[modalContent.id + 1].year,
+				images: projectData[modalContent.id + 1].images,
+				partner: projectData[modalContent.id + 1].partner,
+				description: projectData[modalContent.id + 1].intro_text,
+			});
+		}
+
+		// When user presses the left arrow key and prevProject is not
+		// undefined, user is getting redirected to the previous project
+		if (showModal && e.key === 'ArrowLeft') {
+			if (modalContent.id == 0) {
+				setModalContent({
+					id: projectData[projectData.length - 1].id,
+					title: projectData[projectData.length - 1].title,
+					jobs: projectData[projectData.length - 1].role,
+					github: projectData[projectData.length - 1].github,
+					liveSite: projectData[projectData.length - 1].link,
+					stack: projectData[projectData.length - 1].stack,
+					year: projectData[projectData.length - 1].year,
+					images: projectData[projectData.length - 1].images,
+					partner: projectData[projectData.length - 1].partner,
+					description: projectData[projectData.length - 1].intro_text,
+				});
+				return;
+			}
+
+			setModalContent({
+				id: projectData[modalContent.id - 1].id,
+				title: projectData[modalContent.id - 1].title,
+				jobs: projectData[modalContent.id - 1].role,
+				github: projectData[modalContent.id - 1].github,
+				liveSite: projectData[modalContent.id - 1].link,
+				stack: projectData[modalContent.id - 1].stack,
+				year: projectData[modalContent.id - 1].year,
+				images: projectData[modalContent.id - 1].images,
+				partner: projectData[modalContent.id - 1].partner,
+				description: projectData[modalContent.id - 1].intro_text,
+			});
+		}
+
+		// ESC
+		if (showModal && e.key === 'Escape') {
+			setShowModal(false);
+		}
+	}
 
 	return (
 		<>
@@ -84,6 +167,7 @@ const Home: NextPage = () => {
 											key={index}
 											onClick={() => {
 												setModalContent({
+													id: project.id,
 													title: project.title,
 													jobs: project.role,
 													github: project.github,
@@ -112,6 +196,7 @@ const Home: NextPage = () => {
 										key={index}
 										onClick={() => {
 											setModalContent({
+												id: project.id,
 												title: project.title,
 												jobs: project.role,
 												github: project.github,

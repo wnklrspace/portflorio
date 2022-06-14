@@ -2,6 +2,7 @@ import { slugify } from '/helper';
 
 const projectData = [
 	{
+		id: 0,
 		title: 'easygiveback',
 		slug: slugify('easygiveback'),
 		link: 'https://easygiveback.de',
@@ -54,6 +55,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 1,
 		title: 'Vitalcenter Gerstberger',
 		slug: slugify('Vitalcenter Gerstberger'),
 		link: 'https://jobs.gerstberger.com',
@@ -118,6 +120,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 2,
 		title: 'muse case labs',
 		slug: slugify('muse case labs'),
 		link: 'https://muse-case-labs.com',
@@ -184,6 +187,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 3,
 		title: 'Astoria West NYC',
 		slug: slugify('Astoria West NYC'),
 		link: 'https://astoriawestnyc.com',
@@ -281,6 +285,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 4,
 		title: 'Gerstberger Information System',
 		slug: slugify('Gerstberger Information System'),
 		link: '',
@@ -321,6 +326,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 5,
 		title: 'amplify',
 		slug: slugify('amplify'),
 		link: 'https://xd.adobe.com/view/eb762da1-b929-4d52-ae7f-b8e4501158cf-be25/screen/19cd5799-7e34-45a2-b4ae-a21a26d27e36/?fullscreen',
@@ -381,6 +387,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 6,
 		title: 'Foodorama',
 		slug: slugify('Foodorama'),
 		link: '',
@@ -415,6 +422,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 7,
 		title: 'Uhland Realschule',
 		slug: slugify('Uhland Realschule'),
 		link: 'https://uhland-realschule.de/',
@@ -473,6 +481,7 @@ const projectData = [
 		],
 	},
 	{
+		id: 8,
 		title: 'Natur Pur',
 		slug: slugify('Natur Pur'),
 		link: 'http://ap.wnklr.art/',
