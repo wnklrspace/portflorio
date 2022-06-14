@@ -14,7 +14,7 @@ const projectData = [
 			mainColor: '#D5F0FF',
 			textColor: 'light',
 		},
-		hero_image: '/cover_easygiveback_03.jpg',
+		hero_image: '/cover_easygiveback_01.jpg',
 		role: ['Front End Development'],
 		partner: [],
 		stack: [
@@ -66,7 +66,7 @@ const projectData = [
 			mainColor: '#ed1a3b',
 			textColor: 'light',
 		},
-		hero_image: '',
+		hero_image: '/bg.jpg',
 		role: ['Front End Development', 'UX Design'],
 		partner: [
 			{
@@ -131,7 +131,7 @@ const projectData = [
 			mainColor: '#e8ff9d',
 			textColor: 'light',
 		},
-		hero_image: '',
+		hero_image: '/mcl_cover_01.png',
 		role: ['Front End Development'],
 		partner: [
 			{
@@ -433,7 +433,7 @@ const projectData = [
 			mainColor: '#009f63',
 			textColor: 'light',
 		},
-		hero_image: '',
+		hero_image: '/uh_01.png',
 		role: ['Front End Development'],
 		partner: [
 			{

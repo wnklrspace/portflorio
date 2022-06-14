@@ -131,9 +131,9 @@ const Home: NextPage = () => {
 			<Layout fontColor='light'>
 				<Section firstOfPage hasTop>
 					<Container>
-						<h1 className={styles.title}>
+						<Text type='h1' size='xxl'>
 							Front End <br /> Development
-						</h1>
+						</Text>
 					</Container>
 				</Section>
 

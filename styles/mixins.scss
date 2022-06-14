@@ -47,12 +47,17 @@
 
 @mixin type-l {
 	font-size: $font-size-lg;
-	line-height: 1.3em;
+	line-height: 1.1em;
 }
 
 @mixin type-xl {
 	font-size: $font-size-xl;
-	line-height: 1.2em;
+	line-height: 1.1em;
+}
+
+@mixin type-xxl {
+	font-size: $font-size-xxl;
+	line-height: 1.1em;
 }
 
 //

@@ -1,8 +1,17 @@
 @import '../../styles/mixins.scss';
 
+.xxl,
+.xxl > * {
+	@include type-xl;
+
+	@include medium {
+		@include type-xxl;
+	}
+}
+
 .xl,
 .xl > * {
-	@include type-xl;
+	@include type-l;
 
 	@include medium {
 		@include type-xl;

@@ -4,7 +4,7 @@ import styles from './text.module.scss';
 
 interface TextProps {
 	type: 'h1' | 'h2' | 'h3' | 'p' | 'span';
-	size: 'xl' | 'l' | 'm' | 's';
+	size: 'xxl' | 'xl' | 'l' | 'm' | 's';
 	weight?: 'bold' | 'regular' | 'light';
 	transform?: 'lowercase' | 'uppercase';
 	marginBottom?: boolean;
@@ -25,6 +25,7 @@ export const Text: FC<TextProps> = ({
 }) => {
 	const textStylings = classNames({
 		// size
+		[styles['xxl']]: size === 'xxl',
 		[styles['xl']]: size === 'xl',
 		[styles['l']]: size === 'l',
 		[styles['m']]: size === 'm',
