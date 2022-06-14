@@ -27,8 +27,10 @@ export const Slider: FC<SliderProps> = ({ images }) => {
 										src={image.src}
 										alt={image.alt}
 										placeholder='blur'
+										width={image.width}
+										height={image.height}
 										blurDataURL={image.src}
-										layout='fill'
+										layout='responsive'
 									/>
 								</div>
 							</SwiperSlide>

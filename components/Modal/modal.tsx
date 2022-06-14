@@ -43,10 +43,14 @@ export const Modal: FC<ModalProps> = ({
 					</Text>
 				</div>
 				<div className={styles['modal__body']}>
-					<div>
-						<Slider images={images} />
-					</div>
-					<Space size='sm' />
+					{images.length != 0 && (
+						<>
+							<div>
+								<Slider images={images} />
+							</div>
+							<Space size='sm' />
+						</>
+					)}
 					<div style={{ opacity: 0.5, marginBottom: '10px' }}>
 						<Text type='p' size='s' transform='uppercase'>
 							Tech stack
