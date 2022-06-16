@@ -333,7 +333,7 @@ const projectData = [
 		github: '',
 		year: 2020,
 		intro_text:
-			'Designing a music player for digital dance session with your friends',
+			'Designing a music player with digital dance session with your friends',
 		theme: {
 			mainColor: 'rgb(63,70,153)',
 			textColor: 'light',
