@@ -99,6 +99,7 @@
 	bottom: 0;
 	background-color: rgba($color-black, 0.5);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	z-index: 100;
 	cursor: pointer;
 }
