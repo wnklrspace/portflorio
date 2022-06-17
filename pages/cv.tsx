@@ -43,6 +43,28 @@ const About: NextPage = () => {
 								</div>
 								<Space size='sm' />
 								<Text type='p' size='m' italic underline>
+									The way I talk to machines
+								</Text>
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									Primarily
+								</Text>
+								<Space size='xs' />
+								<Pill name='Next.JS' />
+								<Pill name='React' />
+								<Pill name='TypeScript' />
+								<Pill name='JavaScript' />
+								<Pill name='SCSS' />
+								<Space size='xs' />
+								<Text type='p' size='m'>
+									I had a glimpse on
+								</Text>
+								<Space size='xs' />
+								<Pill name='Swift' />
+								<Pill name='PHP' />
+								<Pill name='Java' />
+								<Space size='sm' />
+								<Text type='p' size='m' italic underline>
 									Expertise
 								</Text>
 								<Space size='xs' />
@@ -62,29 +84,7 @@ const About: NextPage = () => {
 								<Pill name='Accessibility' />
 								<Pill name='User Testing' />
 								<Pill name='Component Design' />
-								<Space size='sm' />
-								<Text type='p' size='m' italic underline>
-									The way I talk to machines
-								</Text>
-								<Space size='xs' />
-								<Text type='p' size='m'>
-									Primarily
-								</Text>
-								<Space size='xs' />
-								<Pill name='SCSS' />
-								<Pill name='JavaScript' />
-								<Pill name='TypeScript' />
-								<Pill name='React' />
-								<Pill name='Next.JS' />
-								<Pill name='Framer Motion' />
-								<Space size='xs' />
-								<Text type='p' size='m'>
-									I had a glimpse on
-								</Text>
-								<Space size='xs' />
-								<Pill name='Swift' />
-								<Pill name='PHP' />
-								<Pill name='Java' />
+
 								<Space size='sm' />
 								<Text type='p' size='m' italic underline>
 									How I handle content
