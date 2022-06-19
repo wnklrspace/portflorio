@@ -127,7 +127,11 @@ const Home: NextPage = () => {
 
 	return (
 		<>
-			<SeoMeta desc='• Front End Development' urlPath='./' />
+			<SeoMeta
+				title={'• Front End Development'}
+				desc='Florian Winkler, Front End Developer from Stuttgart. Currently Studying Mobile Medien B.Sc. at Hochschule der Medien'
+				urlPath='./'
+			/>
 			<Layout fontColor='light'>
 				<Section firstOfPage hasTop>
 					<Container>
