@@ -7,12 +7,14 @@ import classNames from 'classnames';
 import { Text } from '../Text';
 import { Container } from '../Layout';
 import styles from './styles.module.scss';
+import { useRouter } from 'next/router';
 
 interface NavigationProps {
 	fontColor: 'light' | 'dark';
 }
 
 export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
+	const { route } = useRouter();
 	const [showNav, setShowNav] = useState(false);
 	const navClass = classNames(styles.nav, {
 		[styles['nav--active']]: showNav,
@@ -28,6 +30,8 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 		[styles['nav-background--active']]: showNav,
 	});
 
+	console.log('route: ', route);
+
 	return (
 		<>
 			<Link href='/'>
@@ -37,7 +41,7 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 				<div className={styles.burger__meat} />
 				<div className={styles.burger__meat} />
 			</div>
-			<div className={backgroundClass} />
+			<div onClick={() => setShowNav(false)} className={backgroundClass} />
 			<nav className={navClass}>
 				<Container>
 					<Row>
@@ -45,33 +49,47 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 							<ul>
 								<li>
 									<Link href='/'>
-										<a>Projects</a>
+										<a
+											className={`${route === '/' && styles.active}`}
+											onClick={() => setShowNav(false)}>
+											Projects
+										</a>
 									</Link>
 								</li>
 								<li>
 									<Link href='../cv'>
-										<a>CV</a>
+										<a
+											className={`${route === '/cv' && styles.active}`}
+											onClick={() => setShowNav(false)}>
+											CV
+										</a>
 									</Link>
 								</li>
 							</ul>
 							<ul>
 								<li>
 									<Link href='https://github.com/wnklrspace'>
-										<a target='_blank' rel='noopener'>
+										<a
+											onClick={() => setShowNav(false)}
+											target='_blank'
+											rel='noopener'>
 											Github
 										</a>
 									</Link>
 								</li>
 								<li>
 									<Link href='https://www.linkedin.com/in/florian-winkler-384582198/'>
-										<a target='_blank' rel='noopener'>
+										<a
+											onClick={() => setShowNav(false)}
+											target='_blank'
+											rel='noopener'>
 											Linked In
 										</a>
 									</Link>
 								</li>
 								<li>
 									<Link href='../imprint'>
-										<a>Imprint</a>
+										<a onClick={() => setShowNav(false)}>Imprint</a>
 									</Link>
 								</li>
 							</ul>
