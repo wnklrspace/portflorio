@@ -123,6 +123,8 @@ const Home: NextPage = () => {
 		if (showModal && e.key === 'Escape') {
 			setShowModal(false);
 		}
+
+		console.log('cotnent: ', modalContent);
 	}
 
 	return (

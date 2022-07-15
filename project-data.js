@@ -306,7 +306,26 @@ const projectData = [
 			},
 		],
 		stack: ['React.JS', 'SCSS', 'JavaScript', 'SQL'],
-		images: [],
+		images: [
+			{
+				src: '/gis_01.png',
+				alt: 'GIS Login Bereich',
+				width: 2880,
+				height: 1580,
+			},
+			{
+				src: '/gis_02.png',
+				alt: 'GIS Dashboard Bereich',
+				width: 2880,
+				height: 1580,
+			},
+			{
+				src: '/gis_03.png',
+				alt: 'GIS Actions',
+				width: 2880,
+				height: 1580,
+			},
+		],
 		description: [
 			{
 				key: 'challenge',
