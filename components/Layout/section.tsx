@@ -6,6 +6,7 @@ interface Props {
 	hasTop?: boolean;
 	hasBottom?: boolean;
 	firstOfPage?: boolean;
+	hasBorderBottom?: boolean;
 }
 
 export const Section: React.FunctionComponent<Props> = ({
@@ -13,11 +14,13 @@ export const Section: React.FunctionComponent<Props> = ({
 	hasTop = false,
 	firstOfPage = false,
 	hasBottom = true,
+	hasBorderBottom = false,
 }) => {
 	const sectionClass = classNames(layout.section, {
 		[layout['section--t']]: hasTop,
 		[layout['section--first']]: firstOfPage,
 		[layout['section--nb']]: !hasBottom,
+		[layout['section--bb']]: hasBorderBottom,
 	});
 
 	return <section className={sectionClass}>{children}</section>;

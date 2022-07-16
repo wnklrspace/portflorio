@@ -123,8 +123,6 @@ const Home: NextPage = () => {
 		if (showModal && e.key === 'Escape') {
 			setShowModal(false);
 		}
-
-		console.log('cotnent: ', modalContent);
 	}
 
 	return (
@@ -135,15 +133,25 @@ const Home: NextPage = () => {
 				urlPath='./'
 			/>
 			<Layout fontColor='light'>
-				<Section firstOfPage hasTop>
+				<Section firstOfPage hasTop hasBorderBottom>
 					<Container>
-						<Text type='h1' size='xxl'>
-							Front End <br /> Development
-						</Text>
+						<Row>
+							<Col md={11}>
+								<Text type='h1' size='xxl'>
+									Front End Developer focused on{' '}
+									<span
+										style={{
+											color: '#5353ff',
+										}}>
+										complex UX &amp; UI{' '}
+									</span>
+								</Text>
+							</Col>
+						</Row>
 					</Container>
 				</Section>
 
-				<Section>
+				<Section hasTop>
 					<Container>
 						<Row>
 							<Col md={{ size: 4, offset: 8 }}>

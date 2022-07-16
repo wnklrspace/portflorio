@@ -16,7 +16,7 @@ const Imprint: NextPage = () => {
 				<Section hasTop>
 					<Container>
 						<Row>
-							<Col md={{ size: 8, offset: 2 }}>
+							<Col>
 								<Link href='./'>
 									<a>Back to Home</a>
 								</Link>
@@ -30,27 +30,29 @@ const Imprint: NextPage = () => {
 				<Section>
 					<Container>
 						<Row>
-							<Col md={{ size: 8, offset: 2 }}>
-								<p>Angaben gemäß § 5 TMG</p>
-								<p>
+							<Col md={8}>
+								<Text type='p' size='m' marginBottom>
+									Angaben gemäß § 5 TMG
+									<br />
 									Florian Winkler <br />
 									Stuttgart
-								</p>
-								<p>Kontakt</p>
-								<p>
+								</Text>
+								<Text type='p' size='m' marginBottom>
+									Kontakt
+									<br />
 									Auf Anfrage schicke ich Ihnen gerne meine Kontaktdaten und die
 									ganze Adresse zu.
-								</p>
-								<p>
+								</Text>
+								<Text type='p' size='m' marginBottom>
 									Verbraucher­streit­beilegung/Universal­schlichtungs­stelle
-								</p>
-								<p>
+									<br />
 									Wir sind nicht bereit oder verpflichtet, an
 									Streitbeilegungsverfahren vor einer
 									Verbraucherschlichtungsstelle teilzunehmen.
-								</p>
-								<p>Haftung für Inhalte</p>
-								<p>
+								</Text>
+								<Text type='p' size='m' marginBottom>
+									Haftung für Inhalte
+									<br />
 									Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
 									Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
 									verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
@@ -64,9 +66,10 @@ const Imprint: NextPage = () => {
 									Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
 									Rechtsverletzungen werden wir diese Inhalte umgehend
 									entfernen.
-								</p>
-								<p>Haftung für Links</p>
-								<p>
+								</Text>
+								<Text type='p' size='m' marginBottom>
+									Haftung für Links
+									<br />
 									Unser Angebot enthält Links zu externen Websites Dritter, auf
 									deren Inhalte wir keinen Einfluss haben. Deshalb können wir
 									für diese fremden Inhalte auch keine Gewähr übernehmen. Für
@@ -79,9 +82,10 @@ const Imprint: NextPage = () => {
 									konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.
 									Bei Bekanntwerden von Rechtsverletzungen werden wir derartige
 									Links umgehend entfernen.
-								</p>
-								<p>Urheberrecht</p>
-								<p>
+								</Text>
+								<Text type='p' size='m' marginBottom>
+									Urheberrecht
+									<br />
 									Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
 									diesen Seiten unterliegen dem deutschen Urheberrecht. Die
 									Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
@@ -96,7 +100,7 @@ const Imprint: NextPage = () => {
 									bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden
 									von Rechtsverletzungen werden wir derartige Inhalte umgehend
 									entfernen.
-								</p>
+								</Text>
 							</Col>
 						</Row>
 					</Container>

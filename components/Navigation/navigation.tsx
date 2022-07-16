@@ -35,7 +35,7 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 	return (
 		<>
 			<Link href='/'>
-				<a className={logoClass}>F W</a>
+				<a className={logoClass}>FW</a>
 			</Link>
 			<div className={burgerClass} onClick={() => setShowNav(!showNav)}>
 				<div className={styles.burger__meat} />

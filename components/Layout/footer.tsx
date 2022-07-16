@@ -21,7 +21,6 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 				className={styles.footer}>
 				<Section>
 					<Container>
-						<hr />
 						<Row>
 							<Col md={3}>
 								<Text type='p' size='m'>
@@ -49,8 +48,6 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 										<a>CV</a>
 									</Link>
 								</Text>
-							</Col>
-							<Col md={3}>
 								<Text type='p' size='m'>
 									<Link href='https://github.com/wnklrspace'>
 										<a target='_blank' rel='noopener'>
@@ -66,6 +63,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 									</Link>
 								</Text>
 							</Col>
+
 							<Col md={3}>
 								<Text type='p' size='m'>
 									All rights reserved 2022
@@ -78,10 +76,26 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 									</Link>
 								</Text>
 							</Col>
+
+							<Col md={3}>
+								<Text type='p' size='m'>
+									<span style={{ opacity: '0.25' }}>Nice to</span> me
+									<span style={{ opacity: '0.25' }}>et you</span> in 10 seconds
+								</Text>
+								<Text type='p' size='m'>
+									🛹 Currently skating around Stuttgart | 👨‍💻 while studying
+									Mobile Media B.Sc.
+									<br /> 📚 I love reading | 🎥 and know probably more about
+									movies and movie culture than having actually seen every
+									important one
+									<br /> 🎧 Besides I love strolling around, exploring new
+									places | 🌝 and enjoy bad puns a lot
+								</Text>
+							</Col>
 						</Row>
 					</Container>
 				</Section>
-				<Section>
+				<div className={styles['footer__details']}>
 					<Container>
 						<Row>
 							<Col md={3}>
@@ -98,7 +112,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
 							</Col>
 						</Row>
 					</Container>
-				</Section>
+				</div>
 			</footer>
 		</>
 	);

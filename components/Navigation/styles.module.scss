@@ -41,10 +41,11 @@
 	flex-direction: column;
 
 	&--inverted {
-		background: #fff;
+		background: $color-black;
+		border: 1px solid rgba($color-white, 0.2);
 
 		.burger__meat {
-			background-color: #333;
+			background-color: rgba($color-white, 0.8);
 		}
 	}
 
@@ -52,10 +53,19 @@
 		right: 3rem;
 	}
 
+	&--active {
+		background: $color-white;
+		// border: 1px solid rgba($color-black, 0.2);
+
+		.burger__meat {
+			background-color: $color-black;
+		}
+	}
+
 	&__meat {
 		width: 60%;
 		height: 2px;
-		background-color: #fff;
+		background-color: $color-white;
 
 		&:last-child {
 			margin-top: 6px;
@@ -87,7 +97,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: #fff;
+	background-color: $color-white;
 	padding: calc(10vh + gap(4)) 0 10vh 0;
 	align-items: center;
 
@@ -143,19 +153,20 @@
 	&:after {
 		content: '';
 		position: absolute;
-		bottom: 0;
-		left: 0;
+		top: 10%;
+		left: -20px;
 		right: 0;
-		height: 2px;
-		width: 100%;
-		background-color: rgba($color-black, 0.2);
+		height: 80%;
+		width: 4px;
+		border-radius: 5px;
+		background-color: $color-purple;
 	}
 }
 
 .about {
 	display: none;
 	padding: gap(3);
-	background-color: $color-black;
+	background-color: $color-purple;
 	border-radius: 20px;
 
 	@include large {

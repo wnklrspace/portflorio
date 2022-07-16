@@ -12,7 +12,7 @@
 	}
 
 	@include large {
-		padding-bottom: gap(20);
+		padding-bottom: gap(15);
 	}
 
 	&--xs {
@@ -45,7 +45,7 @@
 		}
 
 		@include large {
-			padding-top: gap(20);
+			padding-top: gap(15);
 		}
 	}
 
@@ -63,6 +63,10 @@
 		@include large {
 			padding-top: gap(20);
 		}
+	}
+
+	&--bb {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	}
 }
 
@@ -94,7 +98,12 @@
 }
 
 .footer {
-	padding-top: gap(3);
+	padding-top: gap(10);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+	@include medium {
+		padding-top: gap(20);
+	}
 
 	& > * {
 		font-size: 14px !important;
@@ -111,6 +120,17 @@
 
 		&:hover {
 			opacity: 0.5;
+		}
+	}
+
+	&__details {
+		border-top: 1px solid rgba($color-white, 0.2);
+		padding: gap(1) 0;
+
+		&__inner {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
 		}
 	}
 }
