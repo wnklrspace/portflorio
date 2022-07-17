@@ -20,12 +20,7 @@ const Playground: NextPage<PlaygroundProps> = ({ posts }) => {
 					<Row>
 						<Col>
 							<Text type='h1' size='xxl'>
-								<span
-									style={{
-										color: '#5353ff',
-									}}>
-									Playground
-								</span>
+								Playground
 							</Text>
 						</Col>
 					</Row>

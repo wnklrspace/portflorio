@@ -68,6 +68,15 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 							</ul>
 							<ul>
 								<li>
+									<Link href='../playground'>
+										<a
+											className={`${route === '/playground' && styles.active}`}
+											onClick={() => setShowNav(false)}>
+											Playground
+										</a>
+									</Link>
+								</li>
+								<li>
 									<Link href='https://github.com/wnklrspace'>
 										<a
 											onClick={() => setShowNav(false)}
@@ -89,7 +98,11 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 								</li>
 								<li>
 									<Link href='../imprint'>
-										<a onClick={() => setShowNav(false)}>Imprint</a>
+										<a
+											className={`${route === '/imprint' && styles.active}`}
+											onClick={() => setShowNav(false)}>
+											Imprint
+										</a>
 									</Link>
 								</li>
 							</ul>
