@@ -42,6 +42,7 @@ const Playground: NextPage<PlaygroundProps> = ({ posts }) => {
 									</Link>
 									<div className={styles['image__text']}>
 										<Text type='p' size='s' alignText='center'>
+											posted on a{' '}
 											{date.toLocaleString('en-EN', {
 												weekday: 'long',
 											})}

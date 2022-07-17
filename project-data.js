@@ -447,7 +447,7 @@ const projectData = [
 		link: 'https://uhland-realschule.de/',
 		github: '',
 		year: 2020,
-		intro_text: 'Building a accessible website for a local school',
+		intro_text: 'Building an accessible website for a local school',
 		theme: {
 			mainColor: '#009f63',
 			textColor: 'light',

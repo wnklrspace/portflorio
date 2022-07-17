@@ -8,6 +8,7 @@ import { Modal } from '../components/Modal/modal';
 import { Text } from '../components/Text';
 import projectData from '../project-data';
 import { ListViewContext } from '../context/list-view';
+import { ThemeContext } from '../context/theme';
 import styles from '../styles/page/index.module.scss';
 
 const Home: NextPage = () => {
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
 		partner: [{ name: '', link: '' }],
 	});
 
+	const { theme } = useContext(ThemeContext);
 	const [showModal, setShowModal] = useState<boolean>(false);
 	const { listView, setListView } = useContext(ListViewContext);
 
@@ -159,6 +161,8 @@ const Home: NextPage = () => {
 									<div
 										className={`${styles.switch} ${
 											listView === 'list' && styles['switch--active']
+										} ${theme === 'light' && styles['switch--light']} ${
+											theme === 'dark' && styles['switch--dark']
 										}`}
 										onClick={() => setListView('list')}>
 										<Icon type='list' />
@@ -166,6 +170,8 @@ const Home: NextPage = () => {
 									<div
 										className={`${styles.switch} ${
 											listView === 'grid' && styles['switch--active']
+										} ${theme === 'light' && styles['switch--light']} ${
+											theme === 'dark' && styles['switch--dark']
 										}`}
 										onClick={() => setListView('grid')}>
 										<Icon type='grid' />
@@ -206,8 +212,15 @@ const Home: NextPage = () => {
 										</div>
 									</Col>
 								) : (
-									<div
+									<ProjectListItem
 										key={index}
+										title={project.title}
+										year={project.year}
+										link={`/project/${project.slug}`}
+										mainColor={project.theme.mainColor}
+										description={project.intro_text}
+										jobs={project.role}
+										target='self'
 										onClick={() => {
 											setModalContent({
 												id: project.id,
@@ -222,18 +235,8 @@ const Home: NextPage = () => {
 												description: project.intro_text,
 											});
 											setShowModal(true);
-										}}>
-										<ProjectListItem
-											key={index}
-											title={project.title}
-											year={project.year}
-											link={`/project/${project.slug}`}
-											mainColor={project.theme.mainColor}
-											description={project.intro_text}
-											jobs={project.role}
-											target='self'
-										/>
-									</div>
+										}}
+									/>
 								);
 							})}
 						</Row>

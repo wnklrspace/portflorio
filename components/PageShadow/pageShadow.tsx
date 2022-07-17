@@ -1,6 +1,13 @@
-import { FC } from 'react';
+import classNames from 'classnames';
+import { FC, useContext } from 'react';
+import { ThemeContext } from '../../context/theme';
 import styles from './pageShadow.module.scss';
 
 export const PageShadow: FC = () => {
-	return <div className={styles.pageshadow} />;
+	const { theme } = useContext(ThemeContext);
+	const pageshadowStyling = classNames(styles['pageshadow'], {
+		[styles['pageshadow--dark']]: theme === 'dark',
+		[styles['pageshadow--light']]: theme === 'light',
+	});
+	return <div className={pageshadowStyling} />;
 };

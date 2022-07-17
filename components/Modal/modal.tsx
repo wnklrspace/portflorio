@@ -1,11 +1,13 @@
-import { FC, useEffect } from 'react';
+import { FC, useContext, useEffect } from 'react';
 import Link from 'next/link';
+import classNames from 'classnames';
 import { isEmpty } from 'lodash';
 import { Text } from '../Text';
 import { Slider } from '../Slider/slider';
 import { Pill } from '../Pills';
 import { Space } from '../Space/space';
 import { Icon } from '../Icon/icon';
+import { ThemeContext } from '../../context/theme';
 import styles from './modal.module.scss';
 
 interface ModalProps {
@@ -35,9 +37,14 @@ export const Modal: FC<ModalProps> = ({
 	description,
 	partner,
 }) => {
+	const { theme } = useContext(ThemeContext);
+	const modalStyling = classNames(styles.modal, {
+		[styles['modal--light']]: theme === 'light',
+		[styles['modal--dark']]: theme === 'dark',
+	});
 	return (
 		<div className={styles['container']}>
-			<div className={styles.modal}>
+			<div className={modalStyling}>
 				<div className={styles['modal__head']}>
 					<Text type='h3' size='l'>
 						{title}

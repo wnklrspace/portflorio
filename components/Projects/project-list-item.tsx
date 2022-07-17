@@ -1,4 +1,6 @@
 import classNames from 'classnames';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/theme';
 import { Space } from '../Space/space';
 import { Text } from '../Text';
 import styles from './styles.module.scss';
@@ -11,6 +13,7 @@ interface Props {
 	jobs: Array<string>;
 	mainColor?: string;
 	target?: 'blank' | 'self';
+	onClick?: () => void;
 }
 
 export const ProjectListItem: React.FunctionComponent<Props> = ({
@@ -21,13 +24,16 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 	jobs,
 	mainColor = '#fff',
 	target = 'self',
+	onClick,
 }) => {
-	const projectListItem = classNames(styles['project-list-item'], {});
+	const { theme } = useContext(ThemeContext);
+	const projectListItem = classNames(styles['project-list-item'], {
+		[styles['project-list-item--dark']]: theme === 'dark',
+		[styles['project-list-item--light']]: theme === 'light',
+	});
 
 	return (
-		// <Link href={link}>
-		// 	<a target={`_${target}`}>
-		<div className={projectListItem}>
+		<div className={projectListItem} onClick={onClick}>
 			<div className={styles.ball} style={{ backgroundColor: mainColor }} />
 
 			<div className={styles.title}>
@@ -51,7 +57,5 @@ export const ProjectListItem: React.FunctionComponent<Props> = ({
 				</Text>
 			</div>
 		</div>
-		// 	</a>
-		// </Link>
 	);
 };

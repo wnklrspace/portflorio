@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .layout {
 	display: flex;
 	justify-content: flex-end;
@@ -12,18 +14,29 @@
 	// padding: 20px;
 	width: 50px;
 	height: 50px;
-	border: 1px solid rgba(white, 0.25);
 	border-radius: 5px;
 
 	&:not(:last-child) {
 		margin-right: 10px;
 	}
 
-	&--active {
-		background-color: white;
+	&--light {
+		border: 1px solid rgba($color-black, 0.25);
 
 		svg {
-			fill: black;
+			fill: rgba($color-black, 0.75);
 		}
+	}
+
+	&--dark {
+		border: 1px solid rgba($color-white, 0.25);
+
+		svg {
+			fill: rgba($color-white, 0.75);
+		}
+	}
+
+	&--active {
+		border: 2px solid $color-purple;
 	}
 }

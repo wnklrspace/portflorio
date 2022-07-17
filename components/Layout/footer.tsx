@@ -1,10 +1,12 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext } from 'react';
 import Clock from 'react-live-clock';
 import { Row, Col } from 'reactstrap';
+import classNames from 'classnames';
 import { Text } from '../Text';
 import { Space } from '../Space/space';
 import { Section, Container } from './';
+import { ThemeContext } from '../../context/theme';
 import styles from './styles.module.scss';
 interface Props {
 	backgroundColor?: string;
@@ -13,12 +15,16 @@ interface Props {
 
 export const Footer: React.FunctionComponent<Props> = (props) => {
 	const { backgroundColor, fontColor } = props;
-
+	const { theme } = useContext(ThemeContext);
+	const footerStyling = classNames(styles.footer, {
+		[styles['footer--dark']]: theme === 'dark',
+		[styles['footer--light']]: theme === 'light',
+	});
 	return (
 		<>
 			<footer
 				style={{ backgroundColor: backgroundColor, color: fontColor }}
-				className={styles.footer}>
+				className={footerStyling}>
 				<Section>
 					<Container>
 						<Row>
