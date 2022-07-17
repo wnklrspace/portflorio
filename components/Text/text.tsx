@@ -7,6 +7,7 @@ interface TextProps {
 	size: 'xxl' | 'xl' | 'l' | 'm' | 's';
 	weight?: 'bold' | 'regular' | 'light';
 	transform?: 'lowercase' | 'uppercase';
+	alignText?: 'left' | 'center' | 'right';
 	marginBottom?: boolean;
 	underline?: boolean;
 	italic?: boolean;
@@ -18,6 +19,7 @@ export const Text: FC<TextProps> = ({
 	type,
 	size,
 	weight = 'regular',
+	alignText,
 	underline = false,
 	italic = false,
 	marginBottom = false,
@@ -39,6 +41,10 @@ export const Text: FC<TextProps> = ({
 		[styles['lowercase']]: transform === 'lowercase',
 		[styles['underline']]: underline,
 		[styles['italic']]: italic,
+		// align text
+		[styles['left']]: alignText === 'left',
+		[styles['right']]: alignText === 'right',
+		[styles['center']]: alignText === 'center',
 		// space
 		[styles['mb']]: marginBottom,
 	});
