@@ -26,17 +26,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 		}
 	}, [theme, setTheme]);
 
-	// useEffect(() => {
-	// 	const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+	useEffect(() => {
+		const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-	// 	if (prefersDarkScheme.matches) {
-	// 		document.body.classList.remove('light-theme');
-	// 		document.body.classList.add('dark-theme');
-	// 	} else {
-	// 		document.body.classList.remove('dark-theme');
-	// 		document.body.classList.add('light-theme');
-	// 	}
-	// }, []);
+		if (prefersDarkScheme.matches) {
+			setTheme('dark');
+		} else {
+			setTheme('light');
+		}
+	}, []);
 
 	return (
 		<ListViewContext.Provider
