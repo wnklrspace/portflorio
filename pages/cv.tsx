@@ -37,6 +37,7 @@ const About: NextPage = () => {
 										alt='Florian Winkler'
 										width={800}
 										height={533}
+										placeholder='blur'
 										layout='responsive'
 										blurDataURL='/foto.jpg'
 									/>
