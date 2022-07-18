@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import { Text } from '../Text';
 import { Container } from '../Layout';
 import { ThemeContext } from '../../context/theme';
+import { Logo } from './logo';
 import styles from './styles.module.scss';
 
 interface NavigationProps {
@@ -20,9 +21,6 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 	const [showNav, setShowNav] = useState(false);
 	const navClass = classNames(styles.nav, {
 		[styles['nav--active']]: showNav,
-	});
-	const logoClass = classNames(styles.logo, {
-		[styles['logo--inverted']]: showNav,
 	});
 	const burgerClass = classNames(styles.burger, {
 		[styles['burger--active']]: showNav,
@@ -43,9 +41,7 @@ export const Navigation: FC<NavigationProps> = ({ fontColor }) => {
 
 	return (
 		<>
-			<Link href='/'>
-				<a className={logoClass}>FW</a>
-			</Link>
+			<Logo inverted={showNav} />
 			<div className={themeSwitchStyling} onClick={() => handleThemeSwitch()}>
 				{theme === 'dark' ? (
 					<svg
