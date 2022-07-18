@@ -140,7 +140,7 @@ const Home: NextPage = () => {
 						<Row>
 							<Col md={11}>
 								<Text type='h1' size='xxl'>
-									Front End Developer focused on{' '}
+									Software Developer focused on{' '}
 									<span
 										style={{
 											color: '#5353ff',
