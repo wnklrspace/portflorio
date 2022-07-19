@@ -14,7 +14,7 @@ const About: NextPage = () => {
 		<>
 			<SeoMeta title='• CV' desc='CV of Florian Winkler' urlPath='cv' />
 			<Layout>
-				<Section firstOfPage hasBottom={false} hasBorderBottom>
+				<Section firstOfPage hasBottom hasBorderBottom>
 					<Container>
 						<Row>
 							<Col>
