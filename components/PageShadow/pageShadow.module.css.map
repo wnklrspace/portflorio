@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,WAAW,CAAC;EACX,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,KAAK;EACf,cAAc,EAAE,IAAI;EACpB,MAAM,EAAE,CAAC;EACT,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EACR,OAAO,EAAE,EAAE;CAaX;;AERA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EFbzC,AAAA,WAAW,CAAC;IAWV,MAAM,EAAE,KAAK;GAUd;;;AAPC,AAAD,iBAAO,CAAC;EACP,UAAU,EAAE,6CAAkD;CAC9D;;AAEA,AAAD,kBAAQ,CAAC;EACR,UAAU,EAAE,0CAAkD;CAC9D",
+    "sources": [
+        "pageShadow.module.scss",
+        "../../styles/variables.scss",
+        "../../styles/mixins.scss",
+        "../../styles/variables.scss"
+    ],
+    "names": [],
+    "file": "pageShadow.module.css"
+}

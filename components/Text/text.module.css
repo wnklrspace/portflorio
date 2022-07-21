@@ -1,0 +1,115 @@
+.xxl,
+.xxl > * {
+  font-size: calc(52px + 0.1vw);
+  line-height: 1.1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .xxl,
+  .xxl > * {
+    font-size: calc(94px + 2vw);
+    line-height: 1.1em;
+    letter-spacing: -0.18vw;
+  }
+}
+
+.xl,
+.xl > * {
+  font-size: calc(32px + 0.1vw);
+  line-height: 1.1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .xl,
+  .xl > * {
+    font-size: calc(52px + 0.1vw);
+    line-height: 1.1em;
+  }
+}
+
+.l,
+.l > * {
+  font-size: calc(21px + 0.1vw);
+  line-height: 1.4em;
+}
+
+@media only screen and (min-width: 768px) {
+  .l,
+  .l > * {
+    font-size: calc(32px + 0.1vw);
+    line-height: 1.1em;
+  }
+}
+
+.m,
+.m > * {
+  font-size: calc(12px + 0.1vw);
+  line-height: 1.4em;
+}
+
+@media only screen and (min-width: 768px) {
+  .m,
+  .m > * {
+    font-size: calc(21px + 0.1vw);
+    line-height: 1.4em;
+  }
+}
+
+.s,
+.s > * {
+  font-size: calc(12px + 0.1vw);
+  line-height: 1.4em;
+}
+
+.bold,
+.bold > * {
+  font-weight: 400;
+}
+
+.regular,
+.regular > * {
+  font-weight: 400;
+}
+
+.uppercase,
+.uppercase > * {
+  text-transform: uppercase;
+}
+
+.lowercase,
+.lowercase > * {
+  text-transform: lowercase;
+}
+
+.underline,
+.underline > * {
+  text-decoration: underline;
+}
+
+.italic,
+.italic > * {
+  font-style: italic;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mb {
+    margin-bottom: 60px;
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+/*# sourceMappingURL=text.module.css.map */

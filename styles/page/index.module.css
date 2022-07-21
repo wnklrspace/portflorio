@@ -1,0 +1,50 @@
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.switch {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.switch:not(:last-child) {
+  margin-right: 10px;
+}
+
+.switch--light {
+  border: 1px solid rgba(1, 1, 1, 0.25);
+}
+
+.switch--light svg {
+  fill: rgba(1, 1, 1, 0.75);
+}
+
+.switch--dark {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.switch--dark svg {
+  fill: rgba(255, 255, 255, 0.75);
+}
+
+.switch--active {
+  border: 2px solid #5353ff;
+}
+/*# sourceMappingURL=index.module.css.map */

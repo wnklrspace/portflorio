@@ -1,0 +1,56 @@
+* {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: calc(32px + 0.1vw);
+  line-height: 1;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: calc(52px + 0.1vw);
+  }
+}
+
+h2 {
+  font-size: calc(21px + 0.1vw);
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: calc($font-size-md + 0.1vw);
+  }
+}
+
+p,
+span,
+a {
+  font-size: calc(12px + 0.1vw);
+  line-height: 1.4;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 768px) {
+  p,
+  span,
+  a {
+    font-size: calc($font-size-sm + 0.1vw);
+  }
+}
+
+a {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=typography.css.map */

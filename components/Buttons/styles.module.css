@@ -1,0 +1,33 @@
+.lightswitch {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  width: 20px;
+  height: 20px;
+}
+
+.button {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 40px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    width: unset;
+  }
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+/*# sourceMappingURL=styles.module.css.map */

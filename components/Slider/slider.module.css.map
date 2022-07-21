@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,QAAQ,EAAE,MAAM;EAChB,KAAK,EAAE,iBAAiB;EACxB,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,MAAM;CACf;;AAED,AAAA,gBAAgB,CAAC;EAChB,QAAQ,EAAE,MAAM;EAChB,aAAa,EAAE,IAAI;CAKnB;;AAPD,AAIC,gBAJe,CAIf,GAAG,CAAC;EACH,UAAU,EAAE,KAAK;CACjB",
+    "sources": [
+        "slider.module.scss",
+        "../../styles/mixins.scss",
+        "../../styles/variables.scss",
+        "../../styles/variables.scss"
+    ],
+    "names": [],
+    "file": "slider.module.css"
+}

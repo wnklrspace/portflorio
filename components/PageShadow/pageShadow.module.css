@@ -1,0 +1,27 @@
+.pageshadow {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 768px) {
+  .pageshadow {
+    height: 150px;
+  }
+}
+
+.pageshadow--dark {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#010101));
+  background: linear-gradient(180deg, transparent, #010101);
+}
+
+.pageshadow--light {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff));
+  background: linear-gradient(180deg, transparent, #fff);
+}
+/*# sourceMappingURL=pageShadow.module.css.map */

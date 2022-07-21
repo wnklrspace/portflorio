@@ -1,0 +1,28 @@
+.space {
+  padding-top: 20px;
+}
+
+.space--xxs {
+  padding-top: 10px;
+}
+
+.space--xs {
+  padding-top: 20px;
+}
+
+.space--sm {
+  padding-top: 60px;
+}
+
+.space--md {
+  padding-top: 80px;
+}
+
+.space--lg {
+  padding-top: 100px;
+}
+
+.space--xl {
+  padding-top: 150px;
+}
+/*# sourceMappingURL=space.module.css.map */

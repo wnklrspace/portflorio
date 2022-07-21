@@ -1,0 +1,24 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+/*# sourceMappingURL=playground.module.css.map */

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,CAAC;EACN,aAAa,EAAE,IAAI;EACnB,QAAQ,EAAE,MAAM;CAChB",
+    "sources": [
+        "cv.module.scss",
+        "../mixins.scss",
+        "../variables.scss"
+    ],
+    "names": [],
+    "file": "cv.module.css"
+}

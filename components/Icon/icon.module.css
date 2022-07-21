@@ -1,0 +1,10 @@
+.icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.icon svg {
+  fill: rgba(255, 255, 255, 0.8);
+}
+/*# sourceMappingURL=icon.module.css.map */

@@ -127,7 +127,7 @@ const About: NextPage = () => {
 								<Pill name='Miro' />
 								<Space size='sm' />
 							</Col>
-							<Col md={6} lg={4} xl={{ size: 3, offset: 2 }}>
+							<Col md={6} lg={{ size: 6, offset: 2 }}>
 								<Text type='p' size='m' italic underline>
 									Experience
 								</Text>
@@ -180,8 +180,6 @@ const About: NextPage = () => {
 									10.2018 - 02.2020
 								</Text>
 								<Space size='sm' />
-							</Col>
-							<Col md={6} lg={4} xl={{ size: 3, offset: 0 }}>
 								<Text type='p' size='m' italic underline>
 									Education
 								</Text>
